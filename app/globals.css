@@ -1,26 +1,36 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+
+/* Navbar helpers */
+/* .nav-link {
+  @apply text-white px-6 h-[70px] flex items-center
+  text-base font-semibold
+  transition-all duration-300
+  hover:bg-[#244a7c];
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.nav-link.active {
+  @apply bg-[#244a7c];
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dropdown {
+  @apply absolute top-full left-0 bg-white text-black
+  rounded-md shadow-lg mt-2 min-w-[260px] z-50;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.dropdown-item {
+  @apply w-full text-left px-4 py-2 text-sm hover:bg-gray-100;
 }
+
+.sub-dropdown {
+  @apply absolute left-full top-0 bg-white
+  rounded-md shadow-lg min-w-[220px];
+}
+
+.sub-link {
+  @apply block px-4 py-2 text-sm hover:bg-gray-100;
+} */

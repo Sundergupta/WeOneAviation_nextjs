@@ -1,0 +1,112 @@
+:root {
+  --cpl-bg: #ffffff;
+  --cpl-accent: #0b63d6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.manuContainer {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1300px;
+  margin: 1.5rem auto;
+}
+
+.leftMenu {
+  width: 260px;
+  background: var(--cpl-bg);
+  border-right: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sideMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuLink {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  background: #f4f4f4;
+  border-radius: 8px;
+  transition: all 0.15s ease-in-out;
+}
+
+.menuLink:hover {
+  background: var(--cpl-accent);
+  color: #fff;
+}
+
+.active {
+  background: var(--cpl-accent);
+  color: white;
+}
+
+.contentColumn {
+  flex: 1;
+  background: var(--cpl-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.heroSection {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+}
+
+.heroOverlay {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 992px) {
+  .manuContainer {
+    flex-direction: column;
+  }
+
+  .leftMenu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    border-right: none;
+    border-bottom: 2px solid #e5e7eb;
+    box-shadow: none;
+  }
+
+  .menuLink {
+    flex: 1;
+    text-align: center;
+    border-radius: 6px;
+  }
+}
