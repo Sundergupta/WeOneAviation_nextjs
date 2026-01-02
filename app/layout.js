@@ -1,7 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "../components/Navbar.jsx";
-import Footer from "../components/footer.jsx";
+
+import Navbar from "../components/Navbar";        // ✅ FIXED PATH
+import Footer from "../components/footer";        // ✅ FIXED PATH
+import ContactQuery from "../components/ContactQuery"; // ✅ FIXED PATH
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,6 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body style={{ paddingTop: "70px" }}>
         <Navbar />
+        <ContactQuery />   {/* ✅ works now */}
         {children}
         <Footer />
       </body>

@@ -83,7 +83,7 @@ const AboutUs = () => {
                         </div>
 
                         <div className="about-image">
-                            <Image src="/About2.webp" alt="Cockpit" width={600} height={400} />
+                            <Image src="/assets/About2.webp" alt="Cockpit" width={600} height={400} />
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@ const AboutUs = () => {
             <section className="mission-section">
                 <div className="mission-container">
                     <div className="mission-image-wrapper">
-                        <Image src="/About2.webp" alt="Aircraft" width={600} height={400} />
+                        <Image src="/assets/About2.webp" alt="Aircraft" width={600} height={400} />
                     </div>
 
                     <div className="mission-content">

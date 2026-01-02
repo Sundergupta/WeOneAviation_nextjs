@@ -27,7 +27,7 @@ export default function Home() {
             title: "BEST PILOT TRAINING IN INDIA",
             subtitle:
                 "Join Best Pilot Training Institute In India. Get world-class flight training, DGCA-approved courses, and expert guidance to kickstart your aviation career.",
-            image: "/assets/home page slider/generate image of airplane.jpg",
+            image: "/assets/home page slider/generate image of airplane.webp",
             button1: "Contact Us",
             button2: "Learn More",
         },
@@ -35,7 +35,7 @@ export default function Home() {
             title: "We Deliver 3000+ Pilots To India Since 2011",
             subtitle:
                 "Clear Your DGCA Exam In First Attempt With We One Aviation Academy",
-            image: "/assets/home page slider/generate a videos of airplane.jpg",
+            image: "/assets/home page slider/generate a videos of airplane.webp",
             button1: "View Courses",
             button2: "Meet Instructors",
         },
@@ -43,7 +43,7 @@ export default function Home() {
             title: "From Ground to Sky",
             subtitle:
                 "Premier DGCA Exam Coaching & Flight Training for Aspiring Pilots",
-            image: "/assets/home page slider/airplan (5).jpg",
+            image: "/assets/home page slider/airplan (5).webp",
             button1: "Success Stories",
             button2: "Apply Now",
         },

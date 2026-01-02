@@ -24,19 +24,19 @@ export default function Footer() {
                     <h3 className="footer-title">Quick Links</h3>
                     <ul className="footer-links">
                         <li>
-                            <Link href="/"><Image src="/link.png" alt="" width={20} height={20} /> Home</Link>
+                            <Link href="/"><Image src="/assets/link.png" alt="" width={20} height={20} /> Home</Link>
                         </li>
                         <li>
-                            <Link href="/about-us"><Image src="/link.png" alt="" width={20} height={20} /> About Us</Link>
+                            <Link href="/about-us"><Image src="/assets/link.png" alt="" width={20} height={20} /> About Us</Link>
                         </li>
                         <li>
-                            <Link href="/commercial-pilot-license"><Image src="/link.png" alt="" width={20} height={20} /> Training Programs</Link>
+                            <Link href="/commercial-pilot-license"><Image src="/assets/link.png" alt="" width={20} height={20} /> Training Programs</Link>
                         </li>
                         <li>
-                            <Link href="/blogs"><Image src="/link.png" alt="" width={20} height={20} /> Blog</Link>
+                            <Link href="/blogs"><Image src="/assets/link.png" alt="" width={20} height={20} /> Blog</Link>
                         </li>
                         <li>
-                            <Link href="/contact-us"><Image src="/link.png" alt="" width={20} height={20} /> Contact</Link>
+                            <Link href="/contact-us"><Image src="/assets/link.png" alt="" width={20} height={20} /> Contact</Link>
                         </li>
                     </ul>
                 </div>
@@ -46,16 +46,16 @@ export default function Footer() {
                     <h3 className="footer-title">How to reach us?</h3>
                     <ul className="footer-links">
                         <li>
-                            <Image src="/location.png" alt="" width={20} height={20} />
+                            <Image src="/assets/location.png" alt="" width={20} height={20} />
                             C-404, 3rd Floor, Near Ramphal Chowk
                         </li>
                         <li>Sector-7, Dwarka, New Delhi - 110075</li>
                         <li>
-                            <Image src="/Call.png" alt="" width={20} height={20} />
+                            <Image src="/assets/Call.png" alt="" width={20} height={20} />
                             +91-9667370747
                         </li>
                         <li>
-                            <Image src="/Call.png" alt="" width={20} height={20} />
+                            <Image src="/assets/Call.png" alt="" width={20} height={20} />
                             +91-9355566991
                         </li>
                         <li>
@@ -74,7 +74,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                     >
                         <Image
-                            src="/adress.png"
+                            src="/assets/adress.png"
                             alt="Our Location"
                             width={250}
                             height={180}
