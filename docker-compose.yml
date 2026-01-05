@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  weoneaviation:
+    container_name: weoneaviation-ssr
+    build: .
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+    command: npm start
+
+  # Optional: MongoDB service for local development/testing
+  # mongo:
+  #   image: mongo:6
+  #   restart: unless-stopped
+  #   volumes:
+  #     - mongo-data:/data/db
+
+#volumes:
+#  mongo-data:
