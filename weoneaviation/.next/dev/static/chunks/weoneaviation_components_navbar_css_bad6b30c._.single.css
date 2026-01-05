@@ -1,0 +1,439 @@
+/* [project]/weoneaviation/components/navbar.css [app-client] (css) */
+.navbar {
+  z-index: 999;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: #1a365d;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 1.2rem;
+  transition: background-color .3s ease-in-out, box-shadow .3s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar.scrolled {
+  background-color: #1a365d4d;
+  box-shadow: 0 4px 20px #00000026;
+}
+
+.navbar-container {
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1300px;
+  height: 80px;
+  margin: 0 auto;
+  padding: 0 50px;
+  display: flex;
+}
+
+.navbar-logo {
+  color: #fff;
+  cursor: pointer;
+  justify-self: start;
+  align-items: center;
+  height: 70px;
+  padding: 5px 0;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform .3s;
+  display: flex;
+}
+
+.navbar-logo img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: auto;
+  max-width: 150px;
+  height: 65px;
+  display: block;
+}
+
+.navbar-logo:hover {
+  transform: translateY(-2px);
+}
+
+.navbar-menu {
+  grid-gap: 10px;
+  text-align: center;
+  grid-template-columns: repeat(7, auto);
+  justify-content: end;
+  width: 65vw;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+
+.navbar-item {
+  align-items: center;
+  height: 80px;
+  display: flex;
+}
+
+.navbar-link {
+  color: #fff;
+  text-shadow: 0 1px 2px #0000004d;
+  border-radius: 4px;
+  align-items: center;
+  height: 50%;
+  padding: .5rem 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .3s;
+  display: flex;
+  position: relative;
+}
+
+.navbar-link:hover {
+  color: #fff;
+  background-color: #2d4a8099;
+  transform: translateY(-2px);
+}
+
+.navbar-link:after {
+  content: "";
+  background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+  width: 0;
+  height: 2px;
+  transition: all .3s;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-link:hover:after, .navbar-link.active-link:after {
+  width: 80%;
+}
+
+.navbar-link.active-link {
+  color: #fff;
+  background-color: #2d4a8099;
+  transform: translateY(-2px);
+}
+
+.dropdown-parent {
+  position: relative;
+}
+
+.dropdown-btn {
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  align-items: center;
+  height: 50%;
+  padding: .5rem 1rem;
+  font-weight: 500;
+  transition: all .3s;
+  display: flex;
+  position: relative;
+}
+
+.dropdown-btn:hover {
+  background-color: #2d4a8099;
+  transform: translateY(-2px);
+}
+
+.dropdown-menu {
+  z-index: 1000;
+  opacity: 0;
+  background: #fff;
+  border: 1px solid #e1e5e9;
+  border-radius: 6px;
+  min-width: 250px;
+  margin: 4px 0 0;
+  padding: 8px 0;
+  list-style: none;
+  transition: opacity .3s, transform .3s;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-10px);
+  box-shadow: 0 4px 12px #00000026;
+}
+
+.dropdown-menu.active {
+  opacity: 1;
+  display: block;
+  transform: translateY(0);
+}
+
+.dropdown-link {
+  color: #2c3e50;
+  border-bottom: 1px solid #f8f9fa;
+  padding: 10px 14px;
+  font-size: 14.5px;
+  text-decoration: none;
+  transition: background-color .2s;
+  display: block;
+}
+
+.dropdown-link:hover {
+  color: #2c3e50;
+  background-color: #f8f9fa;
+}
+
+.dropdown-menu li:last-child > .dropdown-link {
+  border-bottom: none;
+}
+
+.dropdown-item-with-submenu {
+  position: relative;
+}
+
+.has-submenu {
+  cursor: pointer;
+  color: #2c3e50;
+  border-bottom: 1px solid #f8f9fa;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  font-size: 14.5px;
+  text-decoration: none;
+  transition: background-color .2s;
+  display: flex;
+}
+
+.has-submenu:hover {
+  background-color: #f8f9fa;
+}
+
+.sub-dropdown-menu {
+  z-index: 1001;
+  opacity: 0;
+  background: #fff;
+  border: 1px solid #e1e5e9;
+  border-radius: 6px;
+  min-width: 220px;
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+  transition: opacity .3s, transform .3s;
+  display: none;
+  position: absolute;
+  top: -8px;
+  left: 100%;
+  transform: translateX(10px);
+  box-shadow: 0 4px 12px #00000026;
+}
+
+.dropdown-item-with-submenu.active > .sub-dropdown-menu, .sub-dropdown-menu.active {
+  opacity: 1;
+  display: block;
+  transform: translateX(0);
+}
+
+.sub-dropdown-link {
+  color: #2c3e50;
+  border-bottom: 1px solid #f8f9fa;
+  padding: 8px 14px;
+  font-size: 13.5px;
+  text-decoration: none;
+  transition: background-color .2s;
+  display: block;
+}
+
+.sub-dropdown-link:hover {
+  color: #2c3e50;
+  background-color: #f8f9fa;
+}
+
+.sub-dropdown-link:last-child {
+  border-bottom: none;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+  background: #ffffff1a;
+  border-radius: 4px;
+  flex-direction: column;
+  padding: 5px;
+  transition: background .3s;
+  display: none;
+}
+
+.navbar-toggle:hover {
+  background: #fff3;
+}
+
+.bar {
+  background-color: #fff;
+  border-radius: 2px;
+  width: 25px;
+  height: 3px;
+  margin: 3px 0;
+  transition: all .3s;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar-container {
+    padding: 0 20px;
+  }
+
+  .navbar-toggle {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+  }
+
+  .navbar-toggle.active .bar:first-child {
+    transform: rotate(-45deg)translate(-5px, 6px);
+  }
+
+  .navbar-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active .bar:nth-child(3) {
+    transform: rotate(45deg)translate(-5px, -6px);
+  }
+
+  .navbar-menu {
+    opacity: 1;
+    -webkit-backdrop-filter: blur(10px);
+    background: #1a365df2;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 90vh;
+    padding-bottom: 20px;
+    transition: all .5s;
+    display: flex;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    overflow-y: auto;
+  }
+
+  .navbar-menu.active {
+    opacity: 1;
+    z-index: 1;
+    transition: all .5s;
+    left: 0;
+  }
+
+  .navbar-item {
+    border-bottom: 1px solid #ffffff1a;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .navbar-item:last-child {
+    border-bottom: none;
+  }
+
+  .navbar-link {
+    padding: 1rem;
+    transform: none;
+  }
+
+  .navbar-link:hover, .navbar-link.active-link {
+    background-color: #2d4a80cc;
+    border-radius: 0;
+    transform: none;
+  }
+
+  .navbar-link:after {
+    display: none;
+  }
+
+  .dropdown-btn {
+    justify-content: center;
+    width: 100%;
+    padding: 1rem;
+    transform: none;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    min-width: auto;
+    box-shadow: none;
+    opacity: 1;
+    background: #0000001a;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: static;
+    transform: none;
+  }
+
+  .dropdown-menu.active {
+    display: block;
+  }
+
+  .dropdown-link, .has-submenu {
+    color: #fff;
+    background: none;
+    border-bottom: 1px solid #ffffff1a;
+    border-left: 5px solid #00f2fe;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .dropdown-link:hover, .has-submenu:hover {
+    background: #0003;
+  }
+
+  .dropdown-menu li:last-child > .dropdown-link, .dropdown-menu li:last-child > .has-submenu {
+    border-bottom: none;
+  }
+
+  .sub-dropdown-menu {
+    box-shadow: none;
+    opacity: 1;
+    background: #00000026;
+    border: none;
+    border-left: 2px solid #fff;
+    min-width: auto;
+    margin-left: 25px;
+    display: none;
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
+
+  .dropdown-item-with-submenu.active > .sub-dropdown-menu {
+    display: block;
+  }
+
+  .sub-dropdown-link {
+    color: #fff;
+    border-bottom: 1px solid #ffffff0d;
+    padding: 8px 14px;
+    font-size: 13.5px;
+  }
+
+  .sub-dropdown-link:hover {
+    background-color: #0003;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar-logo {
+    left: 15px;
+  }
+
+  .navbar-logo img {
+    max-width: 100px;
+    height: 35px;
+  }
+
+  .navbar-container {
+    padding: 0 15px;
+  }
+}
+
+/*# sourceMappingURL=weoneaviation_components_navbar_css_bad6b30c._.single.css.map*/

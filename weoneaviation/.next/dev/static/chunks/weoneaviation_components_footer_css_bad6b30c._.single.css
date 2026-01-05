@@ -1,0 +1,86 @@
+/* [project]/weoneaviation/components/footer.css [app-client] (css) */
+.footer {
+  color: #fff;
+  background: #1a365d;
+  padding: 80px 50px 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  width: 100%;
+  display: flex;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 250px;
+  max-width: 330px;
+}
+
+.footer-title {
+  border-bottom: 2px dashed #fff9;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-desc {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.footer-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links li {
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  display: flex;
+}
+
+.footer-links a {
+  color: #fff;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  display: flex;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.map-image {
+  cursor: pointer;
+  border-radius: 10px;
+  width: 250px;
+  margin-top: 10px;
+  transition: transform .2s;
+  box-shadow: 0 4px 12px #00000026;
+}
+
+.map-image:hover {
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 20px;
+  }
+
+  .footer-container {
+    gap: 30px;
+  }
+}
+
+/*# sourceMappingURL=weoneaviation_components_footer_css_bad6b30c._.single.css.map*/

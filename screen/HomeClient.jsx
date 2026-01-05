@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Head from "next/head";
+// import Head from "next/head";
 import Image from "next/image";
 import "./HomeClient.css";
 
@@ -10,7 +10,7 @@ import ReviewCard from "../components/ReviewCard";
 import Slider from "../components/Slider";
 import Map from "../components/Map";
 
-export default function Home() {
+export default function HomeClient() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
     const companies = [
@@ -61,7 +61,7 @@ export default function Home() {
     return (
         <>
             {/* ================= SEO ================= */}
-            <Head>
+            {/* <Head>
                 <title>We One Aviation</title>
                 <meta
                     name="description"
@@ -73,7 +73,7 @@ export default function Home() {
                 />
                 <meta name="robots" content="index, follow" />
                 <link rel="canonical" href="https://weoneaviation.com/" />
-            </Head>
+            </Head> */}
 
             <div className="home">
                 {/* ================= HERO SLIDER ================= */}
