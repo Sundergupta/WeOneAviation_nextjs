@@ -1,10 +1,10 @@
 import { notFound } from "next/navigation";
 import StructurePage from "../../../components/StateStructur/page";
-import { andhraPradeshData } from "../../../data/states/andhra-pradesh";
+import { statesData } from "../../../data/states/andhra-pradesh";
 
-/* ✅ Dynamic SEO */
-export async function generateMetadata({ params }) {
-    const data = andhraPradeshData[params.state];
+/* ✅ SEO */
+export function generateMetadata({ params }) {
+    const data = statesData[params.state];
 
     if (!data) return {};
 
@@ -18,19 +18,17 @@ export async function generateMetadata({ params }) {
 }
 
 /* ✅ Static Generation */
-export async function generateStaticParams() {
-    return Object.keys(andhraPradeshData).map((state) => ({
+export function generateStaticParams() {
+    return Object.keys(statesData).map((state) => ({
         state,
     }));
 }
 
 /* ✅ Page */
 export default function StatePage({ params }) {
-    const data = andhraPradeshData[params.state];
+    const data = statesData[params.state];
 
-    if (!data) {
-        notFound();
-    }
+    if (!data) notFound();
 
     return <StructurePage data={data} />;
 }

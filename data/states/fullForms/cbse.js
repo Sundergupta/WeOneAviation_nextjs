@@ -1,0 +1,210 @@
+export const cbseData = {
+    /* 🔑 REQUIRED FOR DYNAMIC ROUTING */
+    slug: "cbse",
+
+    /* 🔍 SEO (Replaces React Helmet completely) */
+    seo: {
+        title: "CBSE Full Form – What is CBSE? Meaning, Overview & Details",
+        description:
+            "CBSE full form explained in detail. Learn about CBSE board, curriculum, subjects, grading system, eligibility, results, helpline, and why CBSE is better than other boards.",
+        keywords:
+            "CBSE full form, what is CBSE, CBSE board details, CBSE curriculum, CBSE subjects, CBSE grading system",
+        canonical: "https://weoneaviation.com/full-form/cbse",
+    },
+
+    /* 🧱 PAGE CONTENT (UNCHANGED) */
+    header: {
+        title: "CBSE Full Form – What is CBSE? Meaning, Overview & Details",
+        subtitle:
+            "Curriculum, Subjects, Board Overview, Importance & Career Relevance (2026)",
+    },
+
+    sections: [
+        {
+            title: "Introduction",
+            description:
+                "CBSE is one of the most common and reputed education boards in India. If you have studied in India, you’ve definitely heard about CBSE — and many students complete their 10th and 12th from CBSE schools. I also completed my 10th and 12th from a CBSE school, so I’ll explain everything in detail. Among many boards like State Boards, ICSE, NIOS, and CBSE, CBSE is the most popular and its standard of education is considered better than most. So, let’s get started!",
+        },
+
+        {
+            title: "What is the Full Form of CBSE?",
+            description:
+                "CBSE stands for Central Board of Secondary Education. It is a national-level education board in India for public and private schools, controlled and managed by the Ministry of Education, Government of India.",
+            subsections: [
+                {
+                    heading: "CBSE Full Form in Hindi",
+                    list: ["CBSE का फुल फॉर्म है: केंद्रीय माध्यमिक शिक्षा बोर्ड"],
+                },
+            ],
+        },
+
+        {
+            title: "What is the CBSE Board?",
+            description:
+                "The CBSE Board is a national-level education board that governs public and private schools across India and abroad. It is managed by the Ministry of Education, Government of India. You can pursue Science, Commerce, or Arts from CBSE schools. Not all schools can be affiliated with CBSE. There is a criteria that schools must fulfill before affiliation, including infrastructure, documentation, and academic guidelines.",
+        },
+
+        {
+            title: "Brief History of CBSE",
+            subsections: [
+                {
+                    list: [
+                        "Established in 1929 as the Board of High School and Intermediate Education",
+                        "Renamed as CBSE in 1952",
+                        "Aimed at providing a common and standardized curriculum across India",
+                        "Headquartered in New Delhi",
+                        "Affiliated Schools: Over 27,000+ in India and 240+ abroad",
+                        "Curriculum: Based on NCERT with focus on conceptual learning, analytical thinking, and preparation for exams like JEE and NEET",
+                    ],
+                },
+            ],
+        },
+
+        {
+            title: "Understand CBSE Curriculum and Education",
+            description:
+                "The CBSE Curriculum runs from Class 1 to Class 12 and primarily follows NCERT books. It focuses on conceptual understanding, skill development, activity-based learning, and preparation for national-level competitive exams such as JEE, NEET, and CUET.",
+        },
+
+        {
+            title: "What is the CBSE Curriculum?",
+            subsections: [
+                {
+                    list: [
+                        "Activity-based learning",
+                        "Continuous evaluation (CCE pattern up to Class 10)",
+                        "National-level standardization",
+                        "Inclusion of life skills and value education",
+                    ],
+                },
+            ],
+        },
+
+        {
+            title: "Eligibility Criteria for CBSE School Affiliation",
+            subsections: [
+                {
+                    heading: "1. Infrastructure & Facilities",
+                    list: [
+                        "Adequate land and proper school buildings",
+                        "Safe drinking water and sanitation facilities",
+                        "Fire safety compliance and medical room availability",
+                    ],
+                },
+                {
+                    heading: "2. Faculty & Staff",
+                    list: [
+                        "Qualified teachers as per CBSE norms",
+                        "Required non-teaching staff such as counselors and special educators",
+                    ],
+                },
+                {
+                    heading: "3. Administrative Requirements",
+                    list: [
+                        "School must be registered under a trust/society/non-profit",
+                        "Proper documentation like NOC, land ownership",
+                        "School Management Committee (SMC) must exist",
+                    ],
+                },
+                {
+                    heading: "4. Academic Setup",
+                    list: [
+                        "Curriculum aligned with CBSE syllabus",
+                        "Minimum 220 working days yearly",
+                        "Mandatory subjects: English, Hindi, Mathematics, Science, Social Science, etc.",
+                    ],
+                },
+            ],
+        },
+
+        {
+            title: "CBSE Subjects by Class Level",
+            subsections: [
+                {
+                    heading: "Classes 1 to 5 – Foundational Stage",
+                    list: [
+                        "English",
+                        "Hindi",
+                        "Mathematics",
+                        "Environmental Studies (EVS)",
+                        "Art & Craft",
+                        "Physical Education",
+                        "Computer Awareness (in some schools)",
+                    ],
+                },
+                {
+                    heading: "Classes 6 to 8 – Middle Stage",
+                    list: [
+                        "English (Language & Literature)",
+                        "Hindi",
+                        "Mathematics",
+                        "Science",
+                        "Social Science (History, Civics, Geography)",
+                        "Sanskrit / Third Language",
+                        "Computer Science / Artificial Intelligence (optional)",
+                        "Physical & Health Education",
+                        "Art Education",
+                        "Work Experience",
+                    ],
+                },
+                {
+                    heading: "Classes 9 and 10 – Secondary Stage",
+                    list: [
+                        "English Language & Literature",
+                        "Hindi Course A / Course B",
+                        "Mathematics: Standard / Basic",
+                        "Science (Physics, Chemistry, Biology combined)",
+                        "Social Science",
+                        "Optional: Sanskrit / French / IT / Skill Subjects",
+                    ],
+                },
+                {
+                    heading: "Classes 11 and 12 – Senior Secondary Stage",
+                    list: [
+                        "Science Stream: Physics, Chemistry, Biology/Computer Science, Mathematics, English Core",
+                        "Commerce Stream: Accountancy, Business Studies, Economics, Mathematics/CS, English Core",
+                        "Humanities Stream: History, Geography, Political Science, Sociology, Psychology, English Core",
+                    ],
+                },
+            ],
+        },
+
+        {
+            title: "CBSE Grading System",
+            subsections: [
+                {
+                    heading: "🏆 CBSE Grading System (Class 9 & 10)",
+                    table: {
+                        headers: ["#", "Marks Range (%)", "Grade", "Grade Point"],
+                        rows: [
+                            ["1", "91–100", "A1", "10.0"],
+                            ["2", "81–90", "A2", "9.0"],
+                            ["3", "71–80", "B1", "8.0"],
+                            ["4", "61–70", "B2", "7.0"],
+                            ["5", "51–60", "C1", "6.0"],
+                            ["6", "41–50", "C2", "5.0"],
+                            ["7", "33–40", "D", "4.0"],
+                            ["8", "21–32", "E1", "Fail"],
+                            ["9", "00–20", "E2", "Fail"],
+                        ],
+                    },
+                },
+            ],
+        },
+
+        {
+            title: "FAQ – CBSE Full Form",
+            subsections: [
+                {
+                    list: [
+                        "What is the full form of CBSE?",
+                        "Is CBSE a government board?",
+                        "How many schools are affiliated with CBSE?",
+                        "What curriculum does CBSE follow?",
+                        "Who conducts CBSE exams?",
+                    ],
+                },
+            ],
+        },
+    ],
+};

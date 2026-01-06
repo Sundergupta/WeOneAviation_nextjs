@@ -97,12 +97,13 @@ export default function Navbar() {
                 <div className="navbar-logo">
                     <Link href="/" onClick={handleLinkClick}>
                         <Image
-                            src="/logo.webp"
+                            src="/assets/logo.webp"
                             alt="We One Aviation"
                             width={150}
                             height={65}
                             priority
                         />
+
                     </Link>
                 </div>
 

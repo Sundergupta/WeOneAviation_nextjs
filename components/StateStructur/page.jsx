@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./style.css";
 
 export default function StructurePage({ data }) {
@@ -21,8 +22,11 @@ export default function StructurePage({ data }) {
                 <aside className="menu-section">
                     <h3>Pilot Training States</h3>
                     <ul>
-                        <li><a href="/pilot-training/andhra-pradesh">Andhra Pradesh</a></li>
-                        <li><a href="/pilot-training/maharashtra">Maharashtra</a></li>
+                        {data.menu.map((item, i) => (
+                            <li key={i}>
+                                <Link href={item.link}>{item.name}</Link>
+                            </li>
+                        ))}
                     </ul>
                 </aside>
 
