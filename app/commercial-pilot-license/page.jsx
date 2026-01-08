@@ -1,51 +1,91 @@
 import "./styles/cpl.css";
+
 export const metadata = {
-    title: "Commercial Pilot License (CPL) in India",
+    title: "Commercial Pilot License (CPL) Course in India – Fees, Salary & Eligibility",
     description:
-        "Complete guide to Commercial Pilot License in India – eligibility, syllabus, fees, salary and admission process.",
+        "Complete guide to Commercial Pilot License (CPL) in India including eligibility, DGCA medical, fees, salary, career opportunities and admission process.",
 };
 
 export default function CPLPage() {
     return (
-        <>
+        <div className="commercial-pilot-license">
+
+            {/* =====================================================
+          HERO SECTION
+      ===================================================== */}
+            <section className="hero-section">
+                <div className="container">
+                    <h1>Commercial Pilot License Course Detail</h1>
+                    <h2>Commercial Pilot License</h2>
+                </div>
+            </section>
+
+            {/* =====================================================
+          INTRO + WHAT IS CPL
+      ===================================================== */}
             <section className="container">
-                <div className="cpl-section">
+                <section className="cpl-section">
                     <h1>Commercial Pilot License (CPL)</h1>
+
                     <p>
                         The journey to becoming a professional aviator begins with obtaining a
-                        <strong> Commercial Pilot License (CPL)</strong>. This license authorizes an
-                        individual to operate aircraft commercially and opens doors to careers in
-                        airlines, charter services, cargo operations, and corporate aviation.
+                        <strong> Commercial Pilot License (CPL)</strong>. This license authorizes an individual
+                        to operate aircraft commercially and opens doors to careers in airlines,
+                        charter services, cargo operations, and corporate aviation.
                     </p>
-                    <p>
-                        Before enrolling in a pilot training program, it is essential for students
-                        to understand the basic eligibility criteria set by DGCA. These
-                        requirements ensure that every aspiring pilot meets the academic, medical,
-                        and skill standards needed to operate an aircraft safely and efficiently.
-                    </p>
-                    <p>
-                        Meeting the CPL eligibility criteria is the first checkpoint in your
-                        aviation journey. Once cleared, candidates can proceed with DGCA ground
-                        classes, medical examinations, and eventually, flight training to earn
-                        their wings.
-                    </p>
-                </div>
 
-                {/* Practical Flight Training */}
-                <section className="flight-training-section">
-                    <h3>Commercial Pilot License Practical Flight Training</h3>
                     <p>
-                        After completing the theoretical subjects of the Commercial Pilot Course,
-                        you have to complete flight training from any flying school. Details about
-                        flight training are given below:
+                        Before enrolling in a pilot training program, it is essential for students to
+                        understand the basic eligibility criteria set by DGCA. These requirements ensure
+                        that every aspiring pilot meets the academic, medical, and skill standards needed
+                        to operate an aircraft safely and efficiently.
+                    </p>
+
+                    <p>
+                        Meeting the CPL eligibility criteria is the first checkpoint in your aviation
+                        journey. Once cleared, candidates can proceed with DGCA ground classes, medical
+                        examinations, and eventually, flight training to earn their wings.
+                    </p>
+
+                    <h3>What is Commercial Pilot License?</h3>
+
+                    <p>
+                        Hello Aviators, if your dream is to become a Commercial Pilot, then you are landing
+                        on the perfect page. A Commercial Pilot License (CPL) is a certification that allows
+                        pilots to fly aircraft professionally and get paid for their services.
+                    </p>
+
+                    <p>
+                        If you want to become a pilot, then a Commercial Pilot License is great for you.
+                        There are many licenses for pilots, and the Commercial Pilot License is one of them.
+                    </p>
+
+                    <p>
+                        On this page, you will know all the details about the Commercial Pilot License —
+                        like eligibility, course details, syllabus, fees, admission process, and salary.
+                    </p>
+                </section>
+            </section>
+
+            {/* =====================================================
+          PRACTICAL FLIGHT TRAINING
+      ===================================================== */}
+            <section className="flight-training-section">
+                <div className="container">
+                    <h3>Commercial Pilot License Practical Flight Training</h3>
+
+                    <p>
+                        After completing the theoretical subjects of the Commercial Pilot Course, you have
+                        to complete flight training from any flying school. Details about flight training
+                        are given below:
                     </p>
 
                     <div className="training-list">
                         <div className="training-item">
                             <h4>Minimum of 200 flying hours</h4>
                             <p>
-                                As per DGCA rules, trainees must complete 200 hours of flight time,
-                                including various types of training exercises.
+                                As Per DGCA Rules, trainees must complete 200 hours of flight time, including
+                                various types of training exercises.
                             </p>
                         </div>
 
@@ -60,16 +100,16 @@ export default function CPLPage() {
                         <div className="training-item">
                             <h4>Night flying and cross-country navigation</h4>
                             <p>
-                                Includes training for operating flights at night and flying between
-                                distant airports while following designated airways.
+                                Includes training for operating flights at night and flying between distant
+                                airports while following designated airways.
                             </p>
                         </div>
 
                         <div className="training-item">
                             <h4>Instrument Rating (IR) Training</h4>
                             <p>
-                                Prepares pilots to fly in low visibility conditions using cockpit
-                                instruments rather than relying on external references.
+                                Prepares pilots to fly in low visibility conditions using cockpit instruments
+                                rather than relying on external references.
                             </p>
                         </div>
 
@@ -77,281 +117,284 @@ export default function CPLPage() {
                             <h4>Simulator Training for multi-engine aircraft</h4>
                             <p>
                                 Provides hands-on experience with complex aircraft operations, emergency
-                                procedures, and navigation systems in a controlled environment before
-                                handling actual multi-engine aircraft.
+                                procedures, and navigation systems in a controlled environment before handling
+                                actual multi-engine aircraft.
                             </p>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                {/* Eligibility Criteria */}
-                <section className="eligibility-section">
+            {/* =====================================================
+          ELIGIBILITY CRITERIA
+      ===================================================== */}
+            <section className="eligibility-section">
+                <div className="container">
                     <h3>Eligibility Criteria for Commercial Pilot License</h3>
+
                     <div className="eligibility-grid">
                         <div className="eligibility-item">
                             <h4>Age</h4>
-                            <p>Candidate must be at least 18 years to obtain a Commercial Pilot License.</p>
+                            <p>Candidate must be at least 18 years old.</p>
                         </div>
+
                         <div className="eligibility-item">
                             <h4>Education</h4>
-                            <p>Pass 12th grade with Mathematics and Physics.</p>
+                            <p>12th pass with Mathematics and Physics.</p>
                         </div>
+
                         <div className="eligibility-item">
-                            <h4>DGCA Class 1-2 Medical</h4>
-                            <p>Qualify for DGCA Class 1 and Class 2 medical examinations.</p>
+                            <h4>DGCA Class 1 & 2 Medical</h4>
+                            <p>Candidate must qualify DGCA Class 1 and Class 2 medical examinations.</p>
                         </div>
+
                         <div className="eligibility-item">
                             <h4>Total Flight Hours</h4>
-                            <p>Complete a minimum of 200 hours of flight time as required by DGCA.</p>
+                            <p>Minimum 200 hours of flight time required.</p>
                         </div>
+
                         <div className="eligibility-item">
-                            <h4>PIC Hours</h4>
-                            <p>Should include 100 hours as Pilot-in-Command (PIC).</p>
+                            <h4>Pilot-in-Command (PIC)</h4>
+                            <p>100 hours as Pilot-in-Command (PIC).</p>
                         </div>
+
                         <div className="eligibility-item">
                             <h4>Instrument Flying</h4>
-                            <p>At least 10 hours of instruction flying with instruments is required.</p>
+                            <p>Minimum 10 hours of instrument flying training.</p>
                         </div>
+
                         <div className="eligibility-item">
                             <h4>Simulator Training</h4>
-                            <p>Minimum 5 hours of simulator training is expected.</p>
+                            <p>5 hours of simulator training is mandatory.</p>
                         </div>
+
                         <div className="eligibility-item">
                             <h4>Nationality & Language</h4>
-                            <p>Indian citizenship or OCI; proficiency in English (oral & written).</p>
+                            <p>Indian / OCI with English proficiency.</p>
                         </div>
+
                         <div className="eligibility-item">
                             <h4>Background Check</h4>
-                            <p>No criminal history required for admission.</p>
+                            <p>No criminal history.</p>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                {/* Fees Section */}
-                <section className="fees-section">
-                    <h3>Commercial Pilot Course (CPL) Fees in India</h3>
+            {/* =====================================================
+          DGCA MEDICAL (FULL DETAIL)
+      ===================================================== */}
+            <section className="fees-section">
+                <div className="container">
+                    <h3>1) DGCA Class 1-2 Medical Test</h3>
+
                     <p>
-                        The cost to become a pilot in India varies by flying school and included
-                        training. Below are typical categories and approximate ranges.
+                        At first, you have to clear DGCA Class 1 and Class 2 medical from DGCA-approved
+                        doctors. Doctors check the candidate’s health to ensure they meet physical and
+                        mental fitness standards required for flying.
                     </p>
 
-                    <div className="fees-details">
-                        <div className="fee-item">
-                            <h4>1) DGCA Class 1-2 Medical Test</h4>
-                            <p>
-                                DGCA medical checks include vision, hearing, cardiovascular, neurological,
-                                and general physical tests.
-                            </p>
-                        </div>
+                    <ul>
+                        <li><strong>Vision Test 👁️</strong> – Distance, near vision & color blindness (Ishihara test)</li>
+                        <li><strong>Hearing Test 🎧</strong> – Pure Tone Audiometry (PTA)</li>
+                        <li><strong>Cardiovascular ❤️</strong> – ECG and blood pressure</li>
+                        <li><strong>Neurological 🧠</strong> – Balance, reflexes, coordination</li>
+                        <li><strong>General Physical 🩺</strong> – BMI, lungs, liver, kidney</li>
+                        <li><strong>Blood & Urine 🩸</strong> – Diabetes, cholesterol, infections</li>
+                        <li><strong>Mental Health 🧠</strong> – Stress management & psychology</li>
+                    </ul>
 
-                        <div className="fee-item">
-                            <h4>2) DGCA CPL Exams and Fees</h4>
-                            <p>
-                                DGCA exams are conducted regularly; fees vary for regular and on-demand
-                                exam formats.
-                            </p>
-                        </div>
+                    <p><strong>Class 1 Medical:</strong> ₹5,000 – ₹10,000</p>
+                    <p><strong>Class 2 Medical:</strong> ₹3,000 – ₹6,000</p>
+                </div>
+            </section>
 
-                        <div className="fee-item">
-                            <h4>3) DGCA Ground Classes</h4>
-                            <p>
-                                Ground classes prepare you for DGCA theory exams; fees vary across
-                                institutes—typical ranges are mentioned below.
-                            </p>
-                        </div>
+            {/* =====================================================
+          DGCA EXAMS
+      ===================================================== */}
+            <section className="fees-section">
+                <div className="container">
+                    <h3>2) DGCA CPL Exams</h3>
 
-                        <div className="fee-item">
-                            <h4>4) Flying Training Duration and Fees</h4>
-                            <p>
-                                CPL training typically spans 8–10 months including ground school and
-                                flight hours (around 200 hrs). Flying training costs are the largest
-                                portion of the total fees.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="fees-table">
-                        <h4>Commercial Pilot Course (CPL) Fees in India:</h4>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Expense Category</th>
-                                    <th>Approx. Cost (INR)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>DGCA Class 2 Medical Test</td>
-                                    <td>₹3,000 - ₹6,000</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>DGCA Class 1 Medical Test</td>
-                                    <td>₹5,000 - ₹10,000</td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Computer Number Registration</td>
-                                    <td>₹2,000 - ₹2,500</td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>DGCA Exam Fees (per paper)</td>
-                                    <td>₹2,500 - ₹5,000</td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>CPL Ground School Fees</td>
-                                    <td>₹1,50,000 - ₹3,00,000</td>
-                                </tr>
-                                <tr>
-                                    <td>6</td>
-                                    <td>Flying Training (200 hours)</td>
-                                    <td>₹35,00,000 - ₹45,00,000</td>
-                                </tr>
-                                <tr>
-                                    <td>7</td>
-                                    <td>Simulator Training</td>
-                                    <td>₹2,00,000 - ₹5,00,000</td>
-                                </tr>
-                                <tr>
-                                    <td>8</td>
-                                    <td>Flight School Admission Fees</td>
-                                    <td>₹1,00,000 - ₹2,00,000</td>
-                                </tr>
-                                <tr>
-                                    <td>9</td>
-                                    <td>License Issuance & Other DGCA Fees</td>
-                                    <td>₹50,000 - ₹1,00,000</td>
-                                </tr>
-                                <tr>
-                                    <td>10</td>
-                                    <td>Visa & Travel (If Training Abroad)</td>
-                                    <td>₹2,00,000 - ₹5,00,000</td>
-                                </tr>
-                                <tr className="total-row">
-                                    <td colSpan={2}><strong>Total Estimated CPL Fees in India:</strong></td>
-                                    <td><strong>₹40,00,000 – ₹50,00,000</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </section>
-
-                {/* Academy Section */}
-                <section className="academy-section">
-                    <h3>Start Your Pilot Journey With We One Aviation Academy</h3>
                     <p>
-                        We One Aviation Academy is a premier pilot training institute dedicated to
-                        shaping future aviators. We offer DGCA ground classes, commercial pilot
-                        training, and career support to help you achieve your dream of flying.
+                        You have to give 6 papers of DGCA exam. DGCA conducts exams in two formats:
+                        Regular exams (4 times a year) and On-Demand exams (flexible schedule).
                     </p>
-                    <button className="cta-button">Join Now</button>
-                </section>
 
-                {/* How to Get CPL */}
-                <section className="process-section">
-                    <h3>How to Get a Commercial Pilot License in India</h3>
-                    <div className="process-steps">
-                        <div className="step">
-                            <h4>Choose the right ground classes</h4>
-                            <p>Pick ground classes that match your learning needs and career goals.</p>
-                        </div>
-                        <div className="step">
-                            <h4>Prepare for DGCA exam</h4>
-                            <p>Study past papers, attend classes, and practice mock tests regularly.</p>
-                        </div>
-                        <div className="step">
-                            <h4>Join flight training academy</h4>
-                            <p>Complete required flying hours and simulator training at a certified academy.</p>
-                        </div>
-                    </div>
-                </section>
+                    <p>
+                        <strong>Regular Exam:</strong> ₹2,500 per subject<br />
+                        <strong>On-Demand Exam:</strong> ₹5,000 per paper
+                    </p>
+                </div>
+            </section>
 
-                {/* Salary Section */}
-                <section className="salary-section">
+            {/* =====================================================
+          DGCA GROUND CLASSES
+      ===================================================== */}
+            <section className="fees-section">
+                <div className="container">
+                    <h3>3) DGCA Ground Classes</h3>
+
+                    <p>
+                        DGCA ground classes are very important to clear DGCA exams quickly. With the right
+                        guidance, you can clear exams faster and move towards flight training.
+                    </p>
+
+                    <p>
+                        <strong>Average fees:</strong> ₹2.5 lakh (varies by institute)
+                    </p>
+                </div>
+            </section>
+
+            {/* =====================================================
+          FLYING TRAINING
+      ===================================================== */}
+            <section className="fees-section">
+                <div className="container">
+                    <h3>4) Flying Training Duration & Fees</h3>
+
+                    <p>
+                        CPL training takes around 8–10 months including 200 hours of flying and simulator
+                        training. Average flying cost ranges from ₹35–45 lakh.
+                    </p>
+                </div>
+            </section>
+
+            {/* =====================================================
+          SALARY
+      ===================================================== */}
+            <section className="salary-section">
+                <div className="container">
                     <h3>Commercial Pilot License Salary</h3>
-                    <p>
-                        Pilot salaries vary by experience and employer; below are typical ranges
-                        across career stages.
-                    </p>
-                    <div className="salary-levels">
-                        <div className="salary-level">
-                            <h4>Starting Salary (Beginners)</h4>
-                            <p>₹1.5 lakh to ₹3 lakh per month (approx.)</p>
-                        </div>
-                        <div className="salary-level">
-                            <h4>Mid-Level Salary</h4>
-                            <p>₹5 lakh to ₹10 lakh per month (approx.)</p>
-                        </div>
-                        <div className="salary-level">
-                            <h4>Top-Level Salary</h4>
-                            <p>₹12 lakh to ₹25 lakh per month and above for senior captains.</p>
-                        </div>
-                    </div>
-                </section>
 
-                {/* Career Opportunities */}
-                <section className="career-section">
-                    <h3>Career Opportunities for CPL Holders</h3>
+                    <div className="salary-level">
+                        <h4>Beginners</h4>
+                        <p>₹1.5 – ₹3 lakh per month</p>
+                    </div>
+
+                    <div className="salary-level">
+                        <h4>Mid-Level</h4>
+                        <p>₹5 – ₹10 lakh per month</p>
+                    </div>
+
+                    <div className="salary-level">
+                        <h4>Senior Captain</h4>
+                        <p>₹12 – ₹25 lakh per month</p>
+                    </div>
+
+                    <ul>
+                        <li>Free flights for family</li>
+                        <li>Medical insurance</li>
+                        <li>Hotel & travel allowances</li>
+                        <li>Prestigious lifestyle</li>
+                    </ul>
+                </div>
+            </section>
+
+            {/* =====================================================
+          CAREER OPPORTUNITIES
+      ===================================================== */}
+            {/* =====================================================
+    CAREER OPPORTUNITIES (FULL – REQUIRED)
+===================================================== */}
+            <section className="career-section">
+                <div className="container">
+                    <h3>Career Opportunities for Commercial Pilot License Holders in India</h3>
+
+                    <p>
+                        Getting a Commercial Pilot License (CPL) in India opens the door to an exciting and
+                        rewarding career in aviation. With a CPL, you're allowed to fly planes for money,
+                        and there are many job options to explore.
+                    </p>
+
                     <div className="career-options">
+
                         <div className="career-option">
-                            <h4>Airline Pilot</h4>
-                            <p>Fly passengers for commercial airlines.</p>
+                            <h4>1. Airline Pilot</h4>
+                            <p>This is the most popular choice for CPL holders.</p>
+                            <p><strong>What You Do:</strong> Fly Airbus or Boeing aircraft.</p>
+                            <p><strong>Where You Work:</strong> IndiGo, Air India, SpiceJet, Vistara.</p>
+                            <p><strong>Growth Path:</strong> First Officer → Captain.</p>
+                            <p><strong>Salary:</strong> ₹1.5 lakh to ₹10+ lakh/month.</p>
                         </div>
+
                         <div className="career-option">
-                            <h4>Cargo Pilot</h4>
-                            <p>Operate cargo flights and logistics services.</p>
+                            <h4>2. Cargo Pilot</h4>
+                            <p>Fly cargo aircraft carrying goods.</p>
+                            <p><strong>Companies:</strong> Blue Dart, FedEx, DHL.</p>
+                            <p><strong>Salary:</strong> ₹2–5 lakh/month.</p>
                         </div>
+
                         <div className="career-option">
-                            <h4>Charter Pilot</h4>
-                            <p>Fly private charters and specialized routes.</p>
+                            <h4>3. Charter Pilot</h4>
+                            <p>Fly private aircraft for individuals or tourists.</p>
+                            <p><strong>Salary:</strong> ₹1–4 lakh/month.</p>
                         </div>
+
+                        <div className="career-option">
+                            <h4>4. Flight Instructor</h4>
+                            <p>Train new pilots and build flight hours.</p>
+                            <p><strong>Salary:</strong> ₹1–3 lakh/month.</p>
+                        </div>
+
+                        <div className="career-option">
+                            <h4>5. Corporate Pilot</h4>
+                            <p>Fly private jets for companies.</p>
+                            <p><strong>Salary:</strong> ₹2–6 lakh/month.</p>
+                        </div>
+
+                        <div className="career-option">
+                            <h4>6. Agricultural Pilot</h4>
+                            <p>Spray crops using small aircraft.</p>
+                            <p><strong>Salary:</strong> ₹1–2.5 lakh/month.</p>
+                        </div>
+
+                        <div className="career-option">
+                            <h4>7. Aerial Survey Pilot</h4>
+                            <p>Fly for mapping and research projects.</p>
+                            <p><strong>Salary:</strong> ₹1.5–4 lakh/month.</p>
+                        </div>
+
+                        <div className="career-option">
+                            <h4>8. Air Ambulance Pilot</h4>
+                            <p>Transport patients during emergencies.</p>
+                            <p><strong>Salary:</strong> ₹2–5 lakh/month.</p>
+                        </div>
+
                     </div>
-                </section>
+                </div>
+            </section>
 
-                {/* Final CTA */}
-                <section className="final-cta-section">
+
+            {/* =====================================================
+          FINAL CTA
+      ===================================================== */}
+            <section className="final-cta-section">
+                <div className="container">
                     <h3>Start Your Commercial Flight Training With We One Aviation Academy</h3>
-                    <p>
-                        We One Aviation Academy provides structured training, career guidance, and
-                        industry connections to help you become job-ready.
-                    </p>
-                    <button className="cta-button">Join Flight Training Now</button>
-                </section>
+                    <p>Join DGCA ground classes and flight training today.</p>
+                    <button className="cta-button">Join Now</button>
+                </div>
+            </section>
 
-                {/* Contact Form */}
-                <section className="contact-section">
-                    <h3>Get In Touch with Us Anytime!</h3>
+            {/* =====================================================
+          CONTACT FORM
+      ===================================================== */}
+            <section className="contact-section">
+                <div className="container">
+                    <h3>Get In Touch With Us Anytime!</h3>
                     <p className="contact-phone">+91 9667370747</p>
 
                     <form className="contact-form">
-                        <div className="form-group">
-                            <label htmlFor="name">Name *</label>
-                            <input type="text" id="name" placeholder="Please Enter Your Name" required />
-                        </div>
-
-                        <div className="form-group">
-                            <label htmlFor="phone">Phone Number *</label>
-                            <input type="tel" id="phone" placeholder="Enter Your Contact Number" required />
-                        </div>
-
-                        <div className="form-group">
-                            <label htmlFor="email">Email Address *</label>
-                            <input type="email" id="email" placeholder="Please Enter Your Email address" required />
-                        </div>
-
-                        <div className="form-group">
-                            <label htmlFor="message">Message</label>
-                            <textarea id="message" placeholder="Edit form" rows={4}></textarea>
-                        </div>
-
-                        <button type="submit" className="submit-button">Submit</button>
+                        <input type="text" placeholder="Name" required />
+                        <input type="tel" placeholder="Phone" required />
+                        <input type="email" placeholder="Email" required />
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit">Submit</button>
                     </form>
-                </section>
+                </div>
             </section>
-        </>
+
+        </div>
     );
 }

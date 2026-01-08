@@ -2,32 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  padding-top: 70px;
+}
+
 /* ================= QUERY TAB ================= */
 .query-tab {
   position: fixed;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-
   background: #0b63d6;
   color: #ffffff;
   padding: 12px 16px;
-
   font-weight: 600;
   font-size: 14px;
-
   border-radius: 8px 0 0 8px;
   cursor: pointer;
-
   writing-mode: vertical-rl;
   text-orientation: mixed;
   letter-spacing: 1px;
-
   z-index: 99999;
   box-shadow: -4px 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-/* Optional hover */
 .query-tab:hover {
   background: #094fae;
 }

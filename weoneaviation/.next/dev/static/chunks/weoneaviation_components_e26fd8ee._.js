@@ -154,7 +154,7 @@ function Navbar() {
                         href: "/",
                         onClick: handleLinkClick,
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            src: "/logo.webp",
+                            src: "/assets/Logo.webp",
                             alt: "We One Aviation",
                             width: 150,
                             height: 65,
@@ -186,12 +186,12 @@ function Navbar() {
                                 children: "About Us"
                             }, void 0, false, {
                                 fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                lineNumber: 112,
+                                lineNumber: 113,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                            lineNumber: 111,
+                            lineNumber: 112,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -203,7 +203,7 @@ function Navbar() {
                                     children: "Pilot Training ▼"
                                 }, void 0, false, {
                                     fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                    lineNumber: 123,
+                                    lineNumber: 124,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -220,7 +220,7 @@ function Navbar() {
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                                    lineNumber: 137,
+                                                    lineNumber: 138,
                                                     columnNumber: 37
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -233,34 +233,34 @@ function Navbar() {
                                                                 children: item.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                                                lineNumber: 150,
+                                                                lineNumber: 151,
                                                                 columnNumber: 49
                                                             }, this)
                                                         }, i, false, {
                                                             fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                                            lineNumber: 149,
+                                                            lineNumber: 150,
                                                             columnNumber: 45
                                                         }, this))
                                                 }, void 0, false, {
                                                     fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                                    lineNumber: 144,
+                                                    lineNumber: 145,
                                                     columnNumber: 37
                                                 }, this)
                                             ]
                                         }, index, true, {
                                             fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                            lineNumber: 132,
+                                            lineNumber: 133,
                                             columnNumber: 33
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                    lineNumber: 130,
+                                    lineNumber: 131,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                            lineNumber: 122,
+                            lineNumber: 123,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -272,7 +272,7 @@ function Navbar() {
                                     children: "Pilot Career ▼"
                                 }, void 0, false, {
                                     fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                    lineNumber: 167,
+                                    lineNumber: 168,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -285,12 +285,12 @@ function Navbar() {
                                                 children: "Apply For DGCA Computer Number"
                                             }, void 0, false, {
                                                 fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                                lineNumber: 176,
+                                                lineNumber: 177,
                                                 columnNumber: 33
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                            lineNumber: 175,
+                                            lineNumber: 176,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -300,24 +300,24 @@ function Navbar() {
                                                 children: "DGCA Class 1 & 2 Medical"
                                             }, void 0, false, {
                                                 fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                                lineNumber: 181,
+                                                lineNumber: 182,
                                                 columnNumber: 33
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                            lineNumber: 180,
+                                            lineNumber: 181,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                    lineNumber: 174,
+                                    lineNumber: 175,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                            lineNumber: 166,
+                            lineNumber: 167,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -329,7 +329,7 @@ function Navbar() {
                                     children: "Aviation Services ▼"
                                 }, void 0, false, {
                                     fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                    lineNumber: 190,
+                                    lineNumber: 191,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -341,23 +341,23 @@ function Navbar() {
                                                 children: s.name
                                             }, void 0, false, {
                                                 fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                                lineNumber: 200,
+                                                lineNumber: 201,
                                                 columnNumber: 37
                                             }, this)
                                         }, i, false, {
                                             fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                            lineNumber: 199,
+                                            lineNumber: 200,
                                             columnNumber: 33
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                    lineNumber: 197,
+                                    lineNumber: 198,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                            lineNumber: 189,
+                            lineNumber: 190,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -369,12 +369,12 @@ function Navbar() {
                                 children: "DGCA Prep"
                             }, void 0, false, {
                                 fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                lineNumber: 209,
+                                lineNumber: 210,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                            lineNumber: 208,
+                            lineNumber: 209,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -385,31 +385,24 @@ function Navbar() {
                                 children: "Blogs"
                             }, void 0, false, {
                                 fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                                lineNumber: 219,
+                                lineNumber: 220,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                            lineNumber: 218,
+                            lineNumber: 219,
                             columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                    lineNumber: 110,
+                    lineNumber: 111,
                     columnNumber: 17
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: `navbar-toggle ${isOpen ? "active" : ""}`,
                     onClick: toggleMenu,
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "bar"
-                        }, void 0, false, {
-                            fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                            lineNumber: 233,
-                            columnNumber: 21
-                        }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                             className: "bar"
                         }, void 0, false, {
@@ -423,11 +416,18 @@ function Navbar() {
                             fileName: "[project]/weoneaviation/components/Navbar.jsx",
                             lineNumber: 235,
                             columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$weoneaviation$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                            className: "bar"
+                        }, void 0, false, {
+                            fileName: "[project]/weoneaviation/components/Navbar.jsx",
+                            lineNumber: 236,
+                            columnNumber: 21
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/weoneaviation/components/Navbar.jsx",
-                    lineNumber: 229,
+                    lineNumber: 230,
                     columnNumber: 17
                 }, this)
             ]

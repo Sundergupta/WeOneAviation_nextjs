@@ -22,16 +22,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      suppressHydrationWarning   /* ✅ FIXES hydration mismatch caused by extensions */
-    >
-      <body
-        className={`${geistSans.variable} ${geistMono.variable}`} /* ✅ APPLY FONTS */
-        style={{ paddingTop: "70px" }}
-      >
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar />
-        <ContactQuery />   {/* ✅ unchanged */}
+        <ContactQuery />
         {children}
         <Footer />
       </body>
