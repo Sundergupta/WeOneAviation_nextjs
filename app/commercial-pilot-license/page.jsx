@@ -209,6 +209,7 @@ export default function CPLPage() {
                 </div>
             </section>
 
+
             {/* =====================================================
           DGCA EXAMS
       ===================================================== */}
@@ -260,7 +261,94 @@ export default function CPLPage() {
                 </div>
             </section>
 
+            {/* ================= CPL FEES TABLE ================= */}
+            <section className="fees-section">
+                <div className="container">
+                    <h3>Commercial Pilot Course (CPL) Fees in India</h3>
+
+                    <table className="fees-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Expense Category</th>
+                                <th>Approx Cost (INR)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>DGCA Medical Tests</td><td>₹8,000 – ₹15,000</td></tr>
+                            <tr><td>2</td><td>DGCA Exams</td><td>₹15,000 – ₹30,000</td></tr>
+                            <tr><td>3</td><td>Ground School Fees</td><td>₹1.5 – ₹3 lakh</td></tr>
+                            <tr><td>4</td><td>Flying Training (200 hrs)</td><td>₹35 – ₹45 lakh</td></tr>
+                            <tr><td>5</td><td>Simulator Training</td><td>₹2 – ₹5 lakh</td></tr>
+                            <tr className="total-row">
+                                <td colSpan="2"><strong>Total Estimated Cost</strong></td>
+                                <td><strong>₹40 – ₹50 lakh</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            {/* ================= HOW TO GET CPL ================= */}
+            <section className="process-section">
+                <div className="container">
+                    <h3>How to Get a Commercial Pilot License in India</h3>
+
+                    <div className="process-steps">
+                        <div className="step">
+                            <h4>1. Choose DGCA Ground Classes</h4>
+                            <p>Enroll in a DGCA-approved ground school for exam preparation.</p>
+                        </div>
+
+                        <div className="step">
+                            <h4>2. Clear DGCA Exams</h4>
+                            <p>Pass Air Navigation, Meteorology, Air Regulation, Technical & RTR.</p>
+                        </div>
+
+                        <div className="step">
+                            <h4>3. Complete Flight Training</h4>
+                            <p>Finish 200 flying hours from a DGCA-approved flying school.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            {/* ================= ACADEMY SECTION ================= */}
+            <section className="academy-section">
+                <div className="container">
+                    <h3>Start Your Pilot Journey With We One Aviation Academy</h3>
+                    <p>
+                        We One Aviation Academy offers DGCA ground classes, flight training,
+                        experienced instructors, and structured programs to help you
+                        become a professional pilot.
+                    </p>
+                    <button className="cta-button">Join Now</button>
+                </div>
+            </section>
+
+
+            {/* ================= CAREER OPPORTUNITIES ================= */}
+            <section className="career-section">
+                <div className="container">
+                    <h3>Career Opportunities After CPL</h3>
+
+                    <ul>
+                        <li>Airline Pilot (Domestic & International)</li>
+                        <li>Cargo Pilot</li>
+                        <li>Charter Pilot</li>
+                        <li>Flight Instructor</li>
+                        <li>Corporate Jet Pilot</li>
+                        <li>Aerial Survey Pilot</li>
+                        <li>Air Ambulance Pilot</li>
+                    </ul>
+                </div>
+            </section>
+
+
             {/* =====================================================
+
           SALARY
       ===================================================== */}
             <section className="salary-section">
@@ -294,6 +382,9 @@ export default function CPLPage() {
             {/* =====================================================
           CAREER OPPORTUNITIES
       ===================================================== */}
+
+
+
             {/* =====================================================
     CAREER OPPORTUNITIES (FULL – REQUIRED)
 ===================================================== */}
