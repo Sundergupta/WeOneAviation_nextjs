@@ -22,7 +22,6 @@ export default function SalaryClient() {
             <section className="hero-section">
                 <div className="container">
                     <h1>Commercial Pilot License Salary - 2025</h1>
-                    <h2>Commercial Pilot License</h2>
                 </div>
             </section>
 

@@ -22,7 +22,6 @@ export default function SyllabusClient() {
             <section className="hero-section">
                 <div className="container">
                     <h1>Commercial Pilot License Syllabus</h1>
-                    <h2>Commercial Pilot License</h2>
                 </div>
             </section>
 

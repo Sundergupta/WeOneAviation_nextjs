@@ -16,7 +16,6 @@ export default function CPLPage() {
             <section className="hero-section">
                 <div className="container">
                     <h1>Commercial Pilot License Course Detail</h1>
-                    <h2>Commercial Pilot License</h2>
                 </div>
             </section>
 

@@ -24,7 +24,7 @@ export default function CplLayout({ children }) {
             >
                 <div className="container">
                     <h1>Commercial Pilot License </h1>
-                    <h2>Commercial Pilot License</h2>
+
                 </div>
             </section>
 

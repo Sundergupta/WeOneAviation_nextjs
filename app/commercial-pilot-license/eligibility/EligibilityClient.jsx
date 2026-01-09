@@ -22,7 +22,6 @@ export default function EligibilityClient() {
             <section className="hero-section">
                 <div className="container">
                     <h1>Commercial Pilot License Eligibility</h1>
-                    <h2>Commercial Pilot License</h2>
                 </div>
             </section>
 

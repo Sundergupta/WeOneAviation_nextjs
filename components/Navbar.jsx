@@ -195,6 +195,15 @@ export default function Navbar() {
                                     DGCA Class 1 & 2 Medical
                                 </Link>
                             </li>
+                            <li>
+                                <Link href="/dgca-ground-classes" className="dropdown-link">
+                                    Join DGCA CPL Ground Classes
+                                </Link>
+                            </li><li>
+                                <Link href="/dgca-ground-classes-in-india" className="dropdown-link">
+                                    Join Flying School
+                                </Link>
+                            </li>
                         </ul>
                     </li>
 

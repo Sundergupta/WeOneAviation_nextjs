@@ -27,7 +27,6 @@ export default function AdmissionClient() {
             >
                 <div className="container">
                     <h1>Commercial Pilot License Admission Process</h1>
-                    <h2>Commercial Pilot License</h2>
                 </div>
             </section>
 
