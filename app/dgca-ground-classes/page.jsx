@@ -2,11 +2,14 @@ import Image from "next/image";
 import "./style.css";
 
 export const metadata = {
-    title:
-        "DGCA Ground Classes – Complete Guide to CPL Ground Training in India",
+    title: "DGCA Ground Classes in India | 100% Result-Oriented Training – We One Aviation",
     description:
-        "Complete guide to DGCA Ground Classes for CPL in India. Subjects, fees, online vs offline classes, eligibility, and how to choose the best DGCA ground training.",
+        "Join India’s best DGCA ground classes for CPL. Expert instructors, updated DGCA syllabus & proven results. Trusted by 3000+ pilots.",
+    alternates: {
+        canonical: "https://www.weoneaviation.com/dgca-ground-classes",
+    },
 };
+
 
 export default function DgcaGroundClasses() {
     return (

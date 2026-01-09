@@ -14,7 +14,7 @@ export default function CplLayout({ children }) {
         <>
 
             {/* HERO */}
-            <section
+            {/* <section
                 className="hero-section"
                 style={{
                     backgroundImage: "url('/assets/home page slider/generate a videos of airplane.jpg')",
@@ -26,7 +26,7 @@ export default function CplLayout({ children }) {
                     <h1>Commercial Pilot License </h1>
 
                 </div>
-            </section>
+            </section> */}
 
             {/* TWO COLUMN */}
             <div className={styles.manuContainer}>
