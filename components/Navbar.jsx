@@ -80,6 +80,18 @@ export default function Navbar() {
                 { name: "CPL Simulator", path: "/cpl-simulator" },
             ],
         },
+        {
+            title: "Airline Preparatory Classes",
+            path: "/airline-preparatory-classes",
+            submenu: [
+                { name: "Interview Preparation", path: "/interview-preparation" },
+                { name: "Simulator Assessment", path: "/simulator-assessment" },
+                { name: "Psychometric Testing", path: "/psychometric-testing" },
+                { name: "Group Exercises", path: "/group-exercises" },
+                { name: "Technical Knowledge", path: "/technical-knowledge" },
+                { name: "CRM Training", path: "/crm-training" }
+            ]
+        }
     ];
 
     const servicesData = [
