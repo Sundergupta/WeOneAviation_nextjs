@@ -19,11 +19,9 @@ export default function EligibilityClient() {
         <main className="commercial-pilot-license">
 
             {/* ================= HERO SECTION ================= */}
-            <section className="hero-section">
-                <div className="container">
-                    <h1>Commercial Pilot License Eligibility</h1>
-                </div>
-            </section>
+
+
+
 
             {/* ================= MAIN LAYOUT ================= */}
             <div className="cpl-content-wrapper">

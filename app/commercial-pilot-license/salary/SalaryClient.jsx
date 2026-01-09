@@ -19,11 +19,11 @@ export default function SalaryClient() {
         <main className="salary-page">
 
             {/* ================= HERO SECTION ================= */}
-            <section className="hero-section">
+            {/* <section className="hero-section">
                 <div className="container">
                     <h1>Commercial Pilot License Salary - 2025</h1>
                 </div>
-            </section>
+            </section> */}
 
             {/* ================= MAIN LAYOUT ================= */}
             <div className="cpl-content-wrapper">
@@ -49,7 +49,7 @@ export default function SalaryClient() {
 
                     {/* INTRO */}
                     <section className="cpl-section">
-                        <h1>Commercial Pilot License Salary-2025</h1>
+
                         <p>
                             Thousands of aviators interested in pursuing flight careers ask about the Commercial pilot
                             license salary levels in India in comparison to foreign salaries. Getting your Commercial

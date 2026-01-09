@@ -13,18 +13,19 @@ export default function CPLPage() {
             {/* =====================================================
           HERO SECTION
       ===================================================== */}
-            <section className="hero-section">
+            {/* <section className="hero-section">
                 <div className="container">
                     <h1>Commercial Pilot License Course Detail</h1>
                 </div>
-            </section>
+            </section> */}
+
 
             {/* =====================================================
           INTRO + WHAT IS CPL
       ===================================================== */}
             <section className="container">
                 <section className="cpl-section">
-                    <h1>Commercial Pilot License (CPL)</h1>
+                    {/* <h1>Commercial Pilot License (CPL)</h1> */}
 
                     <p>
                         The journey to becoming a professional aviator begins with obtaining a

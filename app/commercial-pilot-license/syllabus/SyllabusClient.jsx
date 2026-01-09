@@ -19,11 +19,11 @@ export default function SyllabusClient() {
         <main className="commercial-pilot-license">
 
             {/* ================= HERO SECTION ================= */}
-            <section className="hero-section">
+            {/* <section className="hero-section">
                 <div className="container">
                     <h1>Commercial Pilot License Syllabus</h1>
                 </div>
-            </section>
+            </section> */}
 
             {/* ================= MAIN LAYOUT ================= */}
             <div className="cpl-content-wrapper">
@@ -35,7 +35,7 @@ export default function SyllabusClient() {
 
                     {/* INTRO */}
                     <section className="cpl-section">
-                        <h1>Commercial Pilot License Syllabus</h1>
+
                         <p>
                             A commercial pilot license syllabus was designed to teach aspiring pilots the necessary skills
                             which will enable them to carry out safe aircraft operations efficiently. The CPL syllabus meets

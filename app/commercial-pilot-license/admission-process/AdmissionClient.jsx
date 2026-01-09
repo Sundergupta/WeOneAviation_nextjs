@@ -17,7 +17,7 @@ export default function AdmissionClient() {
 
     return (
         <main>
-            <section
+            {/* <section
                 className="hero-section"
             // style={{
             //     backgroundImage: "url('/assets/home page slider/generate a videos of airplane.jpg')",
@@ -28,14 +28,14 @@ export default function AdmissionClient() {
                 <div className="container">
                     <h1>Commercial Pilot License Admission Process</h1>
                 </div>
-            </section>
+            </section> */}
 
             <div className="menu-layout">
 
 
                 <section className="content-box cpl-container">
                     <div className="cpl-section">
-                        <h1>Commercial Pilot License Admission Process</h1>
+
                         <p>
                             Dreaming of a career in aviation? The Commercial Pilot License Admission journey begins with pilots
                             understanding all process requirements. The admission process checks eligibility and aptitude alongside
