@@ -57,10 +57,10 @@ export default function AdmissionClient() {
                         <h2>Check Eligibility Requirements</h2>
                         <p>Make sure you fulfill all eligibility standards before starting your application:</p>
                         <ul>
-                            <li>Age: Training for the license starts at age 17 but the license is issued at age 18.</li>
-                            <li>Education: Students need to complete their 10+2 by obtaining Physics and Mathematics from a recognized board.</li>
-                            <li>Medical Fitness: Applicants must get their Class 2 followed by class 1 Medical Certificates from medical examiners recognized by DGCA.</li>
-                            <li>English Proficiency: Must be able to read, write, and understand English.</li>
+                            <li> <b>Age:</b> Training for the license starts at age 17 but the license is issued at age 18.</li>
+                            <li> <b>Education:</b> Students need to complete their 10+2 by obtaining Physics and Mathematics from a recognized board.</li>
+                            <li> <b>Medical Fitness:</b> Applicants must get their Class 2 followed by class 1 Medical Certificates from medical examiners recognized by DGCA.</li>
+                            <li> <b>English Proficiency:</b> Must be able to read, write, and understand English.</li>
                         </ul>
                         <p>The initial requirement stands as the core element of Commercial Pilot License Admission Process initiation.</p>
                     </div>
@@ -113,7 +113,13 @@ export default function AdmissionClient() {
 
                     <div className="cpl-section cpl-final">
                         <h2>Final Thoughts</h2>
-                        <p>The Commercial Pilot License Admission Process consists of multiple stages which let only the most</p>
+                        <p>The Commercial Pilot License Admission Process consists of multiple stages which let only the most
+                            qualified and ready candidates obtain their wings. You can follow the procedure to become a commercial
+                            pilot if you have the proper guidance while remaining dedicated along with using the right training
+                            opportunities. Select an established DGCA-approved academy that meets your requirements when
+                            kickstarting your aviation career.</p>
+                        <p>At We One Aviation Academy we focus on supporting flight dreams through expert instruction and
+                            modern educational facilities and career-focused training methods.</p>
                     </div>
                 </section>
             </div>
