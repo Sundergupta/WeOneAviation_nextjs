@@ -1,35 +1,36 @@
-import styles from "./DynamicPage.module.css";
+import "./style.css"; // ✅ SAME CSS FILE (allowed)
 
-export default function DynamicPage({ data }) {
+const DynamicPage = ({ data }) => {
     return (
-        <div className={styles.dynamicPage}>
+        <div className="dynamic-page">
 
-            {/* ---------- HEADER ---------- */}
+            {/* ---------------- HEADER ---------------- */}
+            <br />
             {data.header && (
-                <header className={styles.dynamicHeader}>
-                    <div className={styles.headerOverlay}>
+                <header className="dynamic-header">
+                    <div className="header-overlay">
                         <h1>{data.header.title}</h1>
                         <p>{data.header.subtitle}</p>
                     </div>
                 </header>
             )}
 
-            {/* ---------- CONTENT ---------- */}
-            <main className={styles.dynamicContent}>
+            {/* ---------------- MAIN CONTENT ---------------- */}
+            <main className="dynamic-content">
                 {data.sections?.map((section, index) => (
-                    <section key={index} className={`${styles.card} ${styles.dynamicSection}`}>
+                    <section key={index} className="dynamic-section card">
                         <h2>{section.title}</h2>
 
                         {section.description && (
-                            <p className={styles.sectionDesc}>{section.description}</p>
+                            <p className="section-desc">{section.description}</p>
                         )}
 
                         {section.subsections?.map((sub, i) => (
-                            <div key={i} className={styles.dynamicSubsection}>
+                            <div key={i} className="dynamic-subsection">
                                 {sub.heading && <h3>{sub.heading}</h3>}
 
                                 {sub.list && (
-                                    <ul className={styles.styledList}>
+                                    <ul className="styled-list">
                                         {sub.list.map((item, j) => (
                                             <li key={j}>{item}</li>
                                         ))}
@@ -37,12 +38,12 @@ export default function DynamicPage({ data }) {
                                 )}
 
                                 {sub.table && (
-                                    <div className={styles.tableWrapper}>
-                                        <table className={styles.dynamicTable}>
+                                    <div className="table-wrapper">
+                                        <table className="dynamic-table">
                                             <thead>
                                                 <tr>
-                                                    {sub.table.headers.map((h, k) => (
-                                                        <th key={k}>{h}</th>
+                                                    {sub.table.headers.map((head, h) => (
+                                                        <th key={h}>{head}</th>
                                                     ))}
                                                 </tr>
                                             </thead>
@@ -63,6 +64,9 @@ export default function DynamicPage({ data }) {
                     </section>
                 ))}
             </main>
+
         </div>
     );
-}
+};
+
+export default DynamicPage;

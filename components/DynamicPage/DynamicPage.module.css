@@ -1,8 +1,0 @@
-.dynamicPage { max-width: 1400px; margin: auto; padding: 0 1rem; }
-.dynamicHeader { background: linear-gradient(120deg,#e8f0ff,#fff); padding: 2.2rem; border-radius: 12px; }
-.dynamicHeader h1 { color:#0b63d6; }
-.card { background:#fff; border-radius:12px; padding:1.8rem; margin:1.5rem 0; box-shadow:0 6px 10px rgba(0,0,0,.05); }
-.sectionDesc { color:#374151; }
-.dynamicSubsection h3 { color:#2563eb; }
-.styledList li::before { content:"✔"; color:#0b63d6; }
-.dynamicTable th { background:#f3f8ff; }

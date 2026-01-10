@@ -59,7 +59,7 @@ export default function Footer() {
                             +91-9355566991
                         </li>
                         <li>
-                            <Image src="/Email.png" alt="" width={20} height={20} />
+                            <Image src="/assets/Email.png" alt="" width={20} height={20} />
                             weoneaviation8@gmail.com
                         </li>
                     </ul>
