@@ -15,10 +15,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "About Us | WeOne Aviation",
-  description: "Learn about WeOne Aviation, India’s trusted pilot training institute.",
-};
+// export const metadata = {
+//   title: "About Us | WeOne Aviation",
+//   description: "Learn about WeOne Aviation, India’s trusted pilot training institute.",
+// };
 
 export default function RootLayout({ children }) {
   return (
