@@ -52,7 +52,7 @@ export default function Footer() {
                         <li>Sector-7, Dwarka, New Delhi - 110075</li>
                         <li>
                             <Image src="/assets/Call.png" alt="" width={20} height={20} />
-                            +91-9667370747
+                            +91-9355611996
                         </li>
                         <li>
                             <Image src="/assets/Call.png" alt="" width={20} height={20} />
