@@ -1,4 +1,10 @@
 export const punjabData = {
+    seo: {
+        title: "Pilot Training Institute in Punjab",
+        description:
+            "Discover pilot training opportunities in Punjab with DGCA‑approved courses, practical flight modules, and expert mentorship at We One Aviation.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Punjab - 2026",
         subtitle:

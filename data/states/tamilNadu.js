@@ -1,4 +1,11 @@
 export const tamilNaduData = {
+    seo: {
+        title: "Pilot Training Institute in Tamil Nadu",
+        description:
+            "Achieve your dream of flying in Tamil Nadu with We One Aviation’s pilot training programs, practical flight experience, and career support.",
+    },
+
+
     hero: {
         title: "Pilot Training Institute in Tamil Nadu - 2026",
         subtitle:

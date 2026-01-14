@@ -1,4 +1,10 @@
 export const puneData = {
+    seo: {
+        title: "Pilot Training Institute in Pune",
+        description:
+            "Pilot training in Pune with We One Aviation: DGCA CPL & PPL courses, hands‑on flight training, eligibility help, and aviation career guidance.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Pune - 2026",
         subtitle:

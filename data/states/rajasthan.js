@@ -1,4 +1,10 @@
 export const rajasthanData = {
+    seo: {
+        title: "Pilot Training Institute in Rajasthan",
+        description:
+            "We One Aviation delivers complete pilot training in Rajasthan, from eligibility guidance to hands‑on flying and career pathways.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Rajasthan - 2026",
         subtitle:
