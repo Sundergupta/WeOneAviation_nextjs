@@ -1,4 +1,9 @@
 export const bangaloreData = {
+    seo: {
+        title: "Pilot Training Institute in Bangalore",
+        description:
+            "Explore pilot training in Bangalore with We One Aviation, offering DGCA‑aligned CPL, PPL, ground classes, eligibility details, and career support for aspiring pilots.",
+    },
     hero: {
         title: "Pilot Training Institute in Bangalore - 2026",
         subtitle:
