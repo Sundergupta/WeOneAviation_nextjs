@@ -1,7 +1,7 @@
 import "./styles/cpl.css";
 
 export const metadata = {
-    title: "Commercial Pilot License (CPL) Course in India – Fees, Salary & Eligibility",
+    title: "Commercial Pilot License (CPL) Course in India",
     description:
         "Complete guide to Commercial Pilot License (CPL) in India including eligibility, DGCA medical, fees, salary, career opportunities and admission process.",
 };
