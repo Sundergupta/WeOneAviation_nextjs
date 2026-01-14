@@ -1,4 +1,10 @@
 export const ghaziabadData = {
+    seo: {
+        title: "Pilot Training Institute in Ghaziabad",
+        description:
+            "Pilot training in Ghaziabad with We One Aviation: DGCA CPL & PPL courses, hands-on training, eligibility help, and aviation career support.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Ghaziabad - 2026",
         subtitle:

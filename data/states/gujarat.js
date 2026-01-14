@@ -1,4 +1,9 @@
 export const gujaratData = {
+    seo: {
+        title: "Pilot Training Institute in Gujarat",
+        description:
+            "Pilot training in Gujarat with We One Aviation: CPL & PPL courses, DGCA syllabus, hands-on training, eligibility support, and career guidance.",
+    },
     hero: {
         title: "Pilot Training Institute in Gujarat - 2026",
         subtitle:

@@ -1,4 +1,9 @@
 export const gurugramData = {
+    seo: {
+        title: "Pilot Training Institute in Gurugram",
+        description:
+            "Begin pilot training in Gurugram with We One Aviation’s DGCA-aligned CPL and PPL programs, expert instructors, and aviation career guidance.",
+    },
     hero: {
         title: "Pilot Training Institute in Gurugram - 2026",
         subtitle:

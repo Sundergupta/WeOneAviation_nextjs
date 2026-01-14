@@ -1,4 +1,9 @@
 export const goaData = {
+    seo: {
+        title: "Pilot Training Institute in Goa",
+        description:
+            "We One Aviation offers pilot training in Goa with professional CPL & PPL courses, practical learning, eligibility guidance, and aviation career pathways.",
+    },
     hero: {
         title: "Pilot Training Institute in Goa - 2026",
         subtitle:
