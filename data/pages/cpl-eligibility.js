@@ -1,6 +1,13 @@
 export const cplEligibility = {
+    seo: {
+        title: "ICSE Full Form – Meaning & Explanation",
+        description:
+            "Get the ICSE full form, meaning, and relevance for academic eligibility, especially for students pursuing aviation careers.",
+        keywords:
+            "ICSE full form, ICSE board meaning, ICSE syllabus, ICSE vs CBSE, CISCE",
+    },
     header: {
-        title: "Commercial Pilot License (CPL) Eligibility",
+        title: "Commercial Pilot License (CPL) ",
         subtitle: "Requirements, Training Steps, Medicals, Syllabus & Career Path (2026)",
     },
 

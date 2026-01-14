@@ -49,7 +49,7 @@ const ROUTES = {
     // Full Forms → DynamicPage
     "cbse-full-form": { component: DynamicPage, data: cbseFullForm },
     "dgca-full-form": { component: DynamicPage, data: dgcaFullForm },
-    "cpl-eligibility": { component: DynamicPage, data: cplEligibility },
+    "cpl-full-form": { component: DynamicPage, data: cplEligibility },
     "icse-full-form": { component: DynamicPage, data: icseFullForm },
     "ppl-full-form": { component: DynamicPage, data: pplFullForm },
     "rtr-full-form": { component: DynamicPage, data: rtrFullForm },
