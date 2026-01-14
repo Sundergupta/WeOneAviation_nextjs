@@ -1,4 +1,11 @@
 export const himachalPradeshData = {
+
+    seo: {
+        title: "Pilot Training Institute in Himachal Pradesh",
+        description:
+            "Train as a pilot in Himachal Pradesh with DGCA-approved courses from We One Aviation, hands-on training, and aviation career preparation.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Himachal Pradesh - 2026",
         subtitle:

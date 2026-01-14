@@ -1,4 +1,11 @@
 export const haryanaData = {
+
+    seo: {
+        title: "Pilot Training Institute in Haryana",
+        description:
+            "We One Aviation offers pilot training in Haryana with professional CPL & PPL courses, practical learning, eligibility support, and aviation career pathways.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Haryana - 2026",
         subtitle:

@@ -1,4 +1,11 @@
 export const hyderabadData = {
+
+    seo: {
+        title: "Pilot Training Institute in Hyderabad",
+        description:
+            "Start pilot training in Hyderabad with We One Aviation’s DGCA-aligned CPL and PPL courses, expert instructors, and aviation career support.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Hyderabad - 2026",
         subtitle:
