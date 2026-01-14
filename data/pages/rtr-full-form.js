@@ -1,4 +1,11 @@
 export const rtrFullForm = {
+    seo: {
+        title: "RTR Full Form – Radio Telephony Restricted Meaning",
+        description:
+            "Learn the full form of RTR (Radio Telephony Restricted), its aviation significance, and why pilots must clear RTR for flight communication and licensing",
+        keywords:
+            "RTR full form, RTR license meaning, RTR eligibility, RTR vs PPL, RTR requirements",
+    },
     header: {
         title: "RTR Full Form – Radio Telephony Restricted",
         subtitle:
