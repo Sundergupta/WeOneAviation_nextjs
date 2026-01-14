@@ -1,4 +1,10 @@
 export const coimbatoreData = {
+    seo: {
+        title: "Pilot Training Institute in Coimbatore",
+        description:
+            "Train as a pilot in Coimbatore with We One Aviation’s CPL & PPL programs, practical flight prep, and aviation industry guidance.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Coimbatore - 2026",
         subtitle:

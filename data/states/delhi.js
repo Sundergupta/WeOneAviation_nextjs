@@ -1,4 +1,10 @@
 export const delhiData = {
+    seo: {
+        title: "Pilot Training Institute in Delhi",
+        description:
+            "Train as a pilot in Delhi with We One Aviation’s DGCA-approved courses, practical flight prep, and career guidance for aspiring pilots.",
+    },
+
     hero: {
         title: "PILOT TRAINING IN DELHI - 2026",
         subtitle:

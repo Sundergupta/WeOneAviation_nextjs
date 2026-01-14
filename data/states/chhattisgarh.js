@@ -1,4 +1,10 @@
 export const chhattisgarhData = {
+    seo: {
+        title: "Pilot Training Institute in Chhattisgarh",
+        description:
+            "Train as a pilot in Chhattisgarh with We One Aviation’s CPL & PPL programs, hands-on learning, eligibility support, and career pathways.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Chhattisgarh - 2026",
         subtitle:

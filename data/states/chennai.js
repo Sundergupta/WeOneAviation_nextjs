@@ -1,4 +1,10 @@
 export const chennaiData = {
+    seo: {
+        title: "Pilot Training Institute in Chennai",
+        description:
+            "Train as a pilot in Chennai with We One Aviation’s DGCA-approved CPL & PPL courses, practical flight prep, and aviation career guidance.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Chennai - 2026",
         subtitle:
