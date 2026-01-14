@@ -1,5 +1,11 @@
 export const cbseFullForm = {
-
+    seo: {
+        title: "CBSE Full Form – Meaning & Explanation",
+        description:
+            "Discover the CBSE full form, meaning, and importance for academic eligibility in aviation career paths like pilot training.",
+        keywords:
+            "CBSE full form, CBSE board meaning, CBSE syllabus, CBSE vs ICSE, NCERT",
+    },
 
     header: {
         title: "CBSE Full Form – What is CBSE? Meaning, Overview & Details",
