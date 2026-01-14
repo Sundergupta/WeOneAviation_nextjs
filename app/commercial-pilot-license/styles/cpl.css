@@ -1,12 +1,4 @@
-/* -------------------------------
-   Consolidated CPL styles
-   - unified reset
-   - menu layout (.menu-layout) + alias (.manu-container)
-   - container, left-menu, content-box
-   - sections used in page.jsx
-   ------------------------------- */
-
-:root{--accent:#0b63d6;--muted:#64748b;--card:#ffffff}
+                                                                                                                                                                                :root{--accent:#0b63d6;--muted:#64748b;--card:#ffffff}
 
 /* Reset / base */
 *{box-sizing:border-box;margin:0;padding:0}
