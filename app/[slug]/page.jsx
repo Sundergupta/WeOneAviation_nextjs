@@ -86,7 +86,33 @@ const ROUTES = {
 };
 
 // --------------------------------------------------
-// ✅ PAGE
+const SITE_URL = "https://weoneaviation.com";
+
+export async function generateMetadata({ params }) {
+    const { slug } = await params;
+
+    const route = ROUTES[slug];
+    if (!route || !route.data?.seo) {
+        return {
+            title: "WeOne Aviation",
+            description: "India’s leading aviation training institute",
+        };
+    }
+
+    const { title, description, keywords } = route.data.seo;
+
+    return {
+        title,
+        description,
+        keywords,
+        alternates: {
+            canonical: `${SITE_URL}/${slug}`,
+        },
+    };
+}
+
+
+
 // --------------------------------------------------
 export default async function Page({ params }) {
     const { slug } = await params;
