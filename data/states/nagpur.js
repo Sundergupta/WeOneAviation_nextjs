@@ -1,4 +1,10 @@
 export const nagpurData = {
+    seo: {
+        title: "Pilot Training Institute in Nagpur",
+        description:
+            "Explore pilot training in Nagpur through We One Aviation’s comprehensive flight programs, DGCA syllabus, and expert mentorship for future pilots.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Nagpur - 2026",
         subtitle:

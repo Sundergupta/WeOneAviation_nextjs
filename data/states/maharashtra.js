@@ -1,4 +1,10 @@
 export const maharashtraData = {
+    seo: {
+        title: "Pilot Training Institute in Maharashtra",
+        description:
+            "Begin pilot training in Maharashtra with We One Aviation’s DGCA‑aligned CPL and PPL programs, expert guidance, and aviation career support.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Maharashtra - 2026",
         subtitle:

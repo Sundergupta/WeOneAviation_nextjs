@@ -1,6 +1,6 @@
 export const mumbaiData = {
     seo: {
-        title: "Pilot Training Institute in Kolkata",
+        title: "Pilot Training Institute in Mumbai",
         description:
             "We One Aviation delivers structured pilot training in Mumbai with CPL & PPL flight programs, DGCA syllabus, and mentorship for aspiring aviators.",
     },

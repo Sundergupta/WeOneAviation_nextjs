@@ -1,4 +1,10 @@
 export const noidaData = {
+    seo: {
+        title: "Pilot Training Institute in Noida",
+        description:
+            "Get pilot training in Noida with We One Aviation’s professional flight programs, expert mentors, DGCA syllabus, and aviation career planning",
+    },
+
     hero: {
         title: "Pilot Training Institute in Noida - 2026",
         subtitle:
