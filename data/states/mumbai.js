@@ -1,4 +1,9 @@
 export const mumbaiData = {
+    seo: {
+        title: "Pilot Training Institute in Kolkata",
+        description:
+            "We One Aviation delivers structured pilot training in Mumbai with CPL & PPL flight programs, DGCA syllabus, and mentorship for aspiring aviators.",
+    },
     hero: {
         title: "Pilot Training Institute in Mumbai - 2026",
         subtitle:
