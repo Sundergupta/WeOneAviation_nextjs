@@ -3,7 +3,7 @@ import AdmissionClient from "./AdmissionClient";
 export const metadata = {
     title: "Commercial Pilot License Admission Process",
     description:
-        "Learn about the Commercial Pilot License (CPL) admission process at We One Aviation, including application steps, required documents, entrance exams, and selection criteria.",
+        "Learn the Commercial Pilot License admission process at We One Aviation, including application steps, eligibility checks, and enrollment guidance.",
 };
 
 export default function Page() {
