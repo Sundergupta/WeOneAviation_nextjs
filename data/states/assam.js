@@ -1,4 +1,9 @@
 export const assamData = {
+    seo: {
+        title: "Pilot Training Institute in Assam",
+        description:
+            "Explore pilot training in Andhra Pradesh with We One Aviation, including CPL, PPL, DGCA‑aligned courses, eligibility, and career opportunities for aspiring pilots ",
+    },
     hero: {
         title: "Pilot Training Institute in Assam - 2026",
         subtitle:

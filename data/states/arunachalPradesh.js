@@ -1,4 +1,9 @@
 export const arunachalPradeshData = {
+    seo: {
+        title: "Pilot Training Institute in Arunachal Pradesh",
+        description:
+            "Pilot training in Arunachal Pradesh with We One Aviation: CPL & PPL programs, DGCA syllabus, eligibility criteria, and aviation career support.",
+    },
     hero: {
         title: "Pilot Training Institute in Arunachal Pradesh - 2026",
         subtitle:
