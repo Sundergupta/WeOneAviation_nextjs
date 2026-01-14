@@ -3,8 +3,6 @@ export const cbseFullForm = {
         title: "CBSE Full Form – Meaning & Explanation",
         description:
             "Discover the CBSE full form, meaning, and importance for academic eligibility in aviation career paths like pilot training.",
-        keywords:
-            "CBSE full form, CBSE board meaning, CBSE syllabus, CBSE vs ICSE, NCERT",
     },
 
     header: {
@@ -266,20 +264,7 @@ export const cbseFullForm = {
             ],
         },
 
-        {
-            title: "FAQ – CBSE Full Form",
-            subsections: [
-                {
-                    list: [
-                        "What is the full form of CBSE?",
-                        "Is CBSE a government board?",
-                        "How many schools are affiliated with CBSE?",
-                        "What curriculum does CBSE follow?",
-                        "Who conducts CBSE exams?",
-                    ],
-                },
-            ],
-        },
+
     ],
 };
 

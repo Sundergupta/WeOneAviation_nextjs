@@ -1,4 +1,12 @@
 export const dgcaFullForm = {
+    seo: {
+        title: "DGCA Full Form – Meaning & Explanation",
+        description:
+            "Learn the DGCA full form (Directorate General of Civil Aviation), its role in Indian aviation, and why it matters for pilot training ",
+        keywords:
+            "DGCA full form, DGCA board meaning, DGCA syllabus, DGCA vs other aviation boards, DGCA regulations",
+    },
+
     header: {
         title: "DGCA Full Form – What is DGCA in Aviation?",
         subtitle: "Directorate General of Civil Aviation (DGCA) – Role, Importance & Functions in Indian Aviation",
