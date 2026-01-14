@@ -1,4 +1,11 @@
 export const indiaData = {
+
+  seo: {
+    title: "Pilot Training Institute in India",
+    description:
+      "We One Aviation guides aspiring pilots across India with structured CPL and PPL programs, DGCA syllabus, and expert mentorship.",
+  },
+
   hero: {
     title: "Pilot Training Institute in India - 2026",
     subtitle:
@@ -6,6 +13,7 @@ export const indiaData = {
     background: "/images/pilot-training-india-bg.jpg",
     basePath: "/pilot-training-india",
   },
+
 
   menuItems: [
     { name: "Overview", path: "/pilot-training-india" },

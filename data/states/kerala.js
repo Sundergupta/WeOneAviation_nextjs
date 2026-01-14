@@ -1,4 +1,11 @@
 export const keralaData = {
+
+    seo: {
+        title: "Pilot Training Institute in Kerala",
+        description:
+            "Learn to fly in Kerala with We One Aviation’s professional pilot training, expert instructors, CPL and PPL courses, and aviation guidance.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Kerala - 2026",
         subtitle:

@@ -1,4 +1,11 @@
 export const kolkataData = {
+
+    seo: {
+        title: "Pilot Training Institute in Kolkata",
+        description:
+            "Train as a pilot in Kolkata with We One Aviation’s DGCA‑approved flight programs, hands‑on learning, and comprehensive aviation support.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Kolkata - 2026",
         subtitle:

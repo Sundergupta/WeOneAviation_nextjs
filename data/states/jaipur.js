@@ -1,4 +1,11 @@
 export const jaipurData = {
+
+    seo: {
+        title: "Pilot Training Institute in Jaipur",
+        description:
+            "We One Aviation delivers structured pilot training in Jaipur with DGCA syllabus, career planning, and practical flight exposure for aspiring pilots.",
+    },
+
     hero: {
         title: "Pilot Training Institute in Jaipur - 2026",
         subtitle:
