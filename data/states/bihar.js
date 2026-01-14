@@ -1,4 +1,9 @@
 export const biharData = {
+    seo: {
+        title: "Pilot Training Institute in Bihar",
+        description:
+            "Start your aviation career in Bihar with We One Aviation, offering professional CPL and PPL pilot training programs and DGCA-approved courses.",
+    },
     hero: {
         title: "Pilot Training Institute in Bihar - 2026",
         subtitle:
