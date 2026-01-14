@@ -1,4 +1,11 @@
 export const pplFullForm = {
+    seo: {
+        title: " PPL Full Form – Meaning & Explanation",
+        description:
+            "Learn the full form of PPL (Private Pilot License), its meaning, eligibility, and relevance for aspiring pilots beginning their aviation journey.",
+    },
+
+
     header: {
         title: "PPL Full Form – What is PPL in Aviation, Chat, Business and More - 2025?",
         subtitle:
