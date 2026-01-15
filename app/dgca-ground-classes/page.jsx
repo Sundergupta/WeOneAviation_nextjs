@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./style.css";
 
 export const metadata = {
-    title: "DGCA Ground Classes in India | 100% Result-Oriented Training – We One Aviation",
+    title: "DGCA Ground Classes – Pilot Training Theory  ",
     description:
         "Join India’s best DGCA ground classes for CPL. Expert instructors, updated DGCA syllabus & proven results. Trusted by 3000+ pilots.",
     alternates: {
