@@ -13,11 +13,7 @@ export default function CPLPage() {
             {/* =====================================================
           HERO SECTION
       ===================================================== */}
-            {/* <section className="hero-section">
-                <div className="container">
-                    <h1>Commercial Pilot License Course Detail</h1>
-                </div>
-            </section> */}
+
 
 
             {/* =====================================================

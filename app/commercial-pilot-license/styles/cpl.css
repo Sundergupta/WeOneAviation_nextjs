@@ -46,7 +46,7 @@ table, th, td {
 .hero-section p{font-size:1.1rem}
 
 /* Sections common spacing */
-section{padding:3rem 0}
+/* section{padding:3rem 0} */
 section:nth-child(even){background:#f8f9fa}
 
 /* Training / curriculum */
