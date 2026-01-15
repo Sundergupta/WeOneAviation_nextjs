@@ -2,7 +2,7 @@ import Image from "next/image";
 import "./style.css";
 
 export const metadata = {
-    title: "DGCA Class 1 & Class 2 Medical – Complete Guide for Pilots",
+    title: "DGCA Medical – Aviation Medical Examination Guide",
     description:
         "Complete guide for DGCA Class 1 and Class 2 medical examinations in India. Eligibility, process, standards, validity and requirements for pilots.",
 };
