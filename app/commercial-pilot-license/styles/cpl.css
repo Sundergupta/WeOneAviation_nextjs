@@ -282,9 +282,9 @@ p {
 }
 
 /* Section Styling */
-section {
+/* section {
   padding: 3rem 0;
-}
+} */
 
 section:nth-child(even) {
   background-color: #f8f9fa;
