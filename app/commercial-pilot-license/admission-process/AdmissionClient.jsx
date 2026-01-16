@@ -32,7 +32,6 @@ export default function AdmissionClient() {
 
             <div className="menu-layout">
 
-
                 <section className="content-box cpl-container">
                     <div className="cpl-section">
 
@@ -56,24 +55,20 @@ export default function AdmissionClient() {
                     <div className="cpl-section">
                         <h2>Check Eligibility Requirements</h2>
                         <p>Make sure you fulfill all eligibility standards before starting your application:</p>
-                        <ul>
-                            <li> <b>Age:</b> Training for the license starts at age 17 but the license is issued at age 18.</li>
-                            <li> <b>Education:</b> Students need to complete their 10+2 by obtaining Physics and Mathematics from a recognized board.</li>
-                            <li> <b>Medical Fitness:</b> Applicants must get their Class 2 followed by class 1 Medical Certificates from medical examiners recognized by DGCA.</li>
-                            <li> <b>English Proficiency:</b> Must be able to read, write, and understand English.</li>
-                        </ul>
+                        <p>● <b>Age:</b> Training for the license starts at age 17 but the license is issued at age 18.</p>
+                        <p>● <b>Education:</b> Students need to complete their 10+2 by obtaining Physics and Mathematics from a recognized board.</p>
+                        <p>● <b>Medical Fitness:</b> Applicants must get their Class 2 followed by class 1 Medical Certificates from medical examiners recognized by DGCA.</p>
+                        <p>● <b>English Proficiency:</b> Must be able to read, write, and understand English.</p>
                         <p>The initial requirement stands as the core element of Commercial Pilot License Admission Process initiation.</p>
                     </div>
 
                     <div className="cpl-section">
                         <h2>Choose a DGCA-Approved Flying School</h2>
                         <p>Choosing the correct training institution stands as a vital component throughout the Commercial Pilot License Admission Process. Look for a school that:</p>
-                        <ul>
-                            <li>Is approved by the DGCA</li>
-                            <li>Has experienced instructors</li>
-                            <li>Offers modern aircraft and simulators</li>
-                            <li>Provides complete ground and flight training</li>
-                        </ul>
+                        <p>● Is approved by the DGCA</p>
+                        <p>● Has experienced instructors</p>
+                        <p>● Offers modern aircraft and simulators</p>
+                        <p>● Provides complete ground and flight training</p>
                         <p>After selection you must fill out the school’s enrollment form while providing documents and making your first fee payment.</p>
                     </div>
 
@@ -90,36 +85,36 @@ export default function AdmissionClient() {
                     <div className="cpl-section">
                         <h2>Apply for Commercial Pilot License</h2>
                         <p>After passing all exams and completing flight hours:</p>
-                        <ul>
-                            <li>Submit your logbook and documents to DGCA</li>
-                            <li>Undergo Class 1 medical revalidation</li>
-                            <li>Apply for CPL issuance</li>
-                        </ul>
+                        <p>● Submit your logbook and documents to DGCA</p>
+                        <p>● Undergo Class 1 medical revalidation</p>
+                        <p>● Apply for CPL issuance</p>
                     </div>
 
                     <div className="cpl-section">
                         <h2>Admission Procedure at We One Aviation Academy</h2>
                         <p>We One Aviation Academy provides students with a friendly admission process that leads to Commercial Pilot License enrollment. Our admission process includes:</p>
-                        <ul>
-                            <li>Initial Counseling: Understand your goals and assess your eligibility.</li>
-                            <li>Document Verification: Academic data together with medical records are evaluated.</li>
-                            <li>Application Submission: Applicants need to finish the CPL admission form by providing all necessary information.</li>
-                            <li>Medical Support: Assistance in scheduling Class 2 and Class 1 medical tests.</li>
-                            <li>Orientation & Enrollment: After shortlisting candidates they must join an orientation meeting to begin their ground training.</li>
-                            <li>Loan & EMI Assistance: Our support services provide education loan options and EMI solutions to eligible students.</li>
-                        </ul>
+                        <p>● Initial Counseling: Understand your goals and assess your eligibility.</p>
+                        <p>● Document Verification: Academic data together with medical records are evaluated.</p>
+                        <p>● Application Submission: Applicants need to finish the CPL admission form by providing all necessary information.</p>
+                        <p>● Medical Support: Assistance in scheduling Class 2 and Class 1 medical tests.</p>
+                        <p>● Orientation & Enrollment: After shortlisting candidates they must join an orientation meeting to begin their ground training.</p>
+                        <p>● Loan & EMI Assistance: Our support services provide education loan options and EMI solutions to eligible students.</p>
                         <p>We will support you through the entire training program starting from your initial counseling until you pass your final flight test.</p>
                     </div>
 
                     <div className="cpl-section cpl-final">
                         <h2>Final Thoughts</h2>
-                        <p>The Commercial Pilot License Admission Process consists of multiple stages which let only the most
+                        <p>
+                            The Commercial Pilot License Admission Process consists of multiple stages which let only the most
                             qualified and ready candidates obtain their wings. You can follow the procedure to become a commercial
                             pilot if you have the proper guidance while remaining dedicated along with using the right training
                             opportunities. Select an established DGCA-approved academy that meets your requirements when
-                            kickstarting your aviation career.</p>
-                        <p>At We One Aviation Academy we focus on supporting flight dreams through expert instruction and
-                            modern educational facilities and career-focused training methods.</p>
+                            kickstarting your aviation career.
+                        </p>
+                        <p>
+                            At We One Aviation Academy we focus on supporting flight dreams through expert instruction and
+                            modern educational facilities and career-focused training methods.
+                        </p>
                     </div>
                 </section>
             </div>

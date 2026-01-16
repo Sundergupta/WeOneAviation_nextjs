@@ -37,32 +37,30 @@ export default function SyllabusClient() {
                     Theoretical learning at ground school serves as the essential starting point for becoming a pilot.
                     The commercial pilot license syllabus for ground school teaches these necessary subjects:
                 </p>
-                <ul>
-                    <li>
-                        <strong>Air Navigation:</strong> Flight planning together with radio navigation and instrument
-                        flying and global positioning systems make up the subject matter.
-                    </li>
-                    <li>
-                        <strong>Aviation Meteorology:</strong> The training provides knowledge about weather patterns
-                        together with cloud formations and wind systems and their effects on flight operations.
-                    </li>
-                    <li>
-                        <strong>Air Regulation:</strong> Students gain knowledge of the rules from DGCA besides ICAO
-                        regulations and general aviation laws.
-                    </li>
-                    <li>
-                        <strong>Technical General:</strong> Focuses on the basic working of aircraft systems, engines,
-                        and instruments.
-                    </li>
-                    <li>
-                        <strong>Technical Specific:</strong> Training for the aircraft type that a candidate operates
-                        during their flight education period.
-                    </li>
-                    <li>
-                        <strong>Radio Telephony (RTR):</strong> Trains students in aviation communication, standard
-                        phraseology, and emergency procedures.
-                    </li>
-                </ul>
+                <p>
+                    ● <strong>Air Navigation:</strong> Flight planning together with radio navigation and instrument
+                    flying and global positioning systems make up the subject matter.
+                </p>
+                <p>
+                    ● <strong>Aviation Meteorology:</strong> The training provides knowledge about weather patterns
+                    together with cloud formations and wind systems and their effects on flight operations.
+                </p>
+                <p>
+                    ● <strong>Air Regulation:</strong> Students gain knowledge of the rules from DGCA besides ICAO
+                    regulations and general aviation laws.
+                </p>
+                <p>
+                    ● <strong>Technical General:</strong> Focuses on the basic working of aircraft systems, engines,
+                    and instruments.
+                </p>
+                <p>
+                    ● <strong>Technical Specific:</strong> Training for the aircraft type that a candidate operates
+                    during their flight education period.
+                </p>
+                <p>
+                    ● <strong>Radio Telephony (RTR):</strong> Trains students in aviation communication, standard
+                    phraseology, and emergency procedures.
+                </p>
                 <p>
                     Instructors teach subjects through classroom sessions and online resources as well as conducting
                     mock tests to ensure students pass their DGCA examinations.
@@ -76,26 +74,24 @@ export default function SyllabusClient() {
                     Students must complete flight training as a practical requirement for the commercial pilot
                     license syllabus:
                 </p>
-                <ul>
-                    <li>
-                        <strong>Basic Maneuvers:</strong> Take-off and landing procedures together with straight-and-
-                        level flight and turns and climbing and descending flights.
-                    </li>
-                    <li>
-                        <strong>Cross-Country Flights:</strong> Navigation exercises between different airfields.
-                    </li>
-                    <li>
-                        <strong>Instrument Flying:</strong> Training includes flying using instruments alone to
-                        duplicate low-visibility conditions.
-                    </li>
-                    <li>
-                        <strong>Night Flying:</strong> Flight operations during night conditions.
-                    </li>
-                    <li>
-                        <strong>Solo Flying:</strong> Independent flying operations help develop personal confidence
-                        as well as flying expertise.
-                    </li>
-                </ul>
+                <p>
+                    ● <strong>Basic Maneuvers:</strong> Take-off and landing procedures together with straight-and-
+                    level flight and turns and climbing and descending flights.
+                </p>
+                <p>
+                    ● <strong>Cross-Country Flights:</strong> Navigation exercises between different airfields.
+                </p>
+                <p>
+                    ● <strong>Instrument Flying:</strong> Training includes flying using instruments alone to
+                    duplicate low-visibility conditions.
+                </p>
+                <p>
+                    ● <strong>Night Flying:</strong> Flight operations during night conditions.
+                </p>
+                <p>
+                    ● <strong>Solo Flying:</strong> Independent flying operations help develop personal confidence
+                    as well as flying expertise.
+                </p>
                 <p>
                     To earn a commercial pilot license students need at least 200 hours of flight schooling that must
                     cover required hours for solo flights, cross-country flights and instrument flight tasks.
@@ -117,8 +113,6 @@ export default function SyllabusClient() {
                     cockpit positions.
                 </p>
             </section>
-
-
 
         </main>
     );

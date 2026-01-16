@@ -18,38 +18,14 @@ export default function SalaryClient() {
     return (
         <main className="salary-page">
 
-            {/* ================= HERO SECTION ================= */}
-            {/* <section className="hero-section">
-                <div className="container">
-                    <h1>Commercial Pilot License Salary - 2025</h1>
-                </div>
-            </section> */}
-
             {/* ================= MAIN LAYOUT ================= */}
             <div className="cpl-content-wrapper">
-
-                {/* ================= SIDE MENU ================= */}
-                {/* <aside className="side-menu-column">
-                    <ul className="side-menu">
-                        {menuItems.map((item) => (
-                            <li key={item.href}>
-                                <Link
-                                    href={item.href}
-                                    className={pathname === item.href ? "menu-link active" : "menu-link"}
-                                >
-                                    {item.name}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </aside> */}
 
                 {/* ================= CONTENT ================= */}
                 <section className="salary-container">
 
                     {/* INTRO */}
                     <section className="cpl-section">
-
                         <p>
                             Thousands of aviators interested in pursuing flight careers ask about the Commercial pilot
                             license salary levels in India in comparison to foreign salaries. Getting your Commercial
@@ -103,28 +79,26 @@ export default function SalaryClient() {
                     {/* FACTORS */}
                     <section className="cpl-section">
                         <h2>Factors Influencing Commercial Pilot License Salary</h2>
-                        <ul>
-                            <li>
-                                <strong>Airline Type:</strong> Pilots working for domestic airlines receive lower pay rates
-                                than those employed by international airlines.
-                            </li>
-                            <li>
-                                <strong>Aircraft Type:</strong> Pilots operate wide-body jets (Boeing 777 or Airbus A350)
-                                which generates a higher salary compared to pilots who operate smaller aircraft.
-                            </li>
-                            <li>
-                                <strong>Experience Level:</strong> A pilot’s salary grows as their flight hours increase
-                                together with their professional experience.
-                            </li>
-                            <li>
-                                <strong>Location:</strong> Pilots who fly for Middle Eastern or Southeast Asian or European
-                                airlines tend to receive bigger salary packages than their Indian counterparts.
-                            </li>
-                            <li>
-                                <strong>Additional Roles:</strong> Training captains and instructors along with examiners
-                                may receive performance-based bonuses and additional payments through allowances.
-                            </li>
-                        </ul>
+                        <p>
+                            ● <strong>Airline Type:</strong> Pilots working for domestic airlines receive lower pay rates
+                            than those employed by international airlines.
+                        </p>
+                        <p>
+                            ● <strong>Aircraft Type:</strong> Pilots operate wide-body jets (Boeing 777 or Airbus A350)
+                            which generates a higher salary compared to pilots who operate smaller aircraft.
+                        </p>
+                        <p>
+                            ● <strong>Experience Level:</strong> A pilot’s salary grows as their flight hours increase
+                            together with their professional experience.
+                        </p>
+                        <p>
+                            ● <strong>Location:</strong> Pilots who fly for Middle Eastern or Southeast Asian or European
+                            airlines tend to receive bigger salary packages than their Indian counterparts.
+                        </p>
+                        <p>
+                            ● <strong>Additional Roles:</strong> Training captains and instructors along with examiners
+                            may receive performance-based bonuses and additional payments through allowances.
+                        </p>
                     </section>
 
                     {/* ABROAD */}
@@ -141,13 +115,11 @@ export default function SalaryClient() {
                     {/* BENEFITS */}
                     <section className="cpl-section cpl-final">
                         <h2>Additional Benefits</h2>
-                        <ul>
-                            <li>Health and life insurance</li>
-                            <li>Travel perks for family</li>
-                            <li>Housing or accommodation allowance</li>
-                            <li>Retirement and pension plans</li>
-                            <li>Training and upskilling opportunities</li>
-                        </ul>
+                        <p>● Health and life insurance</p>
+                        <p>● Travel perks for family</p>
+                        <p>● Housing or accommodation allowance</p>
+                        <p>● Retirement and pension plans</p>
+                        <p>● Training and upskilling opportunities</p>
                         <p>
                             A commercial pilot license salary offers among the highest professional compensation
                             because it provides exciting travel benefits along with elevated status and employment

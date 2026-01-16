@@ -45,10 +45,10 @@ export default function EligibilityClient() {
                 <h2>Educational Qualification</h2>
                 <p>
                     A solid academic base forms the essential foundation required to turn into a professional pilot.
-                    The educational requirement begins at the <strong>10+2 (senior secondary)</strong> level alongside
+                    The educational requirement begins at the <strong>●10+2 (senior secondary)</strong> level alongside
                     science subjects according to set criteria.
                 </p>
-                <p><strong>10+2 (Senior Secondary) or equivalent</strong></p>
+                <p>●<strong>10+2 (Senior Secondary) or equivalent</strong></p>
                 <p>It is mandatory to study Physics and Mathematics as your core subjects.</p>
                 <p>
                     Candidates who lack Physics and Math in their 10+2 education must separately take these courses
@@ -66,16 +66,16 @@ export default function EligibilityClient() {
                     The medical certification includes:
                 </p>
                 <ul>
-                    <li>Class 2 Medical Certificate (initial requirement for Student Pilot License)</li>
-                    <li>Class 1 Medical Certificate (mandatory for CPL issuance)</li>
+                    <li>● Class 2 Medical Certificate (initial requirement for Student Pilot License)</li>
+                    <li>● Class 1 Medical Certificate (mandatory for CPL issuance)</li>
                 </ul>
                 <p>The medical exam evaluates these specific elements:</p>
                 <ul>
                     <li>
-                        The vision standards require 6/6 vision in one eye and 6/9 vision in the other yet correctable
+                        ● The vision standards require 6/6 vision in one eye and 6/9 vision in the other yet correctable
                         with eyeglasses.
                     </li>
-                    <li>Hearing, blood pressure, ECG, and overall physical health</li>
+                    <li>● Hearing, blood pressure, ECG, and overall physical health</li>
                 </ul>
             </section>
 
@@ -108,9 +108,9 @@ export default function EligibilityClient() {
                     candidate needs to fulfill three requirements to obtain an SPL.
                 </p>
                 <ul>
-                    <li>Be at least 16 years old</li>
-                    <li>Students must pass an oral/written examination on aviation subjects.</li>
-                    <li>Pass a Class 2 medical exam</li>
+                    <li>●Be at least 16 years old</li>
+                    <li>●Students must pass an oral/written examination on aviation subjects.</li>
+                    <li>●Pass a Class 2 medical exam</li>
                 </ul>
                 <p>
                     Under this license students can start receiving supervised flying instruction for basic skills.
@@ -125,10 +125,10 @@ export default function EligibilityClient() {
                     These include:
                 </p>
                 <ul>
-                    <li>100 hours as Pilot-in-Command (PIC)</li>
-                    <li>20 hours of cross-country flying</li>
-                    <li>10 hours of instrument flying</li>
-                    <li>5 hours of night flying</li>
+                    <li>●100 hours as Pilot-in-Command (PIC)</li>
+                    <li>●20 hours of cross-country flying</li>
+                    <li>●10 hours of instrument flying</li>
+                    <li>●5 hours of night flying</li>
                 </ul>
                 <p>
                     Flying education must take place under DGCA-approved academic institutions which provide flight
