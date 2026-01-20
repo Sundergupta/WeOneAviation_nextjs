@@ -4,6 +4,9 @@ import { notFound } from "next/navigation";
 import DynamicPage from "@/components/DynamicPage/DynamicPage";
 import StructurePage from "@/components/StructurePage/StructurePage";
 
+
+import { dgcaPariksha } from "@/data/dgcaPariksha";
+
 // -------- FULL FORM PAGES --------
 import { cbseFullForm } from "@/data/pages/cbse-full-form";
 import { dgcaFullForm } from "@/data/pages/dgca-full-form";
@@ -46,6 +49,12 @@ import { jaipurData } from "@/data/states/jaipur";
 // ✅ CENTRAL ROUTE REGISTRY
 // --------------------------------------------------
 const ROUTES = {
+
+
+
+    "dgca-pariksha": { component: DynamicPage, data: dgcaPariksha },
+
+
     // Full Forms → DynamicPage
     "cbse-full-form": { component: DynamicPage, data: cbseFullForm },
     "dgca-full-form": { component: DynamicPage, data: dgcaFullForm },
