@@ -17,7 +17,7 @@ export const dgcaPariksha = {
         {
             title: "DGCA Pariksha – Overview",
             description:
-                "DGCA Pariksha is the official examination system for all pilot theory examinations in India Conducted by the Directorate General of Civil Aviation, DGCA Pariksha is the mandatory platform for appearing in any DGCA exam for pilot licensing, including CPL and ATPL. At We One Aviation, we specialize in DGCA Pariksha–oriented ground training, helping students clear DGCA exams confidently on the first attempt.",
+                "DGCA Pariksha is the official examination system for all pilot theory examinations in India. Conducted by the Directorate General of Civil Aviation, DGCA Pariksha is the mandatory platform for appearing in any DGCA exam for pilot licensing, including CPL and ATPL. ",
             subsections: [
                 {
                     description:
@@ -52,13 +52,13 @@ export const dgcaPariksha = {
         {
             title: "DGCA Central Examination Organization (CEO)",
             description:
-                "All DGCA exams are conducted by the DGCA Central Examination Organization (CEO). This centralized authority ensures transparency and uniform examination standards across India.",
+                "All DGCA exams are conducted by the DGCA Central Examination Organization (CEO). The CEO is responsible for:",
             subsections: [
                 {
                     heading: "Responsibilities of DGCA CEO",
                     list: [
                         "Managing DGCA Pariksha portal",
-                        "Issuing DGCA exam schedules and results",
+                        "Issuing exam schedules and results",
                         "Handling application scrutiny",
                     ],
                 },
@@ -94,7 +94,7 @@ export const dgcaPariksha = {
         {
             title: "DGCA CPL Exam & Subjects",
             description:
-                "DGCA CPL exams are the most commonly attempted exams by commercial pilot aspirants in India.",
+                "The DGCA CPL exam consists of multiple theory papers conducted through DGCA Pariksha.",
             subsections: [
                 {
                     heading: "DGCA Exams for CPL Include",
@@ -116,7 +116,7 @@ export const dgcaPariksha = {
         {
             title: "DGCA Exam Eligibility Criteria",
             description:
-                "Understanding DGCA exam eligibility is crucial before applying for DGCA Pariksha.",
+                "Understanding DGCA exam eligibility is crucial before applying.",
             subsections: [
                 {
                     heading: "DGCA Exam Eligibility (CPL)",
@@ -129,7 +129,7 @@ export const dgcaPariksha = {
                 },
                 {
                     description:
-                        "Students often ask what is DGCA exam eligibility. Counselors at We One Aviation provide complete guidance.",
+                        "Students often ask what is DGCA exam eligibility, and our counselors at We One Aviation provide complete guidance.",
                 },
             ],
         },
@@ -137,22 +137,22 @@ export const dgcaPariksha = {
         {
             title: "What Is DGCA Exam & Why It Is Important?",
             description:
-                "A DGCA exam is a regulatory theory examination that evaluates a pilot’s knowledge of aviation laws, navigation, meteorology, and aircraft systems.",
+                "Many aspirants ask: what is DGCA exam? A DGCA exam is a regulatory theory examination that evaluates a pilot's knowledge of aviation laws, navigation, meteorology, and aircraft systems. Clearing DGCA exams is mandatory to obtain or upgrade any pilot license in India.",
             subsections: [
                 {
                     description:
-                        "Without clearing DGCA Pariksha exams, no flying hours can be converted into a valid pilot license in India.",
+                        "Without clearing DGCA Pariksha exams, no flying hours can be converted into a valid license.",
                 },
             ],
         },
 
         {
-            title: "DGCA Exam Application Process – How to Apply",
+            title: "DGCA Exam Application Process – How to Apply for DGCA Exam",
             description:
-                "Knowing how to apply for DGCA exam correctly helps avoid application rejection.",
+                "Knowing how to apply for DGCA exam helps avoid rejection.",
             subsections: [
                 {
-                    heading: "Step-by-Step DGCA Exam Application Process",
+                    heading: "Step-by-Step Process",
                     list: [
                         "Register on DGCA Pariksha portal",
                         "Generate DGCA Computer Number",
@@ -164,7 +164,7 @@ export const dgcaPariksha = {
                 },
                 {
                     description:
-                        "We One Aviation assists students throughout the DGCA Pariksha application process.",
+                        "Our team at We One Aviation assists students throughout the DGCA Pariksha application process.",
                 },
             ],
         },
@@ -192,13 +192,13 @@ export const dgcaPariksha = {
         {
             title: "DGCA Exam Date & Schedule",
             description:
-                "DGCA exams are conducted in multiple sessions every year.",
+                "DGCA exams are conducted in sessions.",
             subsections: [
                 {
                     list: [
-                        "DGCA exam date announced via public notice",
-                        "DGCA exam schedule visible on DGCA Pariksha portal",
-                        "Exams conducted online at approved centers",
+                        "DGCA exam date is announced via public notice",
+                        "DGCA exam schedule is visible on DGCA Pariksha portal",
+                        "Exams are conducted online at approved centers",
                     ],
                 },
                 {
@@ -218,15 +218,10 @@ export const dgcaPariksha = {
                         "This is why professional pilot ground classes are essential to clear theory papers efficiently.",
                 },
             ],
-            // subsections:
-            // {
-            //     description:
-            //         "At We One Aviation, our DGCA ground classes ensure students are fully prepared for every DGCA pilot exam..",
-            // },
         },
 
         {
-            title: "Importance of DGCA Ground Classes",
+            title: "Importance of DGCA Ground Classes for DGCA Pariksha",
             description:
                 "DGCA exams are concept-based and technical. Self-study alone often leads to failure.",
             subsections: [
@@ -239,6 +234,10 @@ export const dgcaPariksha = {
                         "Expert aviation instructors",
                     ],
                 },
+                {
+                    description:
+                        "At We One Aviation, our DGCA ground classes ensure students are fully prepared for every DGCA pilot exam.",
+                },
             ],
         },
 
@@ -250,7 +249,7 @@ export const dgcaPariksha = {
                     list: [
                         "DGCA CPL exam",
                         "DGCA pilot exam",
-                        "Aviation exams in India",
+                        "Aviation exam in India",
                     ],
                 },
                 {
@@ -262,13 +261,17 @@ export const dgcaPariksha = {
                         "High DGCA exam success rate",
                     ],
                 },
+                {
+                    description:
+                        "Students searching for reliable DGCA Pariksha preparation trust We One Aviation for results.",
+                },
             ],
         },
 
         {
             title: "Final Thoughts",
             description:
-                "DGCA Pariksha is the backbone of pilot licensing in India. Clearing DGCA exams requires discipline, expert guidance, and structured preparation. With professional DGCA ground classes and expert mentorship, We One Aviation helps you move one step closer to becoming a commercial pilot.",
+                "DGCA Pariksha is the backbone of pilot licensing in India. Clearing DGCA exams requires discipline, expert guidance, and structured preparation. With professional DGCA ground classes, updated DGCA Pariksha strategies, and expert mentorship, We One Aviation helps you move one step closer to your dream of becoming a commercial pilot.",
         },
     ],
 
