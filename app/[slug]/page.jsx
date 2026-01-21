@@ -6,6 +6,7 @@ import StructurePage from "@/components/StructurePage/StructurePage";
 
 
 import { dgcaPariksha } from "@/data/dgcaPariksha";
+import { eGCALogin } from "@/data/eGCALogin";
 
 // -------- FULL FORM PAGES --------
 import { cbseFullForm } from "@/data/pages/cbse-full-form";
@@ -53,6 +54,7 @@ const ROUTES = {
 
 
     "dgca-pariksha": { component: DynamicPage, data: dgcaPariksha },
+    "egca-login": { component: DynamicPage, data: eGCALogin },
 
 
     // Full Forms → DynamicPage
