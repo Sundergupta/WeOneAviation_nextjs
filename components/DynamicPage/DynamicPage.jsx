@@ -1,16 +1,17 @@
-import "./style.css"; // ✅ SAME CSS FILE (allowed)
+import "./style.css"; // same CSS file
 
 const DynamicPage = ({ data }) => {
+    if (!data) return null;
+
     return (
         <div className="dynamic-page">
 
             {/* ---------------- HEADER ---------------- */}
-            <br />
             {data.header && (
                 <header className="dynamic-header">
                     <div className="header-overlay">
                         <h1>{data.header.title}</h1>
-                        <p>{data.header.subtitle}</p>
+                        {data.header.subtitle && <p>{data.header.subtitle}</p>}
                     </div>
                 </header>
             )}
@@ -19,7 +20,7 @@ const DynamicPage = ({ data }) => {
             <main className="dynamic-content">
                 {data.sections?.map((section, index) => (
                     <section key={index} className="dynamic-section card">
-                        <h2>{section.title}</h2>
+                        {section.title && <h2>{section.title}</h2>}
 
                         {section.description && (
                             <p className="section-desc">{section.description}</p>
@@ -27,9 +28,17 @@ const DynamicPage = ({ data }) => {
 
                         {section.subsections?.map((sub, i) => (
                             <div key={i} className="dynamic-subsection">
+
+                                {/* Sub Heading */}
                                 {sub.heading && <h3>{sub.heading}</h3>}
 
-                                {sub.list && (
+                                {/* Sub Description (FIXED) */}
+                                {sub.description && (
+                                    <p className="sub-desc">{sub.description}</p>
+                                )}
+
+                                {/* List */}
+                                {Array.isArray(sub.list) && (
                                     <ul className="styled-list">
                                         {sub.list.map((item, j) => (
                                             <li key={j}>{item}</li>
@@ -37,7 +46,8 @@ const DynamicPage = ({ data }) => {
                                     </ul>
                                 )}
 
-                                {sub.table && (
+                                {/* Table */}
+                                {sub.table && sub.table.headers && sub.table.rows && (
                                     <div className="table-wrapper">
                                         <table className="dynamic-table">
                                             <thead>
@@ -59,11 +69,19 @@ const DynamicPage = ({ data }) => {
                                         </table>
                                     </div>
                                 )}
+
                             </div>
                         ))}
                     </section>
                 ))}
             </main>
+
+            {/* ---------------- FOOTER ---------------- */}
+            {data.footer && (
+                <footer className="dynamic-footer">
+                    <p>{data.footer.text}</p>
+                </footer>
+            )}
 
         </div>
     );

@@ -41,8 +41,12 @@ export const dgcaPariksha = {
                         "Examination scheduling",
                     ],
                 },
+                {
+
+                    description: "If you are preparing for any DGCA exam, understanding how DGCA Pariksha works is essential.",
+                }
             ],
-            description: "If you are preparing for any DGCA exam, understanding how DGCA Pariksha works is essential.",
+
         },
 
         {
@@ -58,8 +62,11 @@ export const dgcaPariksha = {
                         "Handling application scrutiny",
                     ],
                 },
+                {
+
+                    description: "This centralized system ensures transparency and uniform standards across every aviation exam in India.",
+                },
             ],
-            description: "This centralized system ensures transparency and uniform standards across every aviation exam in India.",
         },
 
 
@@ -87,7 +94,7 @@ export const dgcaPariksha = {
         {
             title: "DGCA CPL Exam & Subjects",
             description:
-                "The DGCA CPL exam consists of multiple theory papers conducted through DGCA Pariksha.",
+                "DGCA CPL exams are the most commonly attempted exams by commercial pilot aspirants in India.",
             subsections: [
                 {
                     heading: "DGCA Exams for CPL Include",
@@ -204,13 +211,18 @@ export const dgcaPariksha = {
         {
             title: "DGCA Entrance Exam – Is There Any?",
             description:
-                "There is no DGCA entrance exam like other professional courses.",
+                "There is no DGCA entrance exam like other professional courses. Instead, candidates must clear subject-wise DGCA Pariksha exams.",
             subsections: [
                 {
                     description:
-                        "Candidates must clear subject-wise DGCA Pariksha exams, which is why professional ground classes are essential.",
+                        "This is why professional pilot ground classes are essential to clear theory papers efficiently.",
                 },
             ],
+            // subsections:
+            // {
+            //     description:
+            //         "At We One Aviation, our DGCA ground classes ensure students are fully prepared for every DGCA pilot exam..",
+            // },
         },
 
         {
