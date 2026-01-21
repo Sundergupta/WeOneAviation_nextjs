@@ -1,8 +1,8 @@
 export const dgcaPariksha = {
     seo: {
-        title: "DGCA Pariksha – Complete Guide to DGCA Exam Preparation",
+        title: "DGCA Pariksha – Pilot Exam Guide ",
         description:
-            "DGCA Pariksha is the official examination system for pilot licensing in India. Learn DGCA exam process, eligibility, fees, syllabus, CPL & ATPL exams, and preparation tips.",
+            "Explore DGCA Pariksha details — exam pattern, subject breakdowns, eligibility criteria, and preparation strategies for aspiring pilots.",
         keywords:
             "DGCA Pariksha, DGCA exam, DGCA CPL exam, DGCA ATPL exam, DGCA pilot exam, DGCA exam eligibility, DGCA exam fees",
     },

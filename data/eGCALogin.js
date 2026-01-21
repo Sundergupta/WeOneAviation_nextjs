@@ -1,8 +1,8 @@
 export const eGCALogin = {
     seo: {
-        title: "eGCA Login – Complete Guide to eGCA Registration & DGCA Login",
+        title: "EGCA Login – Access Pilot Portal ",
         description:
-            "Complete guide to eGCA login and registration. Learn how to generate eGCA ID, DGCA login process, document requirements, pilot registration, and common errors.",
+            "Access the EGCA login portal for pilot aspirants and students. Sign in to manage your aviation profile, registrations, and course information.",
         keywords:
             "eGCA login, eGCA registration, DGCA login, eGCA DGCA, pilot registration eGCA, eGCA ID",
     },
