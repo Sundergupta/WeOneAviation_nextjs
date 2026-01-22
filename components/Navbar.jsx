@@ -181,7 +181,7 @@ export default function Navbar() {
                             className="navbar-link dropdown-btn"
                             onClick={() => toggleDropdown(setPilotOpen, pilotOpen)}
                         >
-                            Pilot Career ▼
+                            Become A Pilot  ▼
                         </span>
 
                         <ul className={`dropdown-menu ${pilotOpen ? "active" : ""}`}>
@@ -237,14 +237,7 @@ export default function Navbar() {
                         </a>
                     </li>
 
-                    <li className="navbar-item">
-                        <Link
-                            href="/blogs"
-                            className={`navbar-link ${isActive("/blogs") ? "active-link" : ""}`}
-                        >
-                            Blogs
-                        </Link>
-                    </li>
+
                 </ul>
 
                 {/* HAMBURGER */}

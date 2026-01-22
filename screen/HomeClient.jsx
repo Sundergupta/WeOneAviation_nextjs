@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 // import Head from "next/head";
 import Image from "next/image";
 import "./HomeClient.css";
+import Link from "next/link";
 
 import TrainingCards from "@/components/TrainingCards";
 import ReviewCard from "../components/ReviewCard";
@@ -26,7 +27,7 @@ export default function HomeClient() {
         {
             title: "BEST PILOT TRAINING IN INDIA",
             subtitle:
-                "Join Best Pilot Training Institute In India. Get world-class flight training, DGCA-approved courses, and expert guidance to kickstart your aviation career.",
+                "Join Best Pilot Training Institute In India. Get world-class flight training, DGCA classes, and expert guidance to kickstart your aviation career.",
             image: "/assets/home-page-slider/slider5.webp",
             button1: "Contact Us",
             button2: "Learn More",
@@ -161,7 +162,10 @@ export default function HomeClient() {
                                     Dreaming of Becoming a Commercial Pilot? Get DGCA-approved
                                     training, expert mentorship and hands-on flight experience.
                                 </p>
-                                <button className="highlight-btn">Learn More</button>
+
+                                <Link href="/commercial-pilot-license">
+                                    <button className="highlight-btn">Learn More</button>
+                                </Link>
                             </div>
 
                             <div className="highlight-card">
@@ -171,7 +175,9 @@ export default function HomeClient() {
                                     Master Every DGCA Subject & Fly High! Our DGCA Ground Classes
                                     make learning easy & effective.
                                 </p>
-                                <button className="highlight-btn">Learn More</button>
+                                <Link href="/dgca-ground-classes">
+                                    <button className="highlight-btn">Learn More</button>
+                                </Link>
                             </div>
 
                             <div className="highlight-card">
@@ -181,7 +187,9 @@ export default function HomeClient() {
                                     We train future pilots with state-of-the-art aircraft, expert
                                     instructors, and guaranteed career guidance.
                                 </p>
-                                <button className="highlight-btn">Learn More</button>
+                                <Link href="/dgca-ground-classes-in-india">
+                                    <button className="highlight-btn">Learn More</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -204,7 +212,7 @@ export default function HomeClient() {
                                 </p>
                                 <div className="course-info">
                                     <p>
-                                        <strong>Fees:</strong> 2.80 Lakh
+                                        <strong>Fees:</strong> 2.20-2.90 Lakh
                                     </p>
                                     <p>
                                         <strong>Duration:</strong> 6 Months
@@ -223,7 +231,7 @@ export default function HomeClient() {
                                 </p>
                                 <div className="course-info">
                                     <p>
-                                        <strong>Fees:</strong> 40–50 Lakh
+                                        <strong>Fees:</strong> 50–65 Lakh
                                     </p>
                                     <p>
                                         <strong>Duration:</strong> 1–1.5 Years
@@ -238,11 +246,12 @@ export default function HomeClient() {
                                 </p>
                                 <div className="course-info">
                                     <p>
-                                        <strong>Duration:</strong> 2–3 Years
+                                        <strong>Fees:</strong> 50–70 Lakh
                                     </p>
                                     <p>
-                                        <strong>Fees:</strong> 50–55 Lakh
+                                        <strong>Duration:</strong> 2–3 Years
                                     </p>
+
                                 </div>
                             </div>
                         </div>
