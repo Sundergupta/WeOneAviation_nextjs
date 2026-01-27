@@ -253,6 +253,47 @@
     }
 }
 
+/* media Queries */
+/* ===== All screens – ensure proper centering ===== */
+@media (min-width: 0px) {
+  .slide {
+    background-position: center center !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+/* ===== Tablets & below ===== */
+@media (max-width: 991px) {
+  .slide {
+    background-position: center center !important;
+    background-size: cover;
+  }
+}
+
+/* ===== Mobile screens ===== */
+@media (max-width: 767px) {
+  .slide {
+    background-position: center top !important;
+    background-size: cover;
+  }
+}
+
+/* ===== Very small devices ===== */
+@media (max-width: 480px) {
+  .slide {
+    background-position: center center !important;
+    background-size: cover;
+  }
+}
+
+
+
+
+
+
+
+
 /* Course Highlights Section */
 .course-highlights {
     padding: 80px 0;
