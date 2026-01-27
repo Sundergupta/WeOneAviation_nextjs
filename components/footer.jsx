@@ -69,12 +69,12 @@ export default function Footer() {
                 <div className="footer-col">
                     <h3 className="footer-title">Our Location</h3>
                     <a
-                        href="https://www.google.com/maps?q=C-404,+3rd+Floor,+Near+Ramphal+Chowk,+Sector-7,+Dwarka,+New+Delhi+-+110075"
+                        href="https://www.google.com/maps/place/We+One+Aviation+%7C+Best+Pilot+Training+in+India+%7C+DGCA+Ground+Classes/@28.5851015,77.0687024,728m/data=!3m2!1e3!4b1!4m6!3m5!1s0x390d1b17bf11e435:0x8cf5aa89eaca03cc!8m2!3d28.5850968!4d77.0712773!16s%2Fg%2F11c2k3g7f9?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <Image
-                            src="/assets/adress.png"
+                            src="/assets/addres.png"
                             alt="Our Location"
                             width={250}
                             height={180}
