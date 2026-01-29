@@ -355,7 +355,7 @@ export default function HomeClient() {
                 </section>
                 <section className="why-choose-us">
                     <div className="container">
-                        <h2>Why Choose WeOne Aviation Academy</h2>
+                        <h2>Why Choose We One Aviation </h2>
                         <p className="section-subtitle">
                             All Your Aviation Needs Under One Roof
                         </p>
@@ -363,7 +363,7 @@ export default function HomeClient() {
                         <div className="benefits-grid">
                             <div className="benefit-item">
                                 <span className="benefit-check">✅</span>
-                                <span>DGCA-Approved Training Programs</span>
+                                <span>Approved Training Programs</span>
                             </div>
 
                             <div className="benefit-item">

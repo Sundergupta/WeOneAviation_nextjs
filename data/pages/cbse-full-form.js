@@ -52,10 +52,11 @@ export const cbseFullForm = {
             ],
         },
 
+
         {
             title: "Understand CBSE Curriculum and Education",
             description:
-                "The CBSE Curriculum runs from Class 1 to Class 12 and primarily follows NCERT books. It focuses on conceptual understanding, skill development, activity-based learning, and preparation for national-level competitive exams such as JEE, NEET, and CUET.",
+                "CBSE Curriculum is Start From Class 1st To Class 12th. It Mostly Follow Ncert Books. The Central Board of Secondary Education (CBSE) is one of the most recognized national-level education boards in India. Managed by the Ministry of Education, CBSE governs thousands of schools across India and abroad, ensuring uniformity, modern pedagogy, and quality education.",
         },
 
         {
