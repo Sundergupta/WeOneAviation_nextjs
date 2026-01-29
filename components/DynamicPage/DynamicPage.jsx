@@ -1,4 +1,4 @@
-import "./style.css"; // same CSS file
+import "./style.css";
 
 const DynamicPage = ({ data }) => {
     if (!data) return null;
@@ -18,62 +18,149 @@ const DynamicPage = ({ data }) => {
 
             {/* ---------------- MAIN CONTENT ---------------- */}
             <main className="dynamic-content">
-                {data.sections?.map((section, index) => (
-                    <section key={index} className="dynamic-section card">
-                        {section.title && <h2>{section.title}</h2>}
+                {Array.isArray(data.sections) &&
+                    data.sections.map((section, index) => (
+                        <section key={index} className="dynamic-section card">
 
-                        {section.description && (
-                            <p className="section-desc">{section.description}</p>
-                        )}
+                            {section.title && <h2>{section.title}</h2>}
 
-                        {section.subsections?.map((sub, i) => (
-                            <div key={i} className="dynamic-subsection">
+                            {section.description && (
+                                <p className="section-desc">{section.description}</p>
+                            )}
 
-                                {/* Sub Heading */}
-                                {sub.heading && <h3>{sub.heading}</h3>}
+                            {Array.isArray(section.subsections) &&
+                                section.subsections.map((sub, i) => (
+                                    <div key={i} className="dynamic-subsection">
 
-                                {/* Sub Description (FIXED) */}
-                                {sub.description && (
-                                    <p className="sub-desc">{sub.description}</p>
-                                )}
+                                        {/* Sub Heading */}
+                                        {sub.heading && <h3>{sub.heading}</h3>}
 
-                                {/* List */}
-                                {Array.isArray(sub.list) && (
-                                    <ul className="styled-list">
-                                        {sub.list.map((item, j) => (
-                                            <li key={j}>{item}</li>
-                                        ))}
-                                    </ul>
-                                )}
+                                        {/* Sub Description */}
+                                        {sub.description && (
+                                            <p className="sub-desc">{sub.description}</p>
+                                        )}
 
-                                {/* Table */}
-                                {sub.table && sub.table.headers && sub.table.rows && (
-                                    <div className="table-wrapper">
-                                        <table className="dynamic-table">
-                                            <thead>
-                                                <tr>
-                                                    {sub.table.headers.map((head, h) => (
-                                                        <th key={h}>{head}</th>
-                                                    ))}
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                {sub.table.rows.map((row, r) => (
-                                                    <tr key={r}>
-                                                        {row.map((cell, c) => (
-                                                            <td key={c}>{cell}</td>
-                                                        ))}
-                                                    </tr>
+                                        {/* ---------------- LIST (STRING + OBJECT SAFE) ---------------- */}
+                                        {Array.isArray(sub.list) && (
+                                            <ul className="styled-list">
+                                                {sub.list.map((item, j) => (
+                                                    <li key={j}>
+
+                                                        {/* STRING ITEM */}
+                                                        {typeof item === "string" && item}
+
+                                                        {/* OBJECT ITEM */}
+                                                        {typeof item === "object" && item !== null && (
+                                                            <div className="list-object">
+
+                                                                {item.title && (
+                                                                    <strong className="list-title">
+                                                                        {item.title}
+                                                                    </strong>
+                                                                )}
+
+                                                                {item.description && (
+                                                                    <p className="list-desc">
+                                                                        {item.description}
+                                                                    </p>
+                                                                )}
+
+                                                                {/* LINKS */}
+                                                                {Array.isArray(item.links) && (
+                                                                    <ul className="nested-links">
+                                                                        {item.links.map((link, k) => (
+                                                                            <li key={k}>
+                                                                                <a
+                                                                                    href={link.url}
+                                                                                    target="_blank"
+                                                                                    rel="noopener noreferrer"
+                                                                                >
+                                                                                    {link.label}
+                                                                                </a>
+                                                                            </li>
+                                                                        ))}
+                                                                    </ul>
+                                                                )}
+
+                                                                {/* STEPS */}
+                                                                {Array.isArray(item.steps) && (
+                                                                    <ol className="nested-steps">
+                                                                        {item.steps.map((step, s) => (
+                                                                            <li key={s}>{step}</li>
+                                                                        ))}
+                                                                    </ol>
+                                                                )}
+
+                                                                {/* SMS FORMAT */}
+                                                                {item.format && (
+                                                                    <p>
+                                                                        <strong>Format:</strong> {item.format}
+                                                                    </p>
+                                                                )}
+
+                                                                {item.example && (
+                                                                    <p>
+                                                                        <strong>Example:</strong> {item.example}
+                                                                    </p>
+                                                                )}
+
+                                                                {item.number && (
+                                                                    <p>
+                                                                        <strong>Send to:</strong> {item.number}
+                                                                    </p>
+                                                                )}
+
+                                                                {/* SINGLE LINK */}
+                                                                {item.link && (
+                                                                    <p>
+                                                                        <a
+                                                                            href={item.link.url}
+                                                                            target="_blank"
+                                                                            rel="noopener noreferrer"
+                                                                        >
+                                                                            {item.link.label}
+                                                                        </a>
+                                                                    </p>
+                                                                )}
+
+                                                            </div>
+                                                        )}
+
+                                                    </li>
                                                 ))}
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                )}
+                                            </ul>
+                                        )}
 
-                            </div>
-                        ))}
-                    </section>
-                ))}
+                                        {/* ---------------- TABLE ---------------- */}
+                                        {sub.table &&
+                                            Array.isArray(sub.table.headers) &&
+                                            Array.isArray(sub.table.rows) && (
+                                                <div className="table-wrapper">
+                                                    <table className="dynamic-table">
+                                                        <thead>
+                                                            <tr>
+                                                                {sub.table.headers.map((head, h) => (
+                                                                    <th key={h}>{head}</th>
+                                                                ))}
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            {sub.table.rows.map((row, r) => (
+                                                                <tr key={r}>
+                                                                    {row.map((cell, c) => (
+                                                                        <td key={c}>{cell}</td>
+                                                                    ))}
+                                                                </tr>
+                                                            ))}
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            )}
+
+                                    </div>
+                                ))}
+                        </section>
+                    ))}
             </main>
 
             {/* ---------------- FOOTER ---------------- */}

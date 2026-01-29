@@ -41,7 +41,7 @@ export const icseFullForm = {
         {
             title: "About CISCE – The Council Behind ICSE",
             description:
-                "The Council for the Indian School Certificate Examinations (CISCE) is a private, national-level education board in India that conducts the ICSE (Class 10) and ISC (Class 12) examinations. It is well-known for high English-medium standards and balanced curriculum.",
+                "The Council for the Indian School Certificate Examinations (CISCE) is the national-level education board in India that conducts the ICSE (Class 10) and ISC (Class 12) exams. It is a private, non-governmental board, well-known for its high academic standards, especially in English-medium education.",
             subsections: [
                 {
                     heading: "Key Facts About CISCE:",
@@ -68,8 +68,18 @@ export const icseFullForm = {
 
         {
             title: "History of ICSE Board",
-            description:
-                "The origins of ICSE trace back to the examination system conducted by Cambridge University during British rule. After independence, India needed its own strong academic board. In 1958, the University of Cambridge recommended an Indian council to run these examinations — which led to the formation of CISCE. The first ICSE exam was conducted in 1973. Since then, ICSE has become one of India’s most respected boards.",
+            subsections: [
+
+                {
+                    list: [
+                        "The roots of ICSE go back to Cambridge University, which used to conduct exams for Indian students during British rule.",
+                        "After India’s independence, there was a strong need to create an Indian version of that exam system — something that would maintain high standards but also suit Indian students and culture.",
+                        "So, in 1958, the University of Cambridge recommended setting up an Indian council to handle this — and that’s how the CISCE was formed.",
+                    ]
+                }
+            ],
+
+
         },
 
         {
@@ -85,6 +95,7 @@ export const icseFullForm = {
                 },
             ],
         },
+
 
         {
             title: "ICSE Curriculum Structure – Complete Overview",
@@ -127,11 +138,22 @@ export const icseFullForm = {
                 },
             ],
         },
+        {
+            title: "Classes Covered Under ICSE:",
+            subsections: [
+                {
+                    list: [
+                        "ICSE is conducted for Class 10",
+                        "The syllabus for Classes 1 to 10 is framed by the schools under CISCE guidelines",
+                    ],
+                },
+            ],
+        },
 
         {
             title: "ICSE Grading System – Explained Simply",
             description:
-                "ICSE uses a numeric grade-based evaluation system for Class 10. Grades are given for each subject individually.",
+                "The ICSE Board uses a numeric grading system to evaluate students’ performance in Class 10 exams. This grading system helps measure both theory and practical/project work, depending on the subject.",
             subsections: [
                 {
                     table: {
@@ -152,10 +174,10 @@ export const icseFullForm = {
                 {
                     heading: "Key Points:",
                     list: [
-                        "Internal assessment + theory is used in many subjects.",
-                        "Subjects like Computer Applications and Science include 20%–50% internal marks.",
-                        "ICSE does not calculate an overall percentage.",
-                        "CGPA is NOT used in ICSE (only in CBSE).",
+                        "Theory + Practical: Some subjects have both written exams and internal assessments (like lab work or projects).",
+                        "Internal Marks: Subjects like Computer Applications, Science, and Art include 20%–50% internal marks.",
+                        "No Overall Percentage: ICSE does not calculate a total percentage; schools often convert grades into percentages separately.",
+                        "Subject-Wise Report Card: Students get grades for each subject individually, showing theory and internal marks breakdown.",
                     ],
                 },
             ],
@@ -164,51 +186,215 @@ export const icseFullForm = {
         {
             title: "Eligibility of Schools for ICSE Affiliation",
             description:
-                "Schools must meet strict academic and infrastructure standards to get ICSE affiliation.",
+                "If a school wants to offer ICSE curriculum and get affiliated with CISCE (Council for the Indian School Certificate Examinations), it must meet certain requirements. These rules ensure that the school maintains high standards in teaching, infrastructure, and student development.",
             subsections: [
                 {
+                    heading: "Key Eligibility Criteria for ICSE Affiliation:",
+                },
+                {
+                    heading: "1. 🏗️ Infrastructure Requirements",
                     list: [
-                        "Infrastructure: Well-equipped labs, classrooms, library, and safe environment.",
-                        "English must be the medium of instruction.",
-                        "Teachers must be qualified as per CISCE norms.",
-                        "School must be recognized by the state government.",
-                        "Must be run by a registered trust / society (non-profit).",
-                        "Balanced teacher-student ratio.",
-                        "CISCE conducts inspection before granting affiliation.",
+                        "The school must have a permanent building and a safe learning environment.",
+                        "There should be well-equipped classrooms, science labs, computer labs, and a library.",
+                        "Clean drinking water, proper sanitation, and separate toilets for boys and girls are mandatory.",
+                    ],
+                },
+                {
+                    heading: "2. 🎓 Medium of Instruction",
+                    list: [
+                        "English must be the primary language of instruction.",
+                        "Teachers and students should be able to communicate effectively in English.",
+                    ],
+                },
+                {
+                    heading: "3. 👩‍🏫 Qualified Teachers",
+                    list: [
+                        "The school must have well-trained and qualified teachers as per CISCE norms.",
+                        "Teachers should be capable of teaching as per the ICSE syllabus.",
+                        "Regular teacher training programs are encouraged.",
+                    ],
+                },
+                {
+                    heading: "4. 📝 Academic Facilities",
+                    list: [
+                        "The school should have a proper plan for teaching ICSE syllabus from Class 1 to Class 10.",
+                        "There must be arrangements for internal assessments, project work, and extracurricular activities.",
+                    ],
+                },
+                {
+                    heading: "5. 📄 Legal Status & Recognition",
+                    list: [
+                        "The school must be recognized by the state or union territory government.",
+                        "It should be run by a registered society, trust, or company under the relevant act.",
+                        "The school should have non-proprietary character, i.e., it should not be run for profit.",
+                    ],
+                },
+                {
+                    heading: "6. 📊 Student Strength & Class Ratios",
+                    list: [
+                        "There should be an adequate number of students and teacher-student ratio should be balanced.",
+                        "Classrooms must be spacious and not overcrowded.",
+                    ],
+                },
+                {
+                    heading: "7. 🔍 Inspection & Verification",
+                    list: [
+                        "CISCE sends an inspection team to evaluate the school’s facilities and readiness.",
+                        "Only if the school meets all standards, affiliation is granted.",
                     ],
                 },
             ],
         },
+
 
         {
             title: "Advantages of ICSE Board",
+            description:
+                "The ICSE (Indian Certificate of Secondary Education) board is known for its strong academic foundation, global recognition, and balanced curriculum. Here are the key reasons why ICSE is considered one of the best education boards in India:",
             subsections: [
                 {
+                    heading: "✅ 1. Strong Focus on English Language",
                     list: [
-                        "Strong focus on English language.",
-                        "Deep & balanced syllabus.",
-                        "Application-based learning.",
-                        "High weightage for internal assessments.",
-                        "Wide subject options.",
-                        "Globally recognized board.",
-                        "Boosts communication & personality development.",
-                        "Great base for competitive exams like NEET, JEE, UPSC, SAT, IELTS, TOEFL.",
+                        "ICSE places a high emphasis on English grammar, vocabulary, and writing.",
+                        "Students from ICSE backgrounds often perform better in competitive exams and international universities due to their fluency in English.",
+                    ],
+                },
+                {
+                    heading: "✅ 2. Detailed & Balanced Curriculum",
+                    list: [
+                        "The ICSE syllabus is comprehensive and well-structured.",
+                        "Equal importance is given to Science, Mathematics, Languages, Arts, and Humanities.",
+                        "Helps students develop all-round knowledge and not just academic marks.",
+                    ],
+                },
+                {
+                    heading: "✅ 3. Application-Based Learning",
+                    list: [
+                        "The ICSE board encourages understanding and analysis, not just rote memorization.",
+                        "Subjects are taught in a way that promotes critical thinking and creativity.",
+                    ],
+                },
+                {
+                    heading: "✅ 4. Internal Assessments & Practical Learning",
+                    list: [
+                        "Students are graded on projects, lab work, and class activities, not just final exams.",
+                        "This helps build real-world skills and confidence early on.",
+                    ],
+                },
+                {
+                    heading: "✅ 5. Wide Subject Options",
+                    list: [
+                        "In Classes 9 & 10, students can choose from a diverse range of subjects:",
+                        "Computer Applications, Environmental Science, Art, Performing Arts, Home Science, and more.",
+                        "This allows students to customize their learning path based on interests.",
+                    ],
+                },
+                {
+                    heading: "✅ 6. Global Recognition",
+                    list: [
+                        "ICSE certificates are accepted worldwide, especially in countries like the UK, USA, Australia, and Singapore.",
+                        "ICSE students often find it easier to get into international schools and colleges.",
+                    ],
+                },
+                {
+                    heading: "✅ 7. Great for Personality Development",
+                    list: [
+                        "With emphasis on language, presentations, and projects, ICSE students develop better communication skills.",
+                        "Encourages overall grooming through arts, culture, and extracurriculars.",
+                    ],
+                },
+                {
+                    heading: "✅ 8. Good Base for Competitive Exams",
+                    list: [
+                        "Though the syllabus is vast, ICSE builds a deep conceptual understanding.",
+                        "Students are well-prepared for NEET, JEE, UPSC, and even foreign exams like SAT, IELTS, or TOEFL.",
+                    ],
+                },
+                {
+                    heading: "🎓 Who Should Choose ICSE?",
+                    list: [
+                        "ICSE is perfect for:",
+                        "Students who want strong command over English",
+                        "Those interested in foreign education or global careers",
+                        "Students who prefer in-depth learning with real-world application",
                     ],
                 },
             ],
         },
 
+
         {
             title: "Disadvantages of ICSE Board",
+            description:
+                "While the ICSE Board is known for its rich curriculum and strong English foundation, it’s important to also understand the challenges or disadvantages that come with it. This helps students and parents make an informed decision.",
+            subsections: [
+                {
+                    heading: "❌ 1. Syllabus is Vast and Detailed",
+                    list: [
+                        "The ICSE syllabus is more detailed and lengthy compared to CBSE or State Boards.",
+                        "Students may feel overwhelmed, especially if they are not used to deep learning or regular study.",
+                    ],
+                },
+                {
+                    heading: "❌ 2. High Pressure on Projects & Internal Assessments",
+                    list: [
+                        "ICSE gives importance to project work and internal marks, which increases the overall workload on students.",
+                        "Not every student enjoys continuous evaluations or group assignments.",
+                    ],
+                },
+                {
+                    heading: "❌ 3. Limited Number of ICSE Schools",
+                    list: [
+                        "ICSE-affiliated schools are fewer in number, especially in small towns or rural areas.",
+                        "This makes it difficult for students to switch schools or find tuition support.",
+                    ],
+                },
+                {
+                    heading: "❌ 4. Transition to State Board/CBSE is Tough",
+                    list: [
+                        "If a student needs to transfer from ICSE to CBSE or a State Board, they may struggle to match the format and style of questions.",
+                        "The depth of ICSE subjects is often not aligned with other boards.",
+                    ],
+                },
+                {
+                    heading: "❌ 5. More Focus on Theory in Some Subjects",
+                    list: [
+                        "While ICSE is known for balance, in some subjects (like History or Civics), the syllabus can be theory-heavy, leading to memorization.",
+                    ],
+                },
+                {
+                    heading: "❌ 6. Cost of Education is Generally Higher",
+                    list: [
+                        "Most ICSE schools are private and English-medium, which means higher tuition fees and extra expenses on books, projects, etc.",
+                        "It may not be affordable for all families.",
+                    ],
+                },
+                {
+                    heading: "❌ 7. No State Language Focus",
+                    list: [
+                        "Since ICSE follows English as the medium, state languages often get less attention, which can be a drawback for students preparing for regional government exams.",
+                    ],
+                },
+            ],
+        },
+        {
+            title: "🧠 Which Board is Tougher?",
             subsections: [
                 {
                     list: [
-                        "Vast syllabus can be overwhelming.",
-                        "High workload due to projects and internal assessments.",
-                        "Fewer ICSE schools compared to CBSE.",
-                        "Transition to other boards may be difficult.",
-                        "Education cost is generally higher.",
-                        "Less focus on state languages.",
+                        "ICSE is considered slightly tougher because it goes deeper into every topic.",
+                        "CBSE is easier to manage, especially if you’re preparing for entrance exams.",
+                    ],
+                },
+            ],
+        },
+        {
+            title: "💰 Cost & Accessibility",
+            subsections: [
+                {
+                    list: [
+                        "ICSE Schools are mostly private and often charge higher fees.",
+                        "CBSE Schools are available in both private and government setups, making them more affordable and accessible.",
                     ],
                 },
             ],
@@ -217,7 +403,7 @@ export const icseFullForm = {
         {
             title: "ICSE vs CBSE – Which Education Board is Right for You?",
             description:
-                "Both ICSE and CBSE are excellent boards but serve different learning styles and career paths.",
+                "When choosing the right board for your child, one of the biggest decisions is between ICSE (Indian Certificate of Secondary Education) and CBSE (Central Board of Secondary Education). Both are respected across India and abroad, but they serve different learning styles, goals, and career paths.",
             subsections: [
                 {
                     heading: "Board Overview:",
@@ -244,6 +430,17 @@ export const icseFullForm = {
                     },
                 },
                 {
+                    title: "Verdict:",
+                    subsections: [
+                        {
+                            list: [
+                                "✅ Choose ICSE if your child loves literature, creativity, and balanced learning.",
+                                "✅ Choose CBSE if your child is focused on engineering, medical or competitive exams.",
+                            ],
+                        },
+                    ],
+                },
+                {
                     heading: "Assessment Style:",
                     table: {
                         headers: ["Factor", "ICSE", "CBSE"],
@@ -264,6 +461,8 @@ export const icseFullForm = {
                         ],
                     },
                 },
+
+
                 {
                     heading: "Summary – Which One to Choose?",
                     list: [
