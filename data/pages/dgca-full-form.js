@@ -22,7 +22,7 @@ export const dgcaFullForm = {
         {
             title: "What is DGCA?",
             description:
-                "In simple terms, DGCA is the top regulatory authority for civil aviation in India. It operates under the Ministry of Civil Aviation and ensures that flying in India is safe, structured, and follows international norms.Founded back in 1971, DGCA has played a critical role in growing Indian aviation — from approving flying schools to making sure your plane is safe to fly before takeoff.Dgca full form in Aviation – Directorate General Of Civil Aviation",
+                "In simple terms, DGCA is the top regulatory authority for civil aviation in India. It operates under the Ministry of Civil Aviation and ensures that flying in India is safe, structured, and follows international norms.\n\nFounded back in 1971, DGCA has played a critical role in growing Indian aviation — from approving flying schools to making sure your plane is safe to fly before takeoff.\n\nDgca full form in Aviation – Directorate General Of Civil Aviation\n\nAny query About Pilot training",
         },
         {
             title: "What Does DGCA Do?",
@@ -110,7 +110,7 @@ export const dgcaFullForm = {
         },
 
         {
-            title: "Here is All Details in Short About Dgca",
+            title: "Here is All Details in Short  About Dgca",
             subsections: [
                 {
                     table: {
