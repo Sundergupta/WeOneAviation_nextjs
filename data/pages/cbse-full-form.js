@@ -17,25 +17,19 @@ export const cbseFullForm = {
         {
             title: "Introduction",
             description:
-                "CBSE is one of the most common and reputed education boards in India. If you have studied in India, you’ve definitely heard about CBSE — and many students complete their 10th and 12th from CBSE schools. I also completed my 10th and 12th from a CBSE school, so I’ll explain everything in detail. Among many boards like State Boards, ICSE, NIOS, and CBSE, CBSE is the most popular and its standard of education is considered better than most. So, let’s get started!",
+                "CBSE is one of the most common and reputed education boards in India.\n\nIf you have studied in India, you've definitely heard about CBSE — and many students have completed their 10th and 12th from CBSE schools.\n\nIn India, many schools follow the CBSE curriculum. I also completed my 10th and 12th from a CBSE school, so I'll explain everything to you in detail.\n\nThere are many education boards in India like State Boards, ICSE, NIOS, and CBSE.\n\nBut CBSE is the most popular board in the country, and its standard of education is considered better than most others.\n\nSo, let's get started!",
         },
 
         {
             title: "What is the Full Form of CBSE?",
             description:
-                "CBSE stands for Central Board of Secondary Education. It is a national-level education board in India for public and private schools, controlled and managed by the Ministry of Education, Government of India.",
-            subsections: [
-                {
-                    heading: "CBSE Full Form in Hindi",
-                    list: ["CBSE का फुल फॉर्म है: केंद्रीय माध्यमिक शिक्षा बोर्ड"],
-                },
-            ],
+                "CBSE stands for Central Board of Secondary Education. It is a national-level education board in India for public and private schools, controlled and managed by the Ministry of Education, Government of India.\n\nCBSE Full Form in Hindi:\n\nCBSE का फुल फॉर्म है: केंद्रीय माध्यमिक शिक्षा बोर्ड",
         },
 
         {
-            title: "What is the CBSE Board?",
+            title: "What is the CBSE board",
             description:
-                "The CBSE Board is a national-level education board that governs public and private schools across India and abroad. It is managed by the Ministry of Education, Government of India. You can pursue Science, Commerce, or Arts from CBSE schools. Not all schools can be affiliated with CBSE. There is a criteria that schools must fulfill before affiliation, including infrastructure, documentation, and academic guidelines.",
+                "The CBSE Board is a national-level education board in India that governs public and private schools across the country and some abroad. It is managed by the Ministry of Education, Government of India.\n\nYou Can do Qualify With Science , Commerce or Arts From Cbse Board in 12th. Mostly Private School is Follow The Guidance of Cbse Board.\n\nAll Schools Can't be Affilated With CBSE Board, There is a Criteria For Become Affliated With CBSE Board . So Before Register Yourself With CBSE Board , You Have to Follow their rules and Should be Eligible for It.",
         },
 
         {
@@ -48,7 +42,7 @@ export const cbseFullForm = {
                         "Aimed at providing a common and standardized curriculum across India",
                         "Headquartered in New Delhi",
                         "Affiliated Schools: Over 27,000+ in India and 240+ abroad",
-                        "Curriculum: Based on NCERT with focus on conceptual learning, analytical thinking, and preparation for exams like JEE and NEET",
+                        "📚 Curriculum: Based on NCERT (focuses on conceptual learning, analytical thinking, and national-level exams like JEE, NEET)",
                     ],
                 },
             ],
@@ -56,15 +50,15 @@ export const cbseFullForm = {
 
 
         {
-            title: "Understand CBSE Curriculum and Education",
+            title: "Understand CBSE Curriculum And Education",
             description:
-                "CBSE Curriculum is Start From Class 1st To Class 12th. It Mostly Follow Ncert Books. The Central Board of Secondary Education (CBSE) is one of the most recognized national-level education boards in India. Managed by the Ministry of Education, CBSE governs thousands of schools across India and abroad, ensuring uniformity, modern pedagogy, and quality education.",
+                "CBSE Curriculum is Start From Class 1st To Class 12th. It Mostly Follow Ncert Books.\n\nThe Central Board of Secondary Education (CBSE) is one of the most recognized national-level education boards in India. Managed by the Ministry of Education, CBSE governs thousands of schools across India and abroad, ensuring uniformity, modern pedagogy, and quality education.",
         },
 
         {
             title: "What is the CBSE Curriculum?",
             description:
-                "The CBSE Curriculum is structured to prepare students for both academic excellence and competitive exams like JEE, NEET, and more. It emphasizes conceptual learning, skill development, and holistic growth through",
+                "The CBSE Curriculum is structured to prepare students for both academic excellence and competitive exams like JEE, NEET, and more. It emphasizes conceptual learning, skill development, and holistic growth through:",
             subsections: [
                 {
                     list: [
@@ -78,7 +72,7 @@ export const cbseFullForm = {
         },
 
         {
-            title: "Eligibility Criteria for CBSE School Affiliation",
+            title: "Eligibility Criteria for Schools to Get CBSE Affiliation",
             description:
                 "For a school to be affiliated with CBSE, it must meet certain eligibility guidelines:",
             subsections: [
@@ -117,12 +111,12 @@ export const cbseFullForm = {
         },
 
         {
-            title: "CBSE Subjects by Class Level",
+            title: "CBSE Subjects from Class 1 to Class 12",
             description:
                 "Here’s a grade-wise breakup of CBSE subjects for each class level:",
             subsections: [
                 {
-                    heading: "Classes 1 to 5 – Foundational Stage",
+                    heading: "📆 Classes 1 to 5 – Foundational Stage",
                     list: [
                         "English",
                         "Hindi",
@@ -134,7 +128,7 @@ export const cbseFullForm = {
                     ],
                 },
                 {
-                    heading: "Classes 6 to 8 – Middle Stage",
+                    heading: "📆 Classes 6 to 8 – Middle Stage",
                     list: [
                         "English (Language & Literature)",
                         "Hindi",
@@ -149,31 +143,30 @@ export const cbseFullForm = {
                     ],
                 },
                 {
-                    heading: "Classes 9 and 10 – Secondary Stage",
-                    description:
-                        "Compulsory Subjects:",
-                    list: [
-                        "English Language & Literature",
-                        "Hindi Course A / Course B",
-                        "Mathematics: Standard / Basic",
-                        "Science (Physics, Chemistry, Biology combined)",
-                        "Social Science",
-
+                    heading: "📆 Classes 9 and 10 – Secondary Stage",
+                    subsections: [
+                        {
+                            heading: "Compulsory Subjects:",
+                            list: [
+                                "English Language & Literature",
+                                "Hindi Course A / Course B",
+                                "Mathematics: Standard / Basic",
+                                "Science (Physics, Chemistry, Biology combined)",
+                                "Social Science",
+                            ],
+                        },
+                        {
+                            heading: "📩 Optional Subjects:",
+                            list: [
+                                "Sanskrit / French / Other Foreign or Regional Language",
+                                "Information Technology / Artificial Intelligence",
+                                "Skill Subjects (e.g., Marketing, Financial Literacy)",
+                            ],
+                        },
                     ],
-
                 },
                 {
-                    heading:
-                        "Optional Subjects:",
-                    list: [
-                        "Sanskrit / French / Other Foreign or Regional Language",
-                        "Information Technology / Artificial Intelligence",
-                        "Skill Subjects (e.g., Marketing, Financial Literacy)",
-
-                    ],
-                },
-                {
-                    heading: "Classes 11 and 12 – Senior Secondary Stage",
+                    heading: "📆 Classes 11 and 12 – Senior Secondary Stage",
                     list: [
                         "Science Stream: Physics, Chemistry, Biology/Computer Science, Mathematics, English Core",
                         "Commerce Stream: Accountancy, Business Studies, Economics, Mathematics/CS, English Core",
@@ -186,7 +179,7 @@ export const cbseFullForm = {
         {
             title: "CBSE Grading System",
             description:
-                "When i will Give Paper of 10 and 12th in year 2012 and 2014 Respectively then There is only grade system in 10th But Not in 12th But After Rule of CBSE IN 2017 , 12TH is Also As in Grade system and Grade system of 10th is applicable in year 2011. But Passing Mark is 33 In all Subject out of 100. So Lets Understand the Grading System in CBSE.",
+                "When i will Give Paper of 10 and 12th in year 2012 and 2014 Respectively then There is only grade system in 10th But Not in 12th But After Rule of CBSE IN 2017 , 12TH is Also As in Grade system and Grade system of 10th is applicable in year 2011.\\n\\nBut Passing Mark is 33 In all Subject out of 100.\\n\\nSo Lets Understand the Grading System in CBSE.",
             subsections: [
                 {
                     heading: "🏆 CBSE Grading System (Class 9 & 10)",
@@ -339,23 +332,15 @@ export const cbseFullForm = {
         {
             title: "Why CBSE is Better than Other Boards",
             description:
-                "Among All Boards in India , Cbse is Most Popular and Better Than Other Board Because Syllabus of Cbse Board Same in All Over India and Its Level Of Education is increasing According To students Capability. The Central Board of Secondary Education (CBSE) is India’s most preferred national education board — not just by schools, but also by parents, students, and competitive exam aspirants.",
-            intro:
-                "There is Below why CBSE stands out compared to other boards like ICSE, State Boards, or IB/IGCSE:",
+                "Among All Boards in India , Cbse is Most Popular and Better Than Other Board Because Syllabus of Cbse Board Same in All Over India and Its Level Of Education is increasing According To students Capability.\\n\\nThe Central Board of Secondary Education (CBSE) is India's most preferred national education board \u2014 not just by schools, but also by parents, students, and competitive exam aspirants.\\n\\nThere is Below why CBSE stands out compared to other boards like ICSE, State Boards, or IB/IGCSE:",
             subsections: [
                 {
                     heading: "📘 Uniform Syllabus Across India",
-                    description: [
-                        "CBSE follows a centralized curriculum, which means students across India study the same description, regardless of their city or state.",
-                        "✅ Great for students who relocate often due to transferable jobs (especially in Army, Air Force, Railways, etc.)",
-                    ],
+                    description: "CBSE follows a centralized curriculum, which means students across India study the same content, regardless of their city or state.\n\n✅ Great for students who relocate often due to transferable jobs (especially in Army, Air Force, Railways, etc.)",
                 },
                 {
                     heading: "🎓 Best for Competitive Exams (JEE, NEET, CUET)",
-                    description: [
-                        "CBSE’s syllabus is aligned with major competitive exams in India.",
-                        "Subjects like Physics, Chemistry, Biology, and Mathematics are taught with a conceptual and exam-oriented approach, which helps in:",
-                    ],
+                    description: "CBSE's syllabus is aligned with major competitive exams in India.\n\nSubjects like Physics, Chemistry, Biology, and Mathematics are taught with a conceptual and exam-oriented approach, which helps in:",
                     list: [
                         "🧪 JEE (Engineering)",
                         "🩺 NEET (Medical)",
@@ -364,10 +349,7 @@ export const cbseFullForm = {
                 },
                 {
                     heading: "📚 NCERT Textbooks – Government Approved and Free",
-                    description: [
-                        "CBSE uses NCERT textbooks – prepared by top educational experts and recommended by government institutions.",
-                        "They are:",
-                    ],
+                    description: "CBSE uses NCERT textbooks – prepared by top educational experts and recommended by government institutions.\n\nThey are:",
                     list: [
                         "Easy to understand",
                         "Concept-based",
@@ -377,16 +359,11 @@ export const cbseFullForm = {
                 },
                 {
                     heading: "🧠 Focus on Conceptual Understanding, Not Rote Learning",
-                    description: [
-                        "CBSE encourages application-based questions, HOTS (High Order Thinking Skills), and real-life examples, which helps students develop analytical and problem-solving skills — not just memorize answers.",
-                    ],
+                    description: "CBSE encourages application-based questions, HOTS (High Order Thinking Skills), and real-life examples, which helps students develop analytical and problem-solving skills — not just memorize answers.",
                 },
                 {
                     heading: "🌐 Global Recognition + International Reach",
-                    description: [
-                        "CBSE schools are not just in India — there are more than 240 CBSE-affiliated schools in 28+ countries.",
-                        "This makes CBSE a globally trusted board, suitable for students who might pursue studies abroad later.",
-                    ],
+                    description: "CBSE schools are not just in India — there are more than 240 CBSE-affiliated schools in 28+ countries.\n\nThis makes CBSE a globally trusted board, suitable for students who might pursue studies abroad later.",
                 },
                 {
                     heading: "🏫 Large Network of Schools",

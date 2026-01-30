@@ -24,8 +24,12 @@ const DynamicPage = ({ data }) => {
 
                             {section.title && <h2>{section.title}</h2>}
 
-                            {section.description && (
-                                <p className="section-desc">{section.description}</p>
+                            {section.description && typeof section.description === 'string' && (
+                                <div className="section-desc">
+                                    {section.description.split('\n\n').map((para, i) => (
+                                        <p key={i}>{para}</p>
+                                    ))}
+                                </div>
                             )}
 
                             {/* SECTION LEVEL TABLE */}
@@ -62,8 +66,12 @@ const DynamicPage = ({ data }) => {
                                         {sub.heading && <h3>{sub.heading}</h3>}
 
                                         {/* Sub Description */}
-                                        {sub.description && (
-                                            <p className="sub-desc">{sub.description}</p>
+                                        {sub.description && typeof sub.description === 'string' && (
+                                            <div className="sub-desc">
+                                                {sub.description.split('\n\n').map((para, i) => (
+                                                    <p key={i}>{para}</p>
+                                                ))}
+                                            </div>
                                         )}
 
                                         {/* ---------------- LIST (STRING + OBJECT SAFE) ---------------- */}

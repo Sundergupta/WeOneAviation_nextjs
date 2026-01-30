@@ -31,48 +31,32 @@ export const dgcaFullForm = {
             subsections: [
                 {
                     heading: "1. Issuing Pilot Licenses",
-                    list: [
-                        "If Your Dream To Become a Pilot Then You Need a License of Commercial Pilot License , Private Pilot License And Without Approval of Dgca, you Can’t Take These License. So Becoming a Pilot , You Have To Take All these License From Supreme of Aviation –DGCA.",
-                        "In fact, All pilot licenses in India — like CPL (Commercial Pilot License) or PPL (Private Pilot License), SPL (Student Pilot License , ATPL (Airline Transport Pilot License) — are issued by DGCA after exams and flying hour requirements are fulfilled.",
-                    ],
+                    description: "If Your Dream To Become a Pilot Then You Need a License of Commercial Pilot License , Private Pilot License And Without Approval of Dgca, you Can't Take These License. So Becoming a Pilot , You Have To Take All these License From Supreme of Aviation –DGCA. In fact, All pilot licenses in India — like CPL (Commercial Pilot License) or PPL (Private Pilot License), SPL (Student Pilot License , ATPL (Airline Transport Pilot License) — are issued by DGCA after exams and flying hour requirements are fulfilled.",
                 },
 
                 {
                     heading: "2. Aircraft Certification",
-                    list: [
-                        "Before any airplane can fly in India, DGCA checks it to make sure everything is working properly And New Model Plane.",
-                        "They only allow the plane to fly if it is safe, New and ready to go.",
-                    ],
+                    description: "Before any airplane can fly in India, DGCA checks it to make sure everything is working properly And New Model Plane. They only allow the plane to fly if it is safe, New and ready to go.",
                 },
 
                 {
                     heading: "3. Monitoring Aviation Institutes",
-                    list: [
-                        "No Any Aviation Academy Will Run Without the Permission Of Dgca – They Must Have Meet All The Eligibility Creteria That Given By Dgca.",
-                        "They Should Have Dgca Approved Instructors , training and aircraft meet national and international standards.",
-                    ],
+                    description: "No Any Aviation Academy Will Run Without the Permission Of Dgca – They Must Have Meet All The Eligibility Creteria That Given By Dgca. They Should Have Dgca Approved Instructors , training and aircraft meet national and international standards.",
                 },
 
                 {
                     heading: "4. Ensuring Safety Standards",
-                    list: [
-                        "DGCA sets the rules that airlines must follow. This includes safety protocols, maintenance checks, operational guidelines, and even how crew members are trained.",
-                    ],
+                    description: "DGCA sets the rules that airlines must follow. This includes safety protocols, maintenance checks, operational guidelines, and even how crew members are trained.",
                 },
 
                 {
                     heading: "5. Handling Passenger Complaints",
-                    list: [
-                        "Believe it or not, if you’ve ever had a complaint about a flight delay or airline service, DGCA is the body that can hold the airline accountable.",
-                    ],
+                    description: "Believe it or not, if you've ever had a complaint about a flight delay or airline service, DGCA is the body that can hold the airline accountable.",
                 },
 
                 {
                     heading: "6. Investigating Incidents",
-                    list: [
-                        "In the rare case of a flight incident or emergency, DGCA steps in to investigate.",
-                        "They don’t just look at what went wrong — they make sure it doesn’t happen again.",
-                    ],
+                    description: "In the rare case of a flight incident or emergency, DGCA steps in to investigate. They don't just look at what went wrong — they make sure it doesn't happen again.",
                 },
             ],
         },
@@ -86,7 +70,7 @@ export const dgcaFullForm = {
         {
             title: "DGCA’s Role in a Pilot’s Career",
             description:
-                "If you’re planning to become a pilot, you’ll be dealing with DGCA from day one. Here’s a quick overview of what your journey would look like:",
+                "If you're planning to become a pilot, you'll be dealing with DGCA from day one. Here's a quick overview of what your journey would look like:",
             subsections: [
                 {
                     list: [
