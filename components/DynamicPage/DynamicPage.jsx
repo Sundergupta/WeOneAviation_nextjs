@@ -28,6 +28,32 @@ const DynamicPage = ({ data }) => {
                                 <p className="section-desc">{section.description}</p>
                             )}
 
+                            {/* SECTION LEVEL TABLE */}
+                            {section.table &&
+                                Array.isArray(section.table.headers) &&
+                                Array.isArray(section.table.rows) && (
+                                    <div className="table-wrapper">
+                                        <table className="dynamic-table">
+                                            <thead>
+                                                <tr>
+                                                    {section.table.headers.map((head, h) => (
+                                                        <th key={h}>{head}</th>
+                                                    ))}
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {section.table.rows.map((row, r) => (
+                                                    <tr key={r}>
+                                                        {row.map((cell, c) => (
+                                                            <td key={c}>{cell}</td>
+                                                        ))}
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                )}
+
                             {Array.isArray(section.subsections) &&
                                 section.subsections.map((sub, i) => (
                                     <div key={i} className="dynamic-subsection">

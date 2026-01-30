@@ -16,33 +16,25 @@ export const rtrFullForm = {
         {
             title: "Introduction",
             description:
-                "In today’s world of communication and technology, abbreviations are commonly used to simplify lengthy terms. RTR is one such important abbreviation with different meanings across various fields. However, in aviation and telecommunication, the most widely recognized full form of RTR is Radio Telephony Restricted. It is an essential license issued by the Wireless Planning and Coordination (WPC) Wing of the Ministry of Communications, Government of India, under the Department of Telecommunications. This license plays a significant role for pilots, air traffic controllers (ATCs), and other professionals involved in air-to-ground and ground-to-air communication.",
+                "In today's world of communication and technology, abbreviations are commonly used to simplify lengthy terms. One such important abbreviation is RTR, which holds different meanings depending on the field of use. However, in aviation and telecommunication, the most widely recognized full form of RTR is:\n\nRTR – Radio Telephony Restricted\n\nRTR is an essential license issued by the Wireless Planning and Coordination (WPC) Wing of the Ministry of Communications, Government of India, under the Department of Telecommunications. It plays a significant role for pilots, air traffic controllers (ATCs), and other professionals involved in air-to-ground and ground-to-air communication.",
         },
 
         {
             title: "What is RTR?",
             description:
-                "RTR stands for Radio Telephony Restricted. It is a professional license that certifies an individual’s ability to operate radio communication equipment in the aviation and maritime sectors. In aviation, RTR ensures that pilots and ATCs can communicate effectively using radio telephony, which is the standard method of exchanging vital information related to aircraft operations, navigation, and safety. Without an RTR license, a pilot cannot legally operate an aircraft in controlled airspace, as communication is a crucial part of aviation safety.",
-            subsections: [
-                {
-                    heading: "RTR Full Form",
-                    list: ["Radio Telephony Restricted"],
-                },
-            ],
+                "RTR stands for Radio Telephony Restricted. It is a professional license that certifies an individual's ability to operate radio communication equipment in the aviation and maritime sectors.\n\nIn aviation, RTR ensures that pilots and ATCs can communicate effectively using radio telephony, which is the standard method of exchanging vital information related to aircraft operations, navigation, and safety.\n\nWithout an RTR license, a pilot cannot legally operate an aircraft in controlled airspace, as communication is a crucial part of aviation safety.",
         },
 
         {
             title: "Importance of RTR in Aviation",
-            description:
-                "The RTR license is mandatory for pilots, ATCs, and other aviation professionals to ensure safe and accurate communication. It provides international recognition under ICAO standards and is a crucial requirement for becoming a commercial pilot in India.",
             subsections: [
                 {
                     list: [
-                        "Mandatory for Pilots – Clearing the RTR exam is compulsory for CPL and airline pilot careers.",
-                        "Ensures Safety – RTR-certified professionals can handle emergency and routine transmissions efficiently.",
-                        "International Recognition – RTR validates the ability to use standardized aviation English and ICAO phraseology.",
-                        "Eligibility for CPL – RTR clearance is essential to obtain a Commercial Pilot License in India.",
-                        "Professional Requirement – Required for ATCs, navigators, flight dispatchers, and communication specialists.",
+                        "Mandatory for Pilots – To become a commercial pilot or airline pilot, clearing the RTR exam is compulsory.",
+                        "Ensures Safety – RTR-certified professionals can handle emergency communications and routine transmissions efficiently.",
+                        "International Recognition – An RTR license validates that the candidate is capable of using standardized aviation English and ICAO-approved phraseology.",
+                        "Eligibility for CPL – RTR clearance is essential to obtain a Commercial Pilot License (CPL) in India.",
+                        "Professional Requirement – Air traffic controllers, pilots, navigators, and communication specialists must have an RTR license.",
                     ],
                 },
             ],
@@ -50,27 +42,35 @@ export const rtrFullForm = {
 
         {
             title: "History and Background of RTR",
-            description:
-                "Radio communication became a necessity during World War I and II when aircraft and ships required reliable communication systems. With advancing civil aviation, countries worldwide started regulating radio frequencies and licensing operators. In India, the WPC Wing under the Ministry of Communications manages radio frequency allocation and licenses, including RTR. Over time, RTR evolved into a globally recognized requirement aligned with ICAO standards.",
+            subsections: [
+                {
+                    list: [
+                        "Radio communication became a necessity during World War I and II, where aircraft and ships required reliable communication methods.",
+                        "After the development of civil aviation, countries started regulating radio frequencies and licensing radio operators.",
+                        "In India, the Wireless Planning and Coordination (WPC) Wing under the Ministry of Communications took charge of monitoring and issuing radio licenses, including RTR.",
+                        "The RTR license evolved into a global requirement aligned with ICAO (International Civil Aviation Organization) standards.",
+                    ],
+                },
+            ],
         },
 
         {
             title: "Types of RTR Licenses",
-            description: "In India, there are two primary categories of RTR licenses:",
+            description: "In India, there are two categories of RTR licenses:",
             subsections: [
                 {
                     heading: "RTR (Aero) – Radio Telephony Restricted (Aeronautical)",
                     list: [
-                        "Required for pilots and air traffic controllers.",
+                        "Required by pilots and air traffic controllers.",
                         "Allows communication between aircraft and ground stations.",
-                        "Focuses on aviation phraseology, communication procedures, and emergency handling.",
+                        "Focuses on aviation phraseology and emergency procedures.",
                     ],
                 },
                 {
                     heading: "RTR (Maritime)",
                     list: [
-                        "Required for ship captains, marine officers, and maritime radio operators.",
-                        "Ensures communication between ships, port authorities, and other vessels.",
+                        "Required for ship captains, marine officers, and radio operators in the maritime industry.",
+                        "Ensures communication between ships and port authorities or other vessels.",
                     ],
                 },
             ],
@@ -79,7 +79,7 @@ export const rtrFullForm = {
         {
             title: "RTR (Aero) – For Pilots and Aviation Professionals",
             description:
-                "Since most students and aviation professionals pursue RTR (Aero), this type is particularly important for commercial pilot training.",
+                "Since most students and professionals seek RTR in aviation, let's focus more on RTR (Aero).",
         },
 
         {
@@ -87,10 +87,10 @@ export const rtrFullForm = {
             subsections: [
                 {
                     list: [
-                        "Minimum Age: 18 years.",
-                        "Educational Qualification: 10+2 with Physics and Mathematics.",
-                        "English Proficiency: Must have good command over English (ICAO Level 4 recommended).",
-                        "Medical Fitness: Must hold a DGCA-approved Class 2 or Class 1 medical certificate.",
+                        "Minimum Age: 18 years",
+                        "Educational Qualification: 10+2 with Physics and Mathematics (same as CPL eligibility)",
+                        "Language Proficiency: Must have good command of English (ICAO Level 4 or higher recommended)",
+                        "Medical: Must hold a Class 2/1 Medical Certificate approved by DGCA",
                     ],
                 },
             ],
@@ -99,20 +99,38 @@ export const rtrFullForm = {
         {
             title: "RTR (Aero) Examination Process",
             description:
-                "The RTR exam in India is conducted by the WPC Wing and is typically held six times a year in major cities such as Delhi, Mumbai, Chennai, and Kolkata.",
+                "The RTR exam in India is conducted by the WPC Wing of the Ministry of Communications. The exam is generally held six times a year in cities like Delhi, Mumbai, Chennai, and Kolkata.",
             subsections: [
                 {
                     heading: "Exam Pattern",
+                    description: "The RTR (Aero) exam consists of two parts:",
+                },
+                {
+                    heading: "Part 1 – Practical Test (Transmission & Reception)",
                     list: [
-                        "Part 1 – Practical Test (Transmission & Reception): Tests radio telephony procedures, emergency calls, phraseology usage, and simulated communication.",
-                        "Part 2 – Viva Voice (Oral Examination): Conducted by DGCA and WPC officers. Includes questions on communication rules, ICAO standards, navigation, meteorology, and emergency procedures.",
+                        "Candidates are tested on radio telephony procedures.",
+                        "Use of aviation phraseology, emergency handling, distress calls, and communication techniques.",
+                        "Conducted in a simulated environment.",
                     ],
+                },
+                {
+                    heading: "Part 2 – Viva Voice (Oral Examination)",
+                    description: "Conducted by a panel including DGCA and WPC representatives.\n\nQuestions from:",
+                    list: [
+                        "Radio communication rules & regulations",
+                        "DGCA and ICAO communication standards",
+                        "Meteorology & navigation terms",
+                        "Aviation safety procedures",
+                    ],
+                },
+                {
+                    description: "Tests candidate's presence of mind in emergency scenarios.",
                 },
                 {
                     heading: "Passing Criteria",
                     list: [
                         "Candidates must clear both Part 1 and Part 2 in the same attempt.",
-                        "If a candidate passes only one part, they may attempt the remaining part in the next examination session.",
+                        "If a candidate passes only one part, they get a chance to clear the remaining part in the next attempt.",
                     ],
                 },
             ],
@@ -120,16 +138,17 @@ export const rtrFullForm = {
 
         {
             title: "Syllabus for RTR (Aero)",
+            description: "The RTR (Aero) syllabus includes:",
             subsections: [
                 {
                     list: [
-                        "Radio Communication Procedures.",
-                        "ICAO Aviation English & Standard Phraseology.",
-                        "Aircraft Communication and Radio Systems.",
-                        "Emergency Procedures & Distress Calls.",
-                        "Indian Telegraph Act & Wireless Telegraphy Rules.",
-                        "Basic Navigation and Meteorology.",
-                        "Human Factors in Communication.",
+                        "Radio Communication Procedures",
+                        "ICAO Aviation English & Phraseology",
+                        "Aircraft Communication Systems",
+                        "Emergency Procedures & Distress Calls",
+                        "Indian Telegraph Act & Wireless Telegraphy Rules",
+                        "Basic Navigation and Meteorology",
+                        "Human Factors in Communication",
                     ],
                 },
             ],
@@ -137,8 +156,14 @@ export const rtrFullForm = {
 
         {
             title: "Validity of RTR License",
-            description:
-                "The RTR (Aero) license is valid for life unless suspended or canceled by the authorities. Unlike pilot medicals and CPL renewals, RTR does not require periodic revalidation.",
+            subsections: [
+                {
+                    list: [
+                        "RTR (Aero) is valid for life, unless suspended or canceled by authorities.",
+                        "Unlike medical and CPL renewals, RTR does not require periodic re-validation.",
+                    ],
+                },
+            ],
         },
 
         {
@@ -146,10 +171,10 @@ export const rtrFullForm = {
             subsections: [
                 {
                     list: [
-                        "A mandatory step for obtaining a CPL in India.",
-                        "Improves job opportunities in aviation industries.",
-                        "Globally recognized for international pilot and ATC careers.",
-                        "Adds professional credibility in aviation communication systems.",
+                        "Mandatory Step for Pilots – Without RTR, you cannot get a Commercial Pilot License (CPL).",
+                        "Better Job Opportunities – Airlines and aviation companies prefer candidates who already hold an RTR license.",
+                        "International Career – RTR is recognized globally, so it helps in working abroad as a pilot or ATC.",
+                        "Professional Credibility – Holding RTR demonstrates strong communication skills and regulatory knowledge.",
                     ],
                 },
             ],
@@ -157,15 +182,26 @@ export const rtrFullForm = {
 
         {
             title: "RTR in Other Fields",
-            description: "Although RTR mainly stands for Radio Telephony Restricted in aviation, it has different meanings in other industries:",
+            description: "Though in aviation, RTR stands for Radio Telephony Restricted, the abbreviation has different full forms in other sectors too:",
             subsections: [
                 {
-                    list: [
-                        "RTR in Accounting & Finance – Record to Report.",
-                        "RTR in Technology – Real-Time Rendering.",
-                        "RTR in Business – Ready to Run.",
-                        "RTR in Manufacturing – Release to Ramp.",
-                    ],
+                    heading: "RTR in Accounting & Finance – Record to Report",
+                    description: "A process in finance involving collection, processing, and delivering business reports.",
+                },
+                {
+                    heading: "RTR in Technology – Real-Time Rendering",
+                    description: "Used in computer graphics and gaming for live rendering of visuals.",
+                },
+                {
+                    heading: "RTR in Business – Ready to Run",
+                    description: "Refers to products or services that are pre-configured and ready for immediate use.",
+                },
+                {
+                    heading: "RTR in Manufacturing – Release to Ramp",
+                    description: "Phase in product development before mass production.",
+                },
+                {
+                    description: "Thus, RTR has multiple meanings, but in aviation, it is primarily Radio Telephony Restricted.",
                 },
             ],
         },
@@ -175,10 +211,10 @@ export const rtrFullForm = {
             subsections: [
                 {
                     list: [
-                        "High competition due to limited seats per session.",
-                        "Pressure during oral (viva) examination.",
-                        "Exam conducted only a few times a year.",
-                        "Requirement of fluent aviation English and phraseology.",
+                        "High competition (limited seats available per exam session).",
+                        "Pressure of oral exam (many candidates fail in viva).",
+                        "Limited attempts (exam conducted only a few times yearly).",
+                        "Requirement of fluent aviation English.",
                     ],
                 },
             ],
@@ -189,11 +225,11 @@ export const rtrFullForm = {
             subsections: [
                 {
                     list: [
-                        "Practice radio calls daily using ATC recordings.",
-                        "Use standard ICAO aviation phraseology instead of casual English.",
-                        "Study communication rules & regulations from DGCA-approved books.",
-                        "Join professional RTR coaching for mock tests and oral preparation.",
-                        "Stay calm and confident during viva — presence of mind is tested.",
+                        "Practice Radio Calls daily with ATC recordings.",
+                        "Focus on Standard ICAO Phraseology instead of casual English.",
+                        "Study Communication Rules & Regulations from DGCA-approved books.",
+                        "Join a Good RTR Training Institute for mock tests and oral preparation.",
+                        "Stay Calm in Viva – panel checks confidence and clarity.",
                     ],
                 },
             ],
@@ -202,7 +238,7 @@ export const rtrFullForm = {
         {
             title: "Conclusion",
             description:
-                "The full form of RTR is Radio Telephony Restricted, and it is a crucial license for aviation and maritime professionals. In aviation, it is mandatory for pilots and ATCs to legally operate aircraft communication systems. Conducted by the WPC wing of the Ministry of Communications, the RTR exam ensures that candidates are competent in handling radio communication, emergency procedures, and ICAO phraseology. Beyond aviation, RTR has various meanings in finance, technology, and business, but its significance in aviation remains unmatched. For aspiring commercial pilots, clearing RTR is a major milestone toward flying professionally.",
+                "The full form of RTR is Radio Telephony Restricted, a crucial license for aviation and maritime professionals. In aviation, it is mandatory for pilots and ATCs to legally operate aircraft communication systems. Conducted by the WPC wing of the Ministry of Communications, the RTR exam ensures that candidates are competent in handling radio communication, emergency procedures, and aviation phraseology.\n\nApart from aviation, RTR has different meanings in finance, technology, and business, but its significance in aviation is unmatched.\n\nFor any aspiring commercial pilot in India, clearing RTR is one of the most important milestones in the journey toward flying an aircraft. With proper preparation, practice, and guidance, one can successfully clear RTR and move closer to fulfilling the dream of becoming a pilot.",
         },
     ],
 
