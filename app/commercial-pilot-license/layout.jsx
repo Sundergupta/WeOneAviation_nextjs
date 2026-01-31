@@ -22,6 +22,15 @@ const headingMap = {
         "Commercial Pilot License Admission Process",
 };
 
+// Map routes to hero background images (override per page)
+const backgroundMap = {
+    "/commercial-pilot-license": "/assets/home-page-slider/slider1.webp",
+    "/commercial-pilot-license/eligibility": "/assets/home-page-slider/slider2.webp",
+    "/commercial-pilot-license/syllabus": "/assets/home-page-slider/slider3.webp",
+    "/commercial-pilot-license/salary": "/assets/home-page-slider/slider4.webp",
+    "/commercial-pilot-license/admission-process": "/assets/home-page-slider/slider5.webp",
+};
+
 export default function CplLayout({ children }) {
     const pathname = usePathname();
 
@@ -29,14 +38,16 @@ export default function CplLayout({ children }) {
     const heading =
         headingMap[pathname] || "Commercial Pilot License";
 
+    // select background for current route (fallback to default)
+    const backgroundImageUrl = backgroundMap[pathname] || "/assets/home-page-slider/slider1.webp";
+
     return (
         <>
             {/* HERO */}
             <section
                 className="hero-section"
                 style={{
-                    backgroundImage:
-                        "url('/assets/home page slider/generate a videos of airplane.jpg')",
+                    backgroundImage: `url('${backgroundImageUrl}')`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}

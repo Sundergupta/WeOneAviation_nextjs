@@ -1,60 +1,83 @@
+"use client";
+
+import { useState } from "react";
 import "./style.css";
 
 const Tag = ({ text }) => <span className="tag">{text}</span>;
 
-export const metadata = {
-    title: "Chartered Services – Private Jet & Aircraft Charter in Delhi",
-    description:
-        "Private charter aircraft and helicopter services in Dwarka, Delhi. Luxury business jets, air ambulance, and corporate air travel solutions.",
-};
-
 export default function CharteredServices() {
-    const tags = [
-        "dwarka",
-        "team",
-        "highly qualified pilots",
-        "ground handling crew",
-        "engineering",
-        "fly star",
-        "years",
-        "chartering company services",
-        "efficient methods",
-        "highly skilled personnel",
-        "experienced",
-        "management team",
-        "corporate air jet fleet",
-        "low-cost private jet",
-        "call immediately",
-        "business travel requirements",
-        "confident",
-        "fly star company",
-        "helicopter services",
-        "private charter aircraft",
-        "delhi",
-        "competent support services employees",
-    ];
+    const [selectedAircraft, setSelectedAircraft] = useState(null);
 
-    const related = [
+    const aircrafts = [
         {
-            title: "Pilot Training",
-            desc: "Individualised crew training programmes tailored to aviation employment needs.",
+            name: "King Air B200",
+            image: "/king_air_b200.jpeg",
+            desc: "Twin-engine turboprop ideal for short business routes with high reliability."
         },
         {
-            title: "Air Craft Sale Purchase",
-            desc: "Expert advisory through the full aircraft purchase process for new and used aircraft.",
+            name: "King Air C-90",
+            image: "/king_air_c_90.jpeg",
+            desc: "Compact turboprop aircraft suitable for regional charter operations."
         },
         {
-            title: "Aviation Placement service",
-            desc: "Follow-up support and placement for student pilots completing flight training.",
+            name: "King Air B-350",
+            image: "/king_air_b_350.jpeg",
+            desc: "Luxury turboprop with extended range and spacious cabin."
         },
+        {
+            name: "Learjet 45",
+            image: "/learjet_45.jpeg",
+            desc: "High-speed light business jet with stand-up cabin comfort."
+        },
+        {
+            name: "Phenom 100",
+            image: "/phenom_100.jpeg",
+            desc: "Modern entry-level jet offering efficiency, comfort, and speed."
+        },
+        {
+            name: "Premier 1A",
+            image: "/premier_1A.jpeg",
+            desc: "Light jet with excellent climb rate and superior runway performance."
+        },
+        {
+            name: "Pilatus PC 12/47",
+            image: "/pilatus_pc_1247.jpeg",
+            desc: "Single-engine turboprop known for safety and versatility."
+        },
+        {
+            name: "CRJ 100",
+            image: "/crj_100.jpeg",
+            desc: "Regional jet ideal for group and corporate charter travel."
+        },
+        {
+            name: "Citation 560XLS",
+            image: "/citation_560_xls.jpeg",
+            desc: "Midsize jet with long range and wide-cabin comfort."
+        },
+        {
+            name: "Challenger 604",
+            image: "/challenger_604.jpeg",
+            desc: "Large-cabin business jet designed for long-haul executive travel."
+        },
+        {
+            name: "Hawker 750 / 850 / 900",
+            image: "/hawker_750_850_900.jpeg",
+            desc: "Reliable midsize jets well known for comfort and performance."
+        },
+        {
+            name: "Air Ambulance",
+            image: "/air_ambulance.jpeg",
+            desc: "Fully equipped medical aircraft for emergency patient transfers."
+        }
     ];
 
     return (
         <div className="cs-page">
+            {/* HERO */}
             <section className="hero">
                 <div className="hero-left">
                     <nav className="breadcrumb">
-                        <span>Home</span> <span className="sep">/</span>{" "}
+                        <span>Home</span> <span className="sep">/</span>
                         <strong>Chartered Services</strong>
                     </nav>
 
@@ -72,25 +95,12 @@ export default function CharteredServices() {
                         </a>
                     </div>
                 </div>
-
-                <div className="hero-right">
-                    {/*
-          OPTIONAL HERO IMAGE (unchanged from your original code)
-
-          <div className="hero-image-wrap">
-            <img
-              src="/assets/chartered-hero.jpg"
-              alt="Chartered Services"
-              className="hero-image"
-            />
-            <div className="image-badge">Chartered Services</div>
-          </div>
-          */}
-                </div>
             </section>
 
+            {/* CONTENT */}
             <main className="content" id="more">
                 <article className="lead">
+                    {/* ===== ABOUT SECTION (UNCHANGED) ===== */}
                     <h2 className="section-heading">About Our Charter Services</h2>
 
                     <p>
@@ -113,22 +123,45 @@ export default function CharteredServices() {
                         air jet fleets — tailored to your requirements.
                     </p>
 
-                    <ul className="offer-list">
-                        <li>King Air B200</li>
-                        <li>King Air C-90</li>
-                        <li>King Air B-350</li>
-                        <li>Learjet 45</li>
-                        <li>Phenom 100</li>
-                        <li>Premier 1A</li>
-                        <li>Pilatus PC 12/47</li>
-                        <li>CRJ 100</li>
-                        <li>Citation 560XLS</li>
-                        <li>Challenger 604</li>
-                        <li>Hawker 750/850/900</li>
-                        <li>Air Ambulance</li>
-                    </ul>
+                    {/* ===== FLEET SECTION ===== */}
+                    <h2 className="section-heading" style={{ marginTop: "1.5rem" }}>
+                        Our Charter Aircraft Fleet
+                    </h2>
+
+                    <div className="fleet-layout">
+                        <ul className="offer-list clickable">
+                            {aircrafts.map((aircraft, i) => (
+                                <li
+                                    key={i}
+                                    onClick={() => setSelectedAircraft(aircraft)}
+                                    className={
+                                        selectedAircraft?.name === aircraft.name ? "active" : ""
+                                    }
+                                >
+                                    {aircraft.name}
+                                </li>
+                            ))}
+                        </ul>
+
+                        {selectedAircraft ? (
+                            <div className="aircraft-card">
+                                <img
+                                    src={selectedAircraft.image}
+                                    alt={selectedAircraft.name}
+                                    className="aircraft-image"
+                                />
+                                <h3>{selectedAircraft.name}</h3>
+                                <p>{selectedAircraft.desc}</p>
+                            </div>
+                        ) : (
+                            <div className="aircraft-placeholder">
+                                Select an aircraft to view image & details
+                            </div>
+                        )}
+                    </div>
                 </article>
 
+                {/* SIDEBAR */}
                 <aside className="sidebar">
                     <div className="contact-card">
                         <h3>Contact Us to Know More</h3>
@@ -143,37 +176,23 @@ export default function CharteredServices() {
                     <div className="tags-card">
                         <h4>Tags</h4>
                         <div className="tags">
-                            {tags.map((t, i) => (
-                                <Tag key={i} text={t} />
-                            ))}
+                            {["private jet", "air charter", "business jet", "delhi"].map(
+                                (t, i) => (
+                                    <Tag key={i} text={t} />
+                                )
+                            )}
                         </div>
                     </div>
                 </aside>
-
-                <section className="related">
-                    <h3>Related services</h3>
-                    <div className="related-grid">
-                        {related.map((r, i) => (
-                            <div className="related-card" key={i}>
-                                <h4>{r.title}</h4>
-                                <p>{r.desc}</p>
-                                <a className="learn-more" href="#">
-                                    Learn more
-                                </a>
-                            </div>
-                        ))}
-                    </div>
-                </section>
             </main>
 
+            {/* FOOTER */}
             <footer className="footer">
                 <div>
                     <strong>Fly Space Delhi Aviation</strong> — Private jet and charter
                     excellence since 2014.
                 </div>
-                <div className="small">
-                    © {new Date().getFullYear()} Fly Space
-                </div>
+                <div className="small">© {new Date().getFullYear()} Fly Space</div>
             </footer>
         </div>
     );

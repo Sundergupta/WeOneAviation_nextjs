@@ -1,5 +1,7 @@
 import "./style.css";
 
+import Link from "next/link";
+
 const Tag = ({ text }) => <span className="tag">{text}</span>;
 
 export const metadata = {
@@ -122,13 +124,27 @@ export default function PilotTraining() {
                     </p>
 
                     <ul className="offer-list">
-                        <li>Commercial Pilot Training - CPL</li>
-                        <li>Air Transport Pilot License (ATPL)</li>
-                        <li>DGCA Ground Classes CPL/ATPL</li>
-                        <li>Airlines Preparation</li>
-                        <li>Type Training A320 / B737 / ATR</li>
-                        <li>Radio Telephony (RTR)</li>
-                        <li>Cadet Pilot Program</li>
+                        <li>
+                            <Link href="/commercial-pilot-license">Commercial Pilot Training - CPL</Link>
+                        </li>
+                        <li>
+                            <Link href="/#">Air Transport Pilot License (ATPL)</Link>
+                        </li>
+                        <li>
+                            <Link href="/dgca-ground-classes">DGCA Ground Classes CPL/ATPL</Link>
+                        </li>
+                        <li>
+                            <Link href="/#">Airlines Preparation</Link>
+                        </li>
+                        <li>
+                            <Link href="/#">Type Training A320 / B737 / ATR</Link>
+                        </li>
+                        <li>
+                            <Link href="/rtr">Radio Telephony (RTR)</Link>
+                        </li>
+                        <li>
+                            <Link href="/#">Cadet Pilot Program</Link>
+                        </li>
                     </ul>
                 </article>
 

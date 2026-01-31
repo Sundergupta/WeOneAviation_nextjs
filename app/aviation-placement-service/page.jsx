@@ -1,4 +1,6 @@
 import "./style.css";
+import Image from "next/image";
+
 
 export const metadata = {
     title: "Aviation Placement Service – Pilot & Aviation Jobs Support",
@@ -18,10 +20,27 @@ export default function AviationPlacementService() {
                 <button className="enquire-btn">ENQUIRE NOW</button>
             </div>
 
-            <div className="image-section">
-                <div className="image-placeholder">image</div>
-                <div className="image-placeholder">image</div>
-            </div>
+            <section className="image-section">
+                <div className="image-box">
+                    <Image
+                        src="/assets/Aircraft/aircraft (2).png"
+                        alt="Aircraft Sale Purchase Services"
+                        fill
+                        className="image"
+                        priority
+                    />
+                </div>
+
+                <div className="image-box">
+                    <Image
+                        src="/assets/Aircraft/aircraft.png"
+                        alt="Aircraft Buying Advisory"
+                        fill
+                        className="image"
+                        priority
+                    />
+                </div>
+            </section>
 
             <div className="content-section">
                 <p>
