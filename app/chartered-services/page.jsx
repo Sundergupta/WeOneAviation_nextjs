@@ -12,62 +12,74 @@ export default function CharteredServices() {
         {
             name: "King Air B200",
             image: "/king_air_b200.jpeg",
-            desc: "Twin-engine turboprop ideal for short business routes with high reliability."
+            desc: "Twin-engine turboprop ideal for short business routes with high reliability.",
+            specs: "King Air B200 is a twin-engine turboprop aircraft known for reliability and versatility. It's commonly used for business travel, air ambulance, and government missions. It offers a cruise speed of ~280 knots, range around 1,800 NM, seats 6–9 passengers, and can operate from short runways, making it a trusted aircraft worldwide ✈️."
         },
         {
             name: "King Air C-90",
             image: "/king_air_c_90.jpeg",
-            desc: "Compact turboprop aircraft suitable for regional charter operations."
+            desc: "Compact turboprop aircraft suitable for regional charter operations.",
+            specs: "King Air C90 is a light twin-engine turboprop aircraft known for efficiency, reliability, and short-runway performance. It's widely used for business travel, charter, and training. The aircraft cruises at ~250 knots, has a range of about 1,200 NM, and typically seats 5–7 passengers, making it ideal for short to mid-range flights ✈️"
         },
         {
             name: "King Air B-350",
             image: "/king_air_b_350.jpeg",
-            desc: "Luxury turboprop with extended range and spacious cabin."
+            desc: "Luxury turboprop with extended range and spacious cabin.",
+            specs: "King Air B350 is a large, twin-engine turboprop aircraft known for comfort, long range, and strong performance. It's commonly used for business aviation, air ambulance, and government operations. It cruises at ~312 knots, offers a range of around 1,800 NM, seats 8–11 passengers, and performs well from short and high-altitude runways, making it one of the most capable aircraft in its class ✈️."
         },
         {
             name: "Learjet 45",
             image: "/learjet_45.jpeg",
-            desc: "High-speed light business jet with stand-up cabin comfort."
+            desc: "High-speed light business jet with stand-up cabin comfort.",
+            specs: "Learjet 45 is a light business jet offering high cruise speed and efficient performance, suitable for short to mid-range routes. It typically seats 7–9 passengers and is valued for its smooth handling and quick climb capability ✈️"
         },
         {
             name: "Phenom 100",
             image: "/phenom_100.jpeg",
-            desc: "Modern entry-level jet offering efficiency, comfort, and speed."
+            desc: "Modern entry-level jet offering efficiency, comfort, and speed.",
+            specs: "Phenom 100 is a modern very light jet designed for short-haul travel with low operating costs. It features advanced avionics, a comfortable cabin, and seating for 4–6 passengers, ideal for regional business trips ✈️"
         },
         {
             name: "Premier 1A",
             image: "/premier_1A.jpeg",
-            desc: "Light jet with excellent climb rate and superior runway performance."
+            desc: "Light jet with excellent climb rate and superior runway performance.",
+            specs: "Premier 1A is a fast light jet with one of the widest cabins in its class. It is commonly used for corporate and charter flying, seats 6–7 passengers, and offers a good balance of speed and cabin comfort ✈️"
         },
         {
             name: "Pilatus PC 12/47",
             image: "/pilatus_pc_1247.jpeg",
-            desc: "Single-engine turboprop known for safety and versatility."
+            desc: "Single-engine turboprop known for safety and versatility.",
+            specs: "Pilatus PC-12/47 is a highly versatile single-engine turboprop known for short and unpaved runway operations. It is widely used for business travel, cargo transport, and air ambulance missions, with a spacious and adaptable cabin ✈️"
         },
         {
             name: "CRJ 100",
             image: "/crj_100.jpeg",
-            desc: "Regional jet ideal for group and corporate charter travel."
+            desc: "Regional jet ideal for group and corporate charter travel.",
+            specs: "CRJ 100 is a regional jet aircraft designed for airline operations, typically configured for 50 passengers. It is optimized for short-haul commercial routes and known for its reliability in regional airline service ✈️"
         },
         {
             name: "Citation 560XLS",
             image: "/citation_560_xls.jpeg",
-            desc: "Midsize jet with long range and wide-cabin comfort."
+            desc: "Midsize jet with long range and wide-cabin comfort.",
+            specs: "Citation 560 XLS is a popular mid-size business jet offering excellent range, fuel efficiency, and passenger comfort. It features a stand-up cabin for most passengers and is widely used for corporate and charter flights ✈️"
         },
         {
             name: "Challenger 604",
             image: "/challenger_604.jpeg",
-            desc: "Large-cabin business jet designed for long-haul executive travel."
+            desc: "Large-cabin business jet designed for long-haul executive travel.",
+            specs: "Challenger 604 is a large-cabin, long-range jet designed for intercontinental and transcontinental travel. It offers a spacious, quiet cabin, high payload capability, and is commonly used for VIP, corporate, and government missions ✈️"
         },
         {
             name: "Hawker 750 / 850 / 900",
             image: "/hawker_750_850_900.jpeg",
-            desc: "Reliable midsize jets well known for comfort and performance."
+            desc: "Reliable midsize jets well known for comfort and performance.",
+            specs: "Hawker 750 / 850 / 900 family consists of mid-size business jets known for solid performance, dependable systems, and comfortable cabins. They are widely used in charter and corporate aviation for regional and continental routes ✈️"
         },
         {
             name: "Air Ambulance",
             image: "/air_ambulance.jpeg",
-            desc: "Fully equipped medical aircraft for emergency patient transfers."
+            desc: "Fully equipped medical aircraft for emergency patient transfers.",
+            specs: "Air Ambulance aircraft are specially equipped for medical evacuation and patient transfer, fitted with stretchers, oxygen systems, monitors, and life-support equipment, operated with trained medical staff for critical and non-critical patient transport ✈️"
         }
     ];
 
@@ -152,6 +164,35 @@ export default function CharteredServices() {
                                 />
                                 <h3>{selectedAircraft.name}</h3>
                                 <p>{selectedAircraft.desc}</p>
+                                {selectedAircraft.specs && (
+                                    <>
+                                        {typeof selectedAircraft.specs === 'string' ? (
+                                            <p className="aircraft-specs">{selectedAircraft.specs}</p>
+                                        ) : (
+                                            <div className="aircraft-specs">
+                                                {selectedAircraft.specs.intro && (
+                                                    <p><strong>Overview:</strong> {selectedAircraft.specs.intro}</p>
+                                                )}
+                                                {selectedAircraft.specs.highlights && (
+                                                    <div>
+                                                        <strong>Highlights:</strong>
+                                                        <ul>
+                                                            {selectedAircraft.specs.highlights.map((h, idx) => (
+                                                                <li key={idx}>{h}</li>
+                                                            ))}
+                                                        </ul>
+                                                    </div>
+                                                )}
+                                                {selectedAircraft.specs.whyPopular && (
+                                                    <p><strong>Why Popular:</strong> {selectedAircraft.specs.whyPopular}</p>
+                                                )}
+                                                {selectedAircraft.specs.summary && (
+                                                    <p><strong>Summary:</strong> {selectedAircraft.specs.summary}</p>
+                                                )}
+                                            </div>
+                                        )}
+                                    </>
+                                )}
                             </div>
                         ) : (
                             <div className="aircraft-placeholder">
