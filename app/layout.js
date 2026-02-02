@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import LoadingAnimation from "../components/LoadingAnimation"
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <LoadingAnimation />
         <Navbar />
         <ContactQuery />
         {children}
