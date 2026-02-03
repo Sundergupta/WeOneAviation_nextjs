@@ -17,142 +17,289 @@ export default function EligibilityClient() {
 
     return (
         <main className="commercial-pilot-license">
+
             {/* INTRO */}
             <section className="cpl-section">
 
+
                 <p>
-                    The first essential step for someone who dreams about aviation as a profession is to earn a{" "}
-                    <strong>Commercial Pilot License (CPL)</strong>. The CPL enables professional aircraft operation
-                    although it provides entry into airline and charter company and cargo service prestigious roles.
-                    Before starting a pilot training program students need to understand the specifications that will
-                    determine their admission. Here’s a detailed overview of the eligibility to become a pilot and apply
-                    for a commercial pilot licence course in India.
+                    Becoming a commercial pilot is a dream career for many aviation aspirants. However, before enrolling in
+                    a flying school or starting flight training, it is important to clearly understand the Commercial Pilot License
+                    eligibility criteria. The requirements to become a pilot are set by aviation authorities and include age,
+                    education, medical fitness, and regulatory approvals.
                 </p>
+
+                <p>
+                    This guide explains commercial pilot eligibility, educational qualifications, medical standards, and pilot
+                    training requirements in a clear and structured manner.
+                </p>
+            </section>
+
+            {/* CPL */}
+            <section className="cpl-section">
+                <h2><strong>What Is a Commercial Pilot License (CPL)?</strong></h2>
+                <p>
+                    A Commercial Pilot License (CPL) allows a pilot to fly aircraft professionally and earn remuneration. After
+                    meeting the commercial pilot license eligibility, candidates can pursue careers with airlines, charter
+                    operators, cargo companies, corporate aviation, and flight training organizations.
+                </p>
+            </section>
+
+            {/* CPL vs PPL Comparison Table */}
+
+
+
+            {/* REQUIREMENTS */}
+            <section className="cpl-section">
+                <h2><strong>Requirements to Become a Pilot</strong></h2>
+                <p>
+                    The requirements to become a pilot are defined by aviation authorities such as DGCA (India), FAA
+                    (USA), or EASA (Europe). While regulations vary slightly by country, the core eligibility criteria remain
+                    similar worldwide.
+                </p>
+
+                <h3><strong>Basic Requirements to Become a Pilot</strong></h3>
+                <ul>
+                    <li>Minimum age requirement</li>
+                    <li>Educational qualifications</li>
+                    <li>Medical fitness certification</li>
+                    <li>English language proficiency</li>
+                    <li>Completion of required flight training hours</li>
+                </ul>
+
+                <p>Meeting these requirements is the first step toward professional pilot training.</p>
+            </section>
+
+            {/* QUALIFICATIONS */}
+            <section className="cpl-section">
+                <h2><strong>Qualifications to Become a Pilot</strong></h2>
+                <p>
+                    One of the most common questions students ask is about the qualifications to become a pilot.
+                </p>
+
+                <h3><strong>Educational Qualifications</strong></h3>
+                <p>To meet commercial pilot eligibility, a candidate must have:</p>
+
+                <ul>
+                    <li>Passed 10+2 (or equivalent)</li>
+                    <li>Studied Physics and Mathematics as compulsory subjects</li>
+                </ul>
+
+                <p>
+                    Students who did not study Physics or Mathematics can still qualify by completing these subjects through
+                    open schooling or equivalent boards.
+                </p>
+
+                <p>These pilot education requirements are mandatory for CPL training.</p>
             </section>
 
             {/* AGE */}
             <section className="cpl-section">
-                <h2>Age Requirement</h2>
-                <p>
-                    A candidate qualifying for a CPL in India needs to reach <strong>17 years</strong> old before
-                    applying for enrollment. The license processing begins at age 17 but the candidate will obtain it
-                    after completing their 18th birthday.
-                </p>
-            </section>
+                <h2><strong>Age Criteria – Eligibility to Become a Pilot</strong></h2>
+                <p>Understanding the eligibility to become a pilot includes meeting age requirements.</p>
 
-            {/* EDUCATION */}
-            <section className="cpl-section">
-                <h2>Educational Qualification</h2>
-                <p>
-                    A solid academic base forms the essential foundation required to turn into a professional pilot.
-                    The educational requirement begins at the <strong>●10+2 (senior secondary)</strong> level alongside
-                    science subjects according to set criteria.
-                </p>
-                <p>●<strong>10+2 (Senior Secondary) or equivalent</strong></p>
-                <p>It is mandatory to study Physics and Mathematics as your core subjects.</p>
-                <p>
-                    Candidates who lack Physics and Math in their 10+2 education must separately take these courses
-                    either through NIOS (National Institute of Open Schooling) or any authorized educational institution.
-                    The standards for commercial pilot course eligibility require a specific academic background.
-                </p>
+                <ul>
+                    <li>Minimum age to start flying training: 17 years</li>
+                    <li>Minimum age to obtain a Commercial Pilot License: 18 years</li>
+                </ul>
+
+                <p>This age requirement applies to most aviation authorities globally.</p>
             </section>
 
             {/* MEDICAL */}
             <section className="cpl-section">
-                <h2>Medical Fitness</h2>
+                <h2><strong>Commercial Pilot Eligibility – Medical Requirements</strong></h2>
                 <p>
-                    High levels of physical along with mental fitness are required for safe aircraft operation. Each
-                    pilot candidate needs to obtain a medical certification from an examiner approved by the DGCA.
-                    The medical certification includes:
+                    Medical fitness is one of the most critical aspects of commercial pilot eligibility.
                 </p>
+
+                <h3><strong>Medical Certification</strong></h3>
                 <ul>
-                    <li>● Class 2 Medical Certificate (initial requirement for Student Pilot License)</li>
-                    <li>● Class 1 Medical Certificate (mandatory for CPL issuance)</li>
+                    <li>Class 1 Medical Certificate is mandatory</li>
+                    <li>Conducted by approved aviation medical examiners</li>
+                    <li>Includes vision, hearing, ECG, blood tests, and overall health assessment</li>
                 </ul>
-                <p>The medical exam evaluates these specific elements:</p>
+
+                <p>
+                    Candidates must meet strict medical standards to ensure flight safety. Medical clearance is essential
+                    before beginning flight training.
+                </p>
+            </section>
+
+            {/* TRAINING */}
+            <section className="cpl-section">
+                <h2><strong>Pilot Training Eligibility & Flight Training Requirements</strong></h2>
+                <p>Meeting pilot training eligibility involves more than just education and age.</p>
+
+                <h3><strong>Flight Training Requirements</strong></h3>
+                <p>To qualify for a CPL, a candidate must complete:</p>
+
                 <ul>
-                    <li>
-                        ● The vision standards require 6/6 vision in one eye and 6/9 vision in the other yet correctable
-                        with eyeglasses.
-                    </li>
-                    <li>● Hearing, blood pressure, ECG, and overall physical health</li>
+                    <li>Minimum 200 flight hours (varies by country)</li>
+                    <li>Solo flying hours</li>
+                    <li>Cross-country flights</li>
+                    <li>Instrument flying hours</li>
+                    <li>Multi-engine training (if applicable)</li>
                 </ul>
+
+                <p>These commercial pilot requirements ensure pilots are trained to professional standards.</p>
             </section>
 
-            {/* LANGUAGE */}
+            {/* SKILLS */}
             <section className="cpl-section">
-                <h2>Language Proficiency</h2>
-                <p>
-                    English proficiency stands as a mandatory requirement because aviation communication and
-                    documentation as well as all examination materials operate in the English language. The DGCA
-                    potentially requires candidates to pass an English Language Proficiency (ELP) test.
-                </p>
-            </section>
+                <h2><strong>Pilot Course Eligibility & Skill Requirements</strong></h2>
+                <p>Pilot course eligibility also includes non-academic skills essential for aviation.</p>
 
-            {/* NATIONALITY */}
-            <section className="cpl-section">
-                <h2>Nationality and Citizenship</h2>
-                <p>
-                    The Indian authorities do not require any specific nationality from applicants seeking a CPL
-                    license. Foreign nationals who seek a CPL in India must fulfill additional requirements which
-                    include getting security clearance alongside the conversion of their licenses obtained from
-                    foreign training programs.
-                </p>
-            </section>
-
-            {/* SPL */}
-            <section className="cpl-section">
-                <h2>Student Pilot License (SPL)</h2>
-                <p>
-                    Candidates must first obtain a Student Pilot License (SPL) to enroll in the CPL program. The
-                    candidate needs to fulfill three requirements to obtain an SPL.
-                </p>
+                <h3><strong>Key Skills Required</strong></h3>
                 <ul>
-                    <li>●Be at least 16 years old</li>
-                    <li>●Students must pass an oral/written examination on aviation subjects.</li>
-                    <li>●Pass a Class 2 medical exam</li>
+                    <li>Good communication skills</li>
+                    <li>Strong decision-making ability</li>
+                    <li>Situational awareness</li>
+                    <li>Discipline and responsibility</li>
+                    <li>Proficiency in English language</li>
                 </ul>
-                <p>
-                    Under this license students can start receiving supervised flying instruction for basic skills.
-                </p>
+
+                <p>These pilot qualifications required are evaluated throughout training.</p>
             </section>
 
-            {/* FLYING HOURS */}
+            {/* QUALIFICATIONS FOR CPL TRAINING */}
             <section className="cpl-section">
-                <h2>Flying Hours</h2>
-                <p>
-                    The CPL eligibility requires candidates to complete at least <strong>200 hours</strong> of flying.
-                    These include:
-                </p>
+                <h2><strong>Qualifications for Commercial Pilot Training</strong></h2>
+                <p>The qualifications for commercial pilot training combine academic, medical, and practical standards.</p>
+
+                <h3><strong>To summarize, candidates must have:</strong></h3>
                 <ul>
-                    <li>●100 hours as Pilot-in-Command (PIC)</li>
-                    <li>●20 hours of cross-country flying</li>
-                    <li>●10 hours of instrument flying</li>
-                    <li>●5 hours of night flying</li>
+                    <li>10+2 with Physics & Mathematics</li>
+                    <li>Class 1 Medical Certificate</li>
+                    <li>Valid passport</li>
+                    <li>Aviation authority registration (such as DGCA Computer Number)</li>
                 </ul>
+
+                <p>These qualifications for pilot training are checked before license issuance.</p>
+            </section>
+
+            {/* COMMERCIAL PILOT COURSE ELIGIBILITY */}
+            <section className="cpl-section">
+                <h2><strong>Commercial Pilot Course Eligibility</strong></h2>
                 <p>
-                    Flying education must take place under DGCA-approved academic institutions which provide flight
-                    instruction.
+                    Commercial pilot course eligibility may vary slightly depending on the country where training is
+                    undertaken.
+                </p>
+
+                <h3><strong>Example (India – DGCA)</strong></h3>
+                <ul>
+                    <li>10+2 with Physics & Mathematics</li>
+                    <li>DGCA Class 1 Medical</li>
+                    <li>Minimum age: 18 years</li>
+                    <li>DGCA exams cleared</li>
+                </ul>
+
+                <p>This is also referred to as CPL course eligibility or commercial pilot training eligibility.</p>
+            </section>
+
+            {/* ELIGIBILITY FOR AVIATION COURSE */}
+            <section className="cpl-section">
+                <h2><strong>Eligibility for Aviation Course – Additional Factors</strong></h2>
+                <p>Apart from core requirements, eligibility for aviation course also depends on:</p>
+
+                <ul>
+                    <li>Financial planning for training</li>
+                    <li>Ability to clear theoretical exams</li>
+                    <li>Long-term commitment to aviation career</li>
+                    <li>Willingness to relocate for training</li>
+                </ul>
+
+                <p>Aviation training is demanding, and commitment plays a key role in success.</p>
+            </section>
+
+            {/* CHECKLIST */}
+            <section className="cpl-section">
+                <h2><strong>Commercial Pilot Licence Eligibility – Final Checklist</strong></h2>
+
+                <p>Here is a simple checklist for commercial pilot licence eligibility:</p>
+
+                <ul>
+                    <li>✅ Minimum age: 18 years</li>
+                    <li>✅ 10+2 with Physics & Mathematics</li>
+                    <li>✅ Class 1 Medical fitness</li>
+                    <li>✅ Required flight training hours</li>
+                    <li>✅ Cleared aviation authority exams</li>
+                </ul>
+
+                <p>If you meet these conditions, you are eligible to apply for a CPL.</p>
+            </section>
+
+            {/* CAREER OPPORTUNITIES */}
+            <section className="cpl-section">
+                <h2><strong>Career Opportunities After Meeting CPL Eligibility</strong></h2>
+                <p>Once you fulfill commercial pilot requirements, career options include:</p>
+
+                <ul>
+                    <li>Airline pilot</li>
+                    <li>Charter & business aviation</li>
+                    <li>Cargo pilot</li>
+                    <li>Flight instructor</li>
+                    <li>Corporate aviation</li>
+                </ul>
+
+                <p>Meeting the eligibility criteria opens doors to global aviation careers.</p>
+            </section>
+            <section className="cpl-section cpl-compare">
+                <h2><strong>Commercial Pilot License Eligibility vs Private Pilot License (PPL)</strong></h2>
+                <p className="muted">Many students confuse CPL with PPL eligibility.</p>
+
+                <div className="cpl-table-wrap">
+                    <table className="cpl-compare-table">
+                        <thead>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>PPL</th>
+                                <th>CPL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Purpose</td>
+                                <td>Recreational</td>
+                                <td>Professional</td>
+                            </tr>
+                            <tr>
+                                <td>Medical</td>
+                                <td>Class 2</td>
+                                <td>Class 1</td>
+                            </tr>
+                            <tr>
+                                <td>Education</td>
+                                <td>Recommended</td>
+                                <td>Mandatory</td>
+                            </tr>
+                            <tr>
+                                <td>Flight Hours</td>
+                                <td>~40–60</td>
+                                <td>~200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p>
+                    This comparison helps clarify <strong>commercial pilot license eligibility</strong> requirements.
                 </p>
             </section>
 
-            {/* FINAL THOUGHTS */}
+            {/* FINAL CONCLUSION */}
             <section className="cpl-section cpl-final">
-                <h2>Final Thoughts</h2>
+                <h2><strong>Final Conclusion</strong></h2>
                 <p>
-                    Start a successful career in aviation with meeting all the commercial pilot eligibility
-                    requirements. All requirements including educational background coupled with medical fitness and
-                    language proficiency as well as flying hours are specifically designed to establish the best
-                    possible safety and professional standards.
+                    Understanding Commercial Pilot License eligibility is the most important first step toward becoming a
+                    professional pilot. From educational qualifications and medical fitness to flight training and exams, every
+                    requirement plays a crucial role.
                 </p>
                 <p>
-                    With meeting all requirements coupled with dedication to aviation you will proceed successfully
-                    toward obtaining your wings. Students should enroll in a respected flying school that holds DGCA
-                    approval because it will support them throughout the SPL and CPL education journey.
+                    If you meet the requirements to become a pilot and are passionate about aviation, a career as a
+                    commercial pilot offers global opportunities, professional growth, and a rewarding lifestyle.
                 </p>
             </section>
-
-
 
         </main>
     );
