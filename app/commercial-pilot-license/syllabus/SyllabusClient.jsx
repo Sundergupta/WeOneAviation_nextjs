@@ -20,97 +20,150 @@ export default function SyllabusClient() {
             {/* INTRO */}
             <section className="cpl-section">
 
+
                 <p>
-                    A commercial pilot license syllabus was designed to teach aspiring pilots the necessary skills
-                    which will enable them to carry out safe aircraft operations efficiently. The CPL syllabus meets
-                    DGCA (Directorate General of Civil Aviation) standards through a combination of ground instruction
-                    and flight training that produces fully prepared candidates for aviation success. The following
-                    sections provide you with an in-depth review of the learning subjects in Commercial Pilot License
-                    training programs within India.
+                    If you dream of becoming a professional pilot, understanding the Commercial Pilot License syllabus is
+                    one of the first and most important steps. Many students focus only on flying hours, but in reality, strong
+                    theoretical knowledge is what builds a safe, confident, and skilled pilot. The pilot syllabus forms the
+                    backbone of your entire aviation career.
+                </p>
+
+                <p>
+                    This guide explains the CPL syllabus, subjects, and what you can expect during pilot training in a simple
+                    and human-friendly way.
                 </p>
             </section>
 
-            {/* GROUND TRAINING */}
             <section className="cpl-section">
-                <h2>Ground Training Subjects</h2>
+                <h2> What Is the Commercial Pilot License Syllabus? </h2>
+
                 <p>
-                    Theoretical learning at ground school serves as the essential starting point for becoming a pilot.
-                    The commercial pilot license syllabus for ground school teaches these necessary subjects:
+                    The commercial pilot license syllabus includes all the theoretical subjects that a pilot must study and
+                    clear before being issued a CPL. These subjects help pilots understand how aircraft fly, how weather
+                    affects operations, how navigation works, and what aviation laws must be followed.
                 </p>
+
                 <p>
-                    ● <strong>Air Navigation:</strong> Flight planning together with radio navigation and instrument
-                    flying and global positioning systems make up the subject matter.
-                </p>
-                <p>
-                    ● <strong>Aviation Meteorology:</strong> The training provides knowledge about weather patterns
-                    together with cloud formations and wind systems and their effects on flight operations.
-                </p>
-                <p>
-                    ● <strong>Air Regulation:</strong> Students gain knowledge of the rules from DGCA besides ICAO
-                    regulations and general aviation laws.
-                </p>
-                <p>
-                    ● <strong>Technical General:</strong> Focuses on the basic working of aircraft systems, engines,
-                    and instruments.
-                </p>
-                <p>
-                    ● <strong>Technical Specific:</strong> Training for the aircraft type that a candidate operates
-                    during their flight education period.
-                </p>
-                <p>
-                    ● <strong>Radio Telephony (RTR):</strong> Trains students in aviation communication, standard
-                    phraseology, and emergency procedures.
-                </p>
-                <p>
-                    Instructors teach subjects through classroom sessions and online resources as well as conducting
-                    mock tests to ensure students pass their DGCA examinations.
+                    In India, the syllabus is regulated by DGCA, and students must clear the DGCA CPL exam syllabus as
+                    part of their training. Similar structures are followed globally, with slight differences based on the aviation
+                    authority.
                 </p>
             </section>
 
-            {/* FLIGHT TRAINING */}
             <section className="cpl-section">
-                <h2>Flight Training Modules</h2>
+                <h2> Pilot Syllabus – Why Theory Matters in Flying </h2>
+
                 <p>
-                    Students must complete flight training as a practical requirement for the commercial pilot
-                    license syllabus:
+                    The pilot syllabus is not just about passing exams. It prepares you to make real-life decisions in the
+                    cockpit. During training, pilots learn how to plan flights, read weather charts, calculate fuel, and
+                    understand aircraft systems.
                 </p>
+
                 <p>
-                    ● <strong>Basic Maneuvers:</strong> Take-off and landing procedures together with straight-and-
-                    level flight and turns and climbing and descending flights.
-                </p>
-                <p>
-                    ● <strong>Cross-Country Flights:</strong> Navigation exercises between different airfields.
-                </p>
-                <p>
-                    ● <strong>Instrument Flying:</strong> Training includes flying using instruments alone to
-                    duplicate low-visibility conditions.
-                </p>
-                <p>
-                    ● <strong>Night Flying:</strong> Flight operations during night conditions.
-                </p>
-                <p>
-                    ● <strong>Solo Flying:</strong> Independent flying operations help develop personal confidence
-                    as well as flying expertise.
-                </p>
-                <p>
-                    To earn a commercial pilot license students need at least 200 hours of flight schooling that must
-                    cover required hours for solo flights, cross-country flights and instrument flight tasks.
+                    A strong pilot training syllabus ensures that when something unexpected happens in the air, the pilot
+                    knows exactly how to respond calmly and safely.
                 </p>
             </section>
 
-            {/* FINAL THOUGHTS */}
+            <section className="cpl-section">
+                <h2> CPL Exam Syllabus – Main Subjects Explained </h2>
+
+                <p>
+                    The CPL exam syllabus consists of multiple theory papers. These papers are often referred to as CPL
+                    exam subjects and must be cleared individually.
+                </p>
+
+                <h4>Air Navigation</h4>
+                <p>
+                    Air Navigation focuses on flight planning, time-speed-distance calculations, charts, and radio navigation.
+                    Many students find this subject challenging, but it is also one of the most important CPL subjects.
+                </p>
+
+                <h4>Aviation Meteorology</h4>
+                <p>
+                    This subject helps pilots understand weather patterns, clouds, winds, storms, and how weather impacts
+                    flight safety. Meteorology is a critical commercial pilot license subject because weather plays a major role
+                    in aviation.
+                </p>
+
+                <h4>Air Regulations</h4>
+                <p>
+                    Air Regulations cover aviation laws, rules of the air, licensing requirements, and operational procedures.
+                    This subject ensures pilots fly legally and responsibly.
+                </p>
+
+                <h4>Technical General</h4>
+                <p>
+                    Technical General explains how aircraft systems work, including engines, instruments, electrical systems,
+                    and aircraft performance.
+                </p>
+
+                <h4>Technical Specific</h4>
+                <p>
+                    Technical Specific focuses on the particular aircraft type a pilot is training on. Each aircraft has its own
+                    CPL subject under Technical Specific.
+                </p>
+            </section>
+
+            <section className="cpl-section">
+                <h2> DGCA CPL Exam Syllabus – What Indian Students Should Know </h2>
+
+                <p>
+                    For students training in India, the DGCA CPL exam syllabus is mandatory. The syllabus for CPL DGCA is
+                    designed to test conceptual understanding rather than memorization.
+                </p>
+
+                <p>
+                    Students must clear all subjects as part of the syllabus for CPL before applying for a Commercial Pilot
+                    License.
+                </p>
+            </section>
+
+            <section className="cpl-section">
+                <h2> Syllabus for Pilot Training vs Flying Practice </h2>
+
+                <p>
+                    While the syllabus for pilot theory focuses on classroom learning, flying training focuses on practical
+                    skills. Both go hand in hand. A pilot who understands theory well performs better during flight training.
+                </p>
+
+                <p>The pilot training syllabus helps pilots:</p>
+                <ul>
+                    <li>Fly more confidently</li>
+                    <li>Handle emergencies better</li>
+                    <li>Understand aircraft behavior</li>
+                    <li>Improve overall safety</li>
+                </ul>
+            </section>
+
+            <section className="cpl-section">
+                <h2> Why Understanding the CPL Syllabus Early Helps </h2>
+
+                <p>Knowing the CPL syllabus in advance helps students:</p>
+                <ul>
+                    <li>Prepare mentally for training</li>
+                    <li>Choose the right ground classes</li>
+                    <li>Plan study time effectively</li>
+                    <li>Reduce exam stress</li>
+                    <li>Avoid repeated exam attempts</li>
+                </ul>
+
+                <p>
+                    Most professional flight academies structure their training strictly according to the official commercial pilot
+                    license syllabus.
+                </p>
+            </section>
+
             <section className="cpl-section cpl-final">
-                <h2>Final Thoughts</h2>
+                <h2> Final Thoughts </h2>
+
                 <p>
-                    The official commercial pilot license syllabus exists as a carefully designed program which
-                    prepares future pilots for actual aviation duties. Students receive both academic instruction
-                    and flight training at this facility which prepares them for professional pilot competence and
-                    confidence levels. Competence in ground and flight subjects creates pilots who are prepared to
-                    manage different climate situations and corporate rules as well as airline protocol.
+                    The Commercial Pilot License syllabus is not just about clearing exams—it is about becoming a responsible and knowledgeable professional pilot. From navigation and meteorology to regulations and aircraft systems, every subject in the CPL exam syllabus plays a vital role in aviation safety.
                 </p>
+
                 <p>
-                    The syllabus stands as the essential prerequisite for aviation students interested in reaching
-                    cockpit positions.
+                    If you truly want to succeed as a pilot, respect the syllabus, understand the concepts, and build strong
+                    theoretical foundations alongside your flying skills.
                 </p>
             </section>
 

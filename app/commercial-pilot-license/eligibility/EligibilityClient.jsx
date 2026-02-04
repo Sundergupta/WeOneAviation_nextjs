@@ -37,7 +37,7 @@ export default function EligibilityClient() {
 
             {/* CPL */}
             <section className="cpl-section">
-                <h2><strong>What Is a Commercial Pilot License (CPL)?</strong></h2>
+                <h2> What Is a Commercial Pilot License (CPL)? </h2>
                 <p>
                     A Commercial Pilot License (CPL) allows a pilot to fly aircraft professionally and earn remuneration. After
                     meeting the commercial pilot license eligibility, candidates can pursue careers with airlines, charter
@@ -51,14 +51,14 @@ export default function EligibilityClient() {
 
             {/* REQUIREMENTS */}
             <section className="cpl-section">
-                <h2><strong>Requirements to Become a Pilot</strong></h2>
+                <h2> Requirements to Become a Pilot </h2>
                 <p>
                     The requirements to become a pilot are defined by aviation authorities such as DGCA (India), FAA
                     (USA), or EASA (Europe). While regulations vary slightly by country, the core eligibility criteria remain
                     similar worldwide.
                 </p>
 
-                <h3><strong>Basic Requirements to Become a Pilot</strong></h3>
+                <h3> Basic Requirements to Become a Pilot </h3>
                 <ul>
                     <li>Minimum age requirement</li>
                     <li>Educational qualifications</li>
@@ -72,12 +72,12 @@ export default function EligibilityClient() {
 
             {/* QUALIFICATIONS */}
             <section className="cpl-section">
-                <h2><strong>Qualifications to Become a Pilot</strong></h2>
+                <h2> Qualifications to Become a Pilot </h2>
                 <p>
                     One of the most common questions students ask is about the qualifications to become a pilot.
                 </p>
 
-                <h3><strong>Educational Qualifications</strong></h3>
+                <h3> Educational Qualifications </h3>
                 <p>To meet commercial pilot eligibility, a candidate must have:</p>
 
                 <ul>
@@ -95,7 +95,7 @@ export default function EligibilityClient() {
 
             {/* AGE */}
             <section className="cpl-section">
-                <h2><strong>Age Criteria – Eligibility to Become a Pilot</strong></h2>
+                <h2> Age Criteria – Eligibility to Become a Pilot </h2>
                 <p>Understanding the eligibility to become a pilot includes meeting age requirements.</p>
 
                 <ul>
@@ -108,12 +108,12 @@ export default function EligibilityClient() {
 
             {/* MEDICAL */}
             <section className="cpl-section">
-                <h2><strong>Commercial Pilot Eligibility – Medical Requirements</strong></h2>
+                <h2> Commercial Pilot Eligibility – Medical Requirements </h2>
                 <p>
                     Medical fitness is one of the most critical aspects of commercial pilot eligibility.
                 </p>
 
-                <h3><strong>Medical Certification</strong></h3>
+                <h3> Medical Certification </h3>
                 <ul>
                     <li>Class 1 Medical Certificate is mandatory</li>
                     <li>Conducted by approved aviation medical examiners</li>
@@ -128,10 +128,10 @@ export default function EligibilityClient() {
 
             {/* TRAINING */}
             <section className="cpl-section">
-                <h2><strong>Pilot Training Eligibility & Flight Training Requirements</strong></h2>
+                <h2> Pilot Training Eligibility & Flight Training Requirements </h2>
                 <p>Meeting pilot training eligibility involves more than just education and age.</p>
 
-                <h3><strong>Flight Training Requirements</strong></h3>
+                <h3> Flight Training Requirements </h3>
                 <p>To qualify for a CPL, a candidate must complete:</p>
 
                 <ul>
@@ -147,10 +147,10 @@ export default function EligibilityClient() {
 
             {/* SKILLS */}
             <section className="cpl-section">
-                <h2><strong>Pilot Course Eligibility & Skill Requirements</strong></h2>
+                <h2> Pilot Course Eligibility & Skill Requirements </h2>
                 <p>Pilot course eligibility also includes non-academic skills essential for aviation.</p>
 
-                <h3><strong>Key Skills Required</strong></h3>
+                <h3> Key Skills Required </h3>
                 <ul>
                     <li>Good communication skills</li>
                     <li>Strong decision-making ability</li>
@@ -164,10 +164,10 @@ export default function EligibilityClient() {
 
             {/* QUALIFICATIONS FOR CPL TRAINING */}
             <section className="cpl-section">
-                <h2><strong>Qualifications for Commercial Pilot Training</strong></h2>
+                <h2> Qualifications for Commercial Pilot Training </h2>
                 <p>The qualifications for commercial pilot training combine academic, medical, and practical standards.</p>
 
-                <h3><strong>To summarize, candidates must have:</strong></h3>
+                <h3> To summarize, candidates must have: </h3>
                 <ul>
                     <li>10+2 with Physics & Mathematics</li>
                     <li>Class 1 Medical Certificate</li>
@@ -180,13 +180,13 @@ export default function EligibilityClient() {
 
             {/* COMMERCIAL PILOT COURSE ELIGIBILITY */}
             <section className="cpl-section">
-                <h2><strong>Commercial Pilot Course Eligibility</strong></h2>
+                <h2> Commercial Pilot Course Eligibility </h2>
                 <p>
                     Commercial pilot course eligibility may vary slightly depending on the country where training is
                     undertaken.
                 </p>
 
-                <h3><strong>Example (India – DGCA)</strong></h3>
+                <h3> Example (India – DGCA) </h3>
                 <ul>
                     <li>10+2 with Physics & Mathematics</li>
                     <li>DGCA Class 1 Medical</li>
@@ -199,7 +199,7 @@ export default function EligibilityClient() {
 
             {/* ELIGIBILITY FOR AVIATION COURSE */}
             <section className="cpl-section">
-                <h2><strong>Eligibility for Aviation Course – Additional Factors</strong></h2>
+                <h2> Eligibility for Aviation Course – Additional Factors </h2>
                 <p>Apart from core requirements, eligibility for aviation course also depends on:</p>
 
                 <ul>
@@ -214,7 +214,7 @@ export default function EligibilityClient() {
 
             {/* CHECKLIST */}
             <section className="cpl-section">
-                <h2><strong>Commercial Pilot Licence Eligibility – Final Checklist</strong></h2>
+                <h2> Commercial Pilot Licence Eligibility – Final Checklist </h2>
 
                 <p>Here is a simple checklist for commercial pilot licence eligibility:</p>
 
@@ -231,7 +231,7 @@ export default function EligibilityClient() {
 
             {/* CAREER OPPORTUNITIES */}
             <section className="cpl-section">
-                <h2><strong>Career Opportunities After Meeting CPL Eligibility</strong></h2>
+                <h2> Career Opportunities After Meeting CPL Eligibility </h2>
                 <p>Once you fulfill commercial pilot requirements, career options include:</p>
 
                 <ul>
@@ -245,7 +245,7 @@ export default function EligibilityClient() {
                 <p>Meeting the eligibility criteria opens doors to global aviation careers.</p>
             </section>
             <section className="cpl-section cpl-compare">
-                <h2><strong>Commercial Pilot License Eligibility vs Private Pilot License (PPL)</strong></h2>
+                <h2> Commercial Pilot License Eligibility vs Private Pilot License (PPL) </h2>
                 <p className="muted">Many students confuse CPL with PPL eligibility.</p>
 
                 <div className="cpl-table-wrap">
@@ -283,13 +283,13 @@ export default function EligibilityClient() {
                 </div>
 
                 <p>
-                    This comparison helps clarify <strong>commercial pilot license eligibility</strong> requirements.
+                    This comparison helps clarify  commercial pilot license eligibility  requirements.
                 </p>
             </section>
 
             {/* FINAL CONCLUSION */}
             <section className="cpl-section cpl-final">
-                <h2><strong>Final Conclusion</strong></h2>
+                <h2> Final Conclusion </h2>
                 <p>
                     Understanding Commercial Pilot License eligibility is the most important first step toward becoming a
                     professional pilot. From educational qualifications and medical fitness to flight training and exams, every

@@ -23,110 +23,152 @@ export default function SalaryClient() {
 
                 {/* ================= CONTENT ================= */}
                 <section className="salary-container">
-
                     {/* INTRO */}
                     <section className="cpl-section">
+
+
                         <p>
-                            Thousands of aviators interested in pursuing flight careers ask about the Commercial pilot
-                            license salary levels in India in comparison to foreign salaries. Getting your Commercial
-                            Pilot License (CPL) brings you more than flight experience because it leads to a satisfying
-                            career as well as financial benefits.
+                            The commercial pilot license salary is one of the biggest reasons why aviation attracts thousands of
+                            students every year. Becoming a commercial pilot offers not just prestige but also strong financial growth
+                            over time. However, pilot salaries vary depending on experience, aircraft type, airline, and country.
                         </p>
+
                         <p>
-                            Commercial pilot salary bases its amount on a combination of flight experience with the
-                            aircraft type and airline partnership and geographic location. A comprehensive breakdown on
-                            this page explains the earnings opportunities for CPL holders can be found here.
+                            This guide explains commercial pilot starting pay, CPL salary growth, and what pilots can realistically
+                            expect after completing training.
                         </p>
                     </section>
 
-                    {/* WHAT IS SALARY */}
                     <section className="cpl-section">
-                        <h2>What is a Commercial Pilot License Salary?</h2>
+                        <h2> What Is Commercial Pilot License Salary? </h2>
+
                         <p>
-                            After getting their CPL through training and certification pilots can obtain their commercial
-                            pilot license salary as monthly or yearly pay. Your career stage alongside your work location
-                            determines how much your commercial pilot license salary will be.
+                            The commercial pilot license salary refers to the earnings a pilot receives after obtaining a CPL and flying
+                            professionally. A CPL allows pilots to work with airlines, charter companies, cargo operators, corporate
+                            aviation, or training academies.
                         </p>
-                        <button className="join-btn">Limited Seat - Join Now</button>
+
+                        <p>
+                            Salary levels increase steadily as pilots gain flight hours, aircraft ratings, and operational experience.
+                        </p>
                     </section>
 
-                    {/* ENTRY LEVEL */}
                     <section className="cpl-section">
-                        <h2>Entry-Level Commercial Pilot Salary in India</h2>
+                        <h2> Commercial Pilot Starting Pay – Entry Level Earnings </h2>
+
                         <p>
-                            A valid Commercial Pilot License allows freshers to begin their aviation career by piloting
-                            as First Officer or Co-Pilot. The typical salary for commercial pilots in India with their
-                            license that maintains an average range between INR 1.5 to 3 lakhs per month in their first
-                            role.
+                            Commercial pilot starting pay is the income earned during the initial phase of a pilot’s career, usually as a
+                            First Officer.
                         </p>
-                        <p>
-                            The starting salary paid by regional airlines and charter companies is normally lower than
-                            the standard amount until pilots build their skills through flying experience.
-                        </p>
+
+                        <h3>Average Starting Salary Overview</h3>
+                        <ul>
+                            <li>Entry-level airline pilot (India): ₹1.5 – ₹3.5 lakh per month</li>
+                            <li>International airlines: USD 3,000 – 6,000 per month</li>
+                            <li>Charter & business aviation: ₹1 – ₹2.5 lakh per month</li>
+                        </ul>
+
+                        <p>Starting pay depends heavily on the airline, aircraft type, and demand for pilots.</p>
                     </section>
 
-                    {/* EXPERIENCED */}
                     <section className="cpl-section">
-                        <h2>Experienced Commercial Pilot Salary</h2>
+                        <h2> CPL Salary Growth with Experience </h2>
+
                         <p>
-                            Flight experience alongside collecting sufficient flight hours enables pilots to advance
-                            their position to Captain. A Captain employed at a leading domestic Indian airline receives
-                            a monthly salary between INR 6 to 10 lakhs. The salary earnings for international routes and
-                            world-class carriers typically exceed the pay of domestic routes.
+                            A pilot’s CPL salary grows significantly with flight hours and seniority.
                         </p>
+
+                        <h3>How Experience Impacts CPL Wages</h3>
+                        <ul>
+                            <li>0–500 flight hours: Entry-level salary</li>
+                            <li>1,500+ flight hours: Strong salary growth</li>
+                            <li>Captain upgrade: Salary may double or triple</li>
+                        </ul>
+
+                        <p>Long-haul and wide-body captains earn some of the highest CPL wages in aviation.</p>
                     </section>
 
-                    {/* FACTORS */}
                     <section className="cpl-section">
-                        <h2>Factors Influencing Commercial Pilot License Salary</h2>
+                        <h2> Factors That Affect Commercial Pilot Salary </h2>
+
                         <p>
-                            ● <strong>Airline Type:</strong> Pilots working for domestic airlines receive lower pay rates
-                            than those employed by international airlines.
+                            Several factors influence commercial pilot training salary and long-term earnings.
                         </p>
-                        <p>
-                            ● <strong>Aircraft Type:</strong> Pilots operate wide-body jets (Boeing 777 or Airbus A350)
-                            which generates a higher salary compared to pilots who operate smaller aircraft.
-                        </p>
-                        <p>
-                            ● <strong>Experience Level:</strong> A pilot’s salary grows as their flight hours increase
-                            together with their professional experience.
-                        </p>
-                        <p>
-                            ● <strong>Location:</strong> Pilots who fly for Middle Eastern or Southeast Asian or European
-                            airlines tend to receive bigger salary packages than their Indian counterparts.
-                        </p>
-                        <p>
-                            ● <strong>Additional Roles:</strong> Training captains and instructors along with examiners
-                            may receive performance-based bonuses and additional payments through allowances.
-                        </p>
+
+                        <h3>Key Salary Influencing Factors</h3>
+                        <ul>
+                            <li>Aircraft type (turboprop, jet, wide-body)</li>
+                            <li>Airline or operator</li>
+                            <li>Domestic vs international routes</li>
+                            <li>Total flight hours</li>
+                            <li>Rank (First Officer or Captain)</li>
+                        </ul>
+
+                        <p>This is why pilot license salary differs from one pilot to another.</p>
                     </section>
 
-                    {/* ABROAD */}
                     <section className="cpl-section">
-                        <h2>Commercial Pilot Salary Abroad</h2>
+                        <h2> Pilot License Salary by Career Path </h2>
+
                         <p>
-                            Commercial pilot license salaries are high in the USA and Australia as well as the UAE and
-                            Singapore. Newbie pilots typically receive pay between USD 4,000 and 8,000 each month yet
-                            captains with many years of experience can earn from USD 10,000 to 20,000 and beyond
-                            according to their aircraft assignments and workplace.
+                            After completing CPL, pilots can choose different career paths, each with different salary ranges.
+                        </p>
+
+                        <h3>Airline Pilot Salary</h3>
+                        <p>Airline pilots enjoy the highest earning potential and structured salary growth.</p>
+
+                        <h4>Charter & Corporate Pilot Salary</h4>
+                        <p>Charter pilots earn competitive pay with flexible schedules and varied operations.</p>
+
+                        <h5>Cargo Pilot Salary</h5>
+                        <p>Cargo pilots often earn stable salaries with international exposure.</p>
+
+                        <h6>Pilot Trainer Salary</h6>
+                        <p>A pilot trainer salary is usually lower initially but ideal for building flight hours and experience.</p>
+                    </section>
+
+                    <section className="cpl-section">
+                        <h2> Pilot Training Salary – Early Career Reality </h2>
+
+                        <p>
+                            Many students ask about pilot training salary, but training itself does not provide income. Salary begins
+                            only after obtaining a CPL and securing employment.
+                        </p>
+
+                        <p>Junior pilots and instructors may earn modest pay initially while gaining experience.</p>
+                    </section>
+
+                    <section className="cpl-section">
+                        <h2> Commercial Pilot Course Salary – Is It Worth It? </h2>
+
+                        <p>
+                            The commercial pilot course salary potential makes pilot training a long-term investment. Although
+                            training costs are high, pilots often recover this investment within the first few years of airline
+                            employment.
                         </p>
                     </section>
 
-                    {/* BENEFITS */}
+                    <section className="cpl-section">
+                        <h2> Commercial Pilot Training Salary vs Long-Term Earnings </h2>
+
+                        <p>
+                            While commercial pilot training salary is low during early stages, long-term earnings, global opportunities,
+                            and career stability make aviation one of the most rewarding professions.
+                        </p>
+                    </section>
+
                     <section className="cpl-section cpl-final">
-                        <h2>Additional Benefits</h2>
-                        <p>● Health and life insurance</p>
-                        <p>● Travel perks for family</p>
-                        <p>● Housing or accommodation allowance</p>
-                        <p>● Retirement and pension plans</p>
-                        <p>● Training and upskilling opportunities</p>
+                        <h2> Final Thoughts on Commercial Pilot License Salary </h2>
+
                         <p>
-                            A commercial pilot license salary offers among the highest professional compensation
-                            because it provides exciting travel benefits along with elevated status and employment
-                            flexibility across different countries. The sizeable investment in pilot training yields
-                            equal benefits to the pilot. Acquiring a CPL enables you to pursue flights either within
-                            India’s borders or internationally thereby establishing a stable career with exciting
-                            opportunities.
+                            The commercial pilot license salary depends on multiple factors, but the career offers strong growth,
+                            global opportunities, and long-term financial stability. Although commercial pilot starting pay may seem
+                            modest, experience and upgrades lead to significant income increases.
+                        </p>
+
+                        <p>
+                            For those passionate about flying, a CPL opens doors to one of the most respected and well-paid
+                            careers worldwide.
                         </p>
                     </section>
 
