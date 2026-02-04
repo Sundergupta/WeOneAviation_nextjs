@@ -51,7 +51,7 @@ export default function EligibilityClient() {
 
             {/* REQUIREMENTS */}
             <section className="cpl-section">
-                <h2> Requirements to Become a Pilot </h2>
+                <h3> Requirements to Become a Pilot </h3>
                 <p>
                     The requirements to become a pilot are defined by aviation authorities such as DGCA (India), FAA
                     (USA), or EASA (Europe). While regulations vary slightly by country, the core eligibility criteria remain
@@ -228,22 +228,6 @@ export default function EligibilityClient() {
 
                 <p>If you meet these conditions, you are eligible to apply for a CPL.</p>
             </section>
-
-            {/* CAREER OPPORTUNITIES */}
-            <section className="cpl-section">
-                <h2> Career Opportunities After Meeting CPL Eligibility </h2>
-                <p>Once you fulfill commercial pilot requirements, career options include:</p>
-
-                <ul>
-                    <li>Airline pilot</li>
-                    <li>Charter & business aviation</li>
-                    <li>Cargo pilot</li>
-                    <li>Flight instructor</li>
-                    <li>Corporate aviation</li>
-                </ul>
-
-                <p>Meeting the eligibility criteria opens doors to global aviation careers.</p>
-            </section>
             <section className="cpl-section cpl-compare">
                 <h2> Commercial Pilot License Eligibility vs Private Pilot License (PPL) </h2>
                 <p className="muted">Many students confuse CPL with PPL eligibility.</p>
@@ -286,6 +270,22 @@ export default function EligibilityClient() {
                     This comparison helps clarify  commercial pilot license eligibility  requirements.
                 </p>
             </section>
+            {/* CAREER OPPORTUNITIES */}
+            <section className="cpl-section">
+                <h2> Career Opportunities After Meeting CPL Eligibility </h2>
+                <p>Once you fulfill commercial pilot requirements, career options include:</p>
+
+                <ul>
+                    <li>Airline pilot</li>
+                    <li>Charter & business aviation</li>
+                    <li>Cargo pilot</li>
+                    <li>Flight instructor</li>
+                    <li>Corporate aviation</li>
+                </ul>
+
+                <p>Meeting the eligibility criteria opens doors to global aviation careers.</p>
+            </section>
+
 
             {/* FINAL CONCLUSION */}
             <section className="cpl-section cpl-final">
