@@ -16,108 +16,183 @@ export default function AdmissionClient() {
     ];
 
     return (
-        <main>
-            {/* <section
-                className="hero-section"
-            // style={{
-            //     backgroundImage: "url('/assets/home page slider/generate a videos of airplane.jpg')",
-            //     backgroundSize: "cover",
-            //     backgroundPosition: "center",
-            // }}
-            >
-                <div className="container">
-                    <h1>Commercial Pilot License Admission Process</h1>
-                </div>
-            </section> */}
+        <main className="commercial-pilot-license">
 
-            <div className="menu-layout">
+            {/* INTRO */}
+            <section className="cpl-section">
 
-                <section className="content-box cpl-container">
-                    <div className="cpl-section">
+                <p>
+                    The Commercial Pilot License Admission Process is the first major milestone for anyone dreaming of
+                    becoming a professional pilot. Many students assume that pilot training begins directly with flying, but in
+                    reality, there is a structured commercial pilot license admission procedure that candidates must follow.
+                </p>
 
-                        <p>
-                            Dreaming of a career in aviation? The Commercial Pilot License Admission journey begins with pilots
-                            understanding all process requirements. The admission process checks eligibility and aptitude alongside
-                            readiness to start professional pilot training. Each phase of Commercial Pilot License qualification and
-                            learning to fly alone without an instructor receives strict guidelines from the DGCA (Directorate General
-                            of Civil Aviation) in India.
-                        </p>
-                        <p>
-                            The following guide provides you with details on CPL training application procedures and start-up
-                            instructions.
-                        </p>
-                    </div>
+                <p>
+                    From eligibility checks to medical tests and the entrance exam for commercial pilot, this guide explains
+                    the complete CPL admission process in a simple and easy-to-understand way.
+                </p>
+            </section>
 
-                    <div className="cpl-section">
-                        <h2>Contact Now</h2>
-                    </div>
+            {/* CPL */}
+            <section className="cpl-section">
+                <h2> What Is the Commercial Pilot License Admission Process? </h2>
+                <p>
+                    The Commercial Pilot License Admission Process refers to the official steps a student must complete to
+                    enroll in a CPL training program. This process ensures that candidates meet the academic, medical, and
+                    aptitude requirements needed to safely undergo pilot training.
+                </p>
 
-                    <div className="cpl-section">
-                        <h2>Check Eligibility Requirements</h2>
-                        <p>Make sure you fulfill all eligibility standards before starting your application:</p>
-                        <p>● <b>Age:</b> Training for the license starts at age 17 but the license is issued at age 18.</p>
-                        <p>● <b>Education:</b> Students need to complete their 10+2 by obtaining Physics and Mathematics from a recognized board.</p>
-                        <p>● <b>Medical Fitness:</b> Applicants must get their Class 2 followed by class 1 Medical Certificates from medical examiners recognized by DGCA.</p>
-                        <p>● <b>English Proficiency:</b> Must be able to read, write, and understand English.</p>
-                        <p>The initial requirement stands as the core element of Commercial Pilot License Admission Process initiation.</p>
-                    </div>
+                <p>
+                    The commercial pilot license admission procedure may slightly vary between countries and flying schools,
+                    but the core steps remain largely the same.
+                </p>
+            </section>
 
-                    <div className="cpl-section">
-                        <h2>Choose a DGCA-Approved Flying School</h2>
-                        <p>Choosing the correct training institution stands as a vital component throughout the Commercial Pilot License Admission Process. Look for a school that:</p>
-                        <p>● Is approved by the DGCA</p>
-                        <p>● Has experienced instructors</p>
-                        <p>● Offers modern aircraft and simulators</p>
-                        <p>● Provides complete ground and flight training</p>
-                        <p>After selection you must fill out the school’s enrollment form while providing documents and making your first fee payment.</p>
-                    </div>
+            {/* REQUIREMENTS */}
+            <section className="cpl-section">
+                <h3> Eligibility Criteria for CPL Admission </h3>
+                <p>Before starting the CPL admission process, candidates must meet basic eligibility requirements.</p>
 
-                    <div className="cpl-section">
-                        <h2>Ground School & DGCA Exams</h2>
-                        <p>Students must study core subjects Air Navigation together with Meteorology, Air Regulations, Technical General and Technical Specific at ground school training. Candidates need to clear exams conducted by DGCA concerning these subjects before their training progression.</p>
-                    </div>
+                <h3> Educational Requirements </h3>
+                <ul>
+                    <li>Completion of 10+2 with Physics and Mathematics</li>
+                    <li>Open schooling students may also be eligible (subject to authority approval)</li>
+                </ul>
 
-                    <div className="cpl-section">
-                        <h2>Flight Training & Logging Flying Hours</h2>
-                        <p>You need to meet the requirement of 200 flight hours which includes solo flights, cross-country flights, instrument flights, and night flights. The logbook contains essential training information that serves as a basis for CPL certificate issuance.</p>
-                    </div>
+                <h3> Age Requirement </h3>
+                <ul>
+                    <li>Minimum age: 17 years to start training</li>
+                    <li>Minimum age: 18 years for CPL issuance</li>
+                </ul>
 
-                    <div className="cpl-section">
-                        <h2>Apply for Commercial Pilot License</h2>
-                        <p>After passing all exams and completing flight hours:</p>
-                        <p>● Submit your logbook and documents to DGCA</p>
-                        <p>● Undergo Class 1 medical revalidation</p>
-                        <p>● Apply for CPL issuance</p>
-                    </div>
+                <p>
+                    Meeting these criteria allows students to move forward with the CPL admission formalities.
+                </p>
+            </section>
 
-                    <div className="cpl-section">
-                        <h2>Admission Procedure at We One Aviation Academy</h2>
-                        <p>We One Aviation Academy provides students with a friendly admission process that leads to Commercial Pilot License enrollment. Our admission process includes:</p>
-                        <p>● Initial Counseling: Understand your goals and assess your eligibility.</p>
-                        <p>● Document Verification: Academic data together with medical records are evaluated.</p>
-                        <p>● Application Submission: Applicants need to finish the CPL admission form by providing all necessary information.</p>
-                        <p>● Medical Support: Assistance in scheduling Class 2 and Class 1 medical tests.</p>
-                        <p>● Orientation & Enrollment: After shortlisting candidates they must join an orientation meeting to begin their ground training.</p>
-                        <p>● Loan & EMI Assistance: Our support services provide education loan options and EMI solutions to eligible students.</p>
-                        <p>We will support you through the entire training program starting from your initial counseling until you pass your final flight test.</p>
-                    </div>
+            {/* QUALIFICATIONS */}
+            <section className="cpl-section">
+                <h2> Entrance Exam for Commercial Pilot </h2>
+                <p>
+                    The entrance exam for commercial pilot is conducted by many flying academies to assess a candidate’s
+                    basic aptitude and academic readiness.
+                </p>
 
-                    <div className="cpl-section cpl-final">
-                        <h2>Final Thoughts</h2>
-                        <p>
-                            The Commercial Pilot License Admission Process consists of multiple stages which let only the most
-                            qualified and ready candidates obtain their wings. You can follow the procedure to become a commercial
-                            pilot if you have the proper guidance while remaining dedicated along with using the right training
-                            opportunities. Select an established DGCA-approved academy that meets your requirements when
-                            kickstarting your aviation career.
-                        </p>
-                        <p>
-                            At We One Aviation Academy we focus on supporting flight dreams through expert instruction and
-                            modern educational facilities and career-focused training methods.
-                        </p>
-                    </div>
-                </section>
-            </div>
+                <h3> What Does the Entrance Exam Include? </h3>
+                <ul>
+                    <li>Mathematics and Physics basics</li>
+                    <li>Logical reasoning</li>
+                    <li>English comprehension</li>
+                    <li>Aptitude and psychometric tests</li>
+                </ul>
+
+                <p>
+                    Some academies refer to this test as the CPL entrance exam, and clearing it is an essential part of the
+                    Commercial Pilot License Admission Process.
+                </p>
+            </section>
+
+            {/* AGE */}
+            <section className="cpl-section">
+                <h2> Medical Examination – Mandatory Step </h2>
+                <p>
+                    A Class 1 Medical Certificate is compulsory for commercial pilot license admission.
+                </p>
+
+                <h3> Medical Requirements Include </h3>
+                <ul>
+                    <li>Vision and hearing tests</li>
+                    <li>Blood and urine tests</li>
+                    <li>ECG and chest X-ray</li>
+                    <li>General physical fitness evaluation</li>
+                </ul>
+
+                <p>
+                    Clearing the medical exam early helps avoid delays during the CPL admission process.
+                </p>
+            </section>
+
+            {/* MEDICAL */}
+            <section className="cpl-section">
+                <h2> CPL Admission Process – Step by Step </h2>
+                <p>The CPL admission process typically follows these stages:</p>
+
+                <h3> Step 1: Application Submission </h3>
+                <p>Students apply to a flying school by submitting academic records and personal details.</p>
+
+                <h3> Step 2: Entrance Test </h3>
+                <p>The entrance exam for commercial pilot evaluates academic and mental readiness.</p>
+
+                <h3> Step 3: Interview & Aptitude Assessment </h3>
+                <p>Candidates may face a personal interview and aptitude evaluation.</p>
+
+                <h3> Step 4: Medical Clearance </h3>
+                <p>Obtaining Class 1 medical certification is mandatory.</p>
+
+                <h3> Step 5: Admission Confirmation </h3>
+                <p>Once all steps are cleared, CPL admission is confirmed.</p>
+            </section>
+
+            {/* TRAINING */}
+            <section className="cpl-section">
+                <h2> Commercial Pilot License Admission Without Entrance Exam </h2>
+                <p>
+                    Some international flying schools may offer commercial pilot license admission without a formal entrance
+                    test. However, students are still assessed through interviews and medical examinations.
+                </p>
+
+                <p>
+                    In India, most reputed academies prefer an entrance exam for commercial pilot to ensure training quality
+                    and safety standards.
+                </p>
+            </section>
+
+            {/* SKILLS */}
+            <section className="cpl-section">
+                <h2> Documents Required for CPL Admission </h2>
+                <p>Common documents needed for CPL admission process include:</p>
+
+                <ul>
+                    <li>10+2 mark sheets</li>
+                    <li>Passport</li>
+                    <li>Medical certificate</li>
+                    <li>Birth certificate</li>
+                    <li>Passport-size photographs</li>
+                </ul>
+
+                <p>Proper documentation ensures a smooth commercial pilot license admission experience.</p>
+            </section>
+
+            {/* QUALIFICATIONS FOR CPL TRAINING */}
+            <section className="cpl-section">
+                <h2> Why the CPL Admission Process Matters </h2>
+                <p>
+                    The Commercial Pilot License Admission Process is designed to select candidates who are mentally,
+                    physically, and academically fit for aviation training. It reduces training risks and increases the chances of
+                    successful course completion.
+                </p>
+
+                <p>
+                    Choosing the right academy and understanding the CPL admission process helps students save time, money, and
+                    effort.
+                </p>
+            </section>
+
+            {/* COMMERCIAL PILOT COURSE ELIGIBILITY */}
+            <section className="cpl-section">
+                <h2> Final Thoughts </h2>
+                <p>
+                    The Commercial Pilot License Admission Process is structured to prepare students for the demanding world of
+                    aviation. From clearing the entrance exam for commercial pilot to completing medical evaluations, each step
+                    plays a crucial role in shaping a future pilot.
+                </p>
+                <p>
+                    If you meet the eligibility criteria and are passionate about flying, completing the commercial pilot license
+                    admission procedure is your first step toward an exciting aviation career.
+                </p>
+            </section>
+
+
         </main>
     );
 }

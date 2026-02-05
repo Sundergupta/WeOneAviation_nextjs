@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import "./HomeClient.css";
 import Link from "next/link";
+// import PilotStepsLoader from "../components/PilotStepsLoader";
 
 import TrainingCards from "@/components/TrainingCards";
 import ReviewCard from "../components/ReviewCard";
@@ -547,6 +548,7 @@ export default function HomeClient() {
                         </div>
                     </div>
                 </section>
+                {/* <PilotStepsLoader /> */}
 
                 {/* ================= OFFER SECTION ================= */}
                 <section className="offer-section">

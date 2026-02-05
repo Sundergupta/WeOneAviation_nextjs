@@ -117,13 +117,13 @@ export default function SalaryClient() {
                         <h3>Airline Pilot Salary</h3>
                         <p>Airline pilots enjoy the highest earning potential and structured salary growth.</p>
 
-                        <h4>Charter & Corporate Pilot Salary</h4>
+                        <h4><b> Charter & Corporate Pilot Salary </b></h4>
                         <p>Charter pilots earn competitive pay with flexible schedules and varied operations.</p>
 
-                        <h5>Cargo Pilot Salary</h5>
+                        <h5><b>Cargo Pilot Salary</b></h5>
                         <p>Cargo pilots often earn stable salaries with international exposure.</p>
 
-                        <h6>Pilot Trainer Salary</h6>
+                        <h6><b> Pilot Trainer Salary</b></h6>
                         <p>A pilot trainer salary is usually lower initially but ideal for building flight hours and experience.</p>
                     </section>
 
