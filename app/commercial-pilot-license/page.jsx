@@ -180,7 +180,7 @@ export default function CPLPage() {
                 </p>
 
                 {/* SYLLABUS TABLE (from image) */}
-                <h3>Section 5  Commercial Pilot License Syllabus (Table)</h3>
+                <h3>   Commercial Pilot License Syllabus (Table)</h3>
                 <div className="cpl-table-wrap">
                     <table className="syllabus-table">
                         <tbody>
