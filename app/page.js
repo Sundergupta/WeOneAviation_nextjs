@@ -4,7 +4,7 @@ import HomeClient from "../screen/HomeClient";
 export const metadata = {
   title: "Best Pilot Training Institute in India | DGCA CPL Classes",
   description:
-    "Join We One Aviation, a leading pilot training institute in India offering DGCA CPL ground classes, flight training, expert mentorship, and placement support for aspiring pilots.",
+    "We One Aviation offers DGCA CPL ground classes, expert guidance, and pilot training support for aspiring aviation professionals in India. ",
   keywords: [
     "pilot training institute in India",
     "DGCA ground classes",
