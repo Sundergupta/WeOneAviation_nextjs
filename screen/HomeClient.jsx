@@ -1,6 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
+
+
+
+// import PilotPathway from "../components/PilotPathway"
+
+
+
 // import Head from "next/head";
 import Image from "next/image";
 import "./HomeClient.css";
@@ -477,6 +484,21 @@ export default function HomeClient() {
                         </div>
                     </div>
                 </section>
+
+
+
+
+
+
+                {/* <PilotPathway /> */}
+
+
+
+
+
+
+
+
 
                 {/* ================= TRAINING PROGRAMS ================= */}
                 <section className="training-programs">

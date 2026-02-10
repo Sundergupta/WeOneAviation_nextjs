@@ -35,6 +35,7 @@ export default function FloatingContactButtons() {
                     alt="Call"
                     width={26}
                     height={26}
+                    priority
                 />
             </a>
         </div>

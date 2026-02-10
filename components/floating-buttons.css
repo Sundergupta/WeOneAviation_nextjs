@@ -31,3 +31,18 @@
 .call {
     background-color: #0d6efd;
 }
+
+
+.floating-btn.call {
+  /* background-color: #0a0a0a;    */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  z-index: 9999;
+}
+
+.floating-btn.call img {
+  filter: none;               /* VERY IMPORTANT */
+}
