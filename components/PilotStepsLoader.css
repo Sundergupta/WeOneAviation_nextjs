@@ -29,7 +29,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgb(0, 205, 0);
+  background: #ffd24d;
   border-radius: 10px;
   transition: height 0.4s ease;
 }
@@ -72,13 +72,13 @@
 }
 
 .dot.active {
-  background: rgb(0, 205, 0);
+  background: rgba(26, 54, 93, 1);
   transform: scale(1);
 }
 
 /* Content */
 .step-content h3 {
-  color: rgb(0, 205, 0);
+  color: rgba(26, 54, 93, 1);
   margin-bottom: 4px;
   font-size: 14px;
 }
