@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 
 
-// import PilotPathway from "../components/PilotPathway"
+
 
 
 
@@ -12,7 +12,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import "./HomeClient.css";
 import Link from "next/link";
-// import PilotStepsLoader from "../components/PilotStepsLoader";
+import PilotStepsLoader from "../components/PilotStepsLoader";
 
 import TrainingCards from "@/components/TrainingCards";
 import ReviewCard from "../components/ReviewCard";
@@ -490,7 +490,7 @@ export default function HomeClient() {
 
 
 
-                {/* <PilotPathway /> */}
+
 
 
 
@@ -570,39 +570,17 @@ export default function HomeClient() {
                         </div>
                     </div>
                 </section>
-                {/* <PilotStepsLoader /> */}
+
+
+
+
+                <PilotStepsLoader />
+
+
+
 
                 {/* ================= OFFER SECTION ================= */}
-                <section className="offer-section">
-                    <div className="container">
-                        <div className="offer-card">
-                            <div className="offer-badge">Limited Time Offer</div>
 
-                            <h2>Enroll Now!</h2>
-                            <p className="offer-subtitle">
-                                Special discount available for the next batch starting soon.
-                                Secure your spot today!
-                            </p>
-
-                            <div className="offer-highlight">
-                                <div className="offer-icon">👍</div>
-                                <div className="offer-text">
-                                    <strong>Enroll by Oct 18 for 20% Off</strong>
-                                    <span className="offer-expiry">(Offer expires soon!)</span>
-                                </div>
-                            </div>
-
-                            <div className="offer-cta">
-                                <p className="seats-warning">
-                                    Limited seats! Schedule a consultation
-                                </p>
-                                <button className="consultation-btn">
-                                    Book Consultation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
                 {/* ================= REVIEWS ================= */}
                 <section className="review-section">

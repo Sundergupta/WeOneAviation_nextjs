@@ -6,7 +6,7 @@ const stepsData = [
     {
         title: "10th and 12th Board Verification Certificate",
         desc:
-            "Get your 10th and 12th marksheets officially verified. This confirms Physics and Math in Class 12 before starting pilot training.",
+            "Get your 10th and 12th marksheets officially verified. This is needed to confirm your academic qualifications, especially Physics and Math in Class 12, before starting pilot training.",
     },
     {
         title: "Medical Tests",
@@ -39,57 +39,54 @@ export default function PilotStepsLoader() {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        const index = Number(entry.target.dataset.index);
-                        setActiveStep(index);
+                        setActiveStep(Number(entry.target.dataset.index));
                     }
                 });
             },
-            {
-                threshold: 0.6,
-            }
+            { threshold: 0.5 }
         );
 
         stepRefs.current.forEach((el) => el && observer.observe(el));
-
         return () => observer.disconnect();
     }, []);
-
-    const progressWidth = `${(activeStep / (stepsData.length - 1)) * 100}%`;
 
     return (
         <div className="steps-wrapper">
             <h2 className="steps-title">How to Become a Pilot?</h2>
 
-            {/* Progress Loader */}
-            <div className="loader">
-                <div className="bar" style={{ width: progressWidth }}></div>
+            <div className="timeline">
+                <div className="timeline-line">
+                    <div
+                        className="timeline-progress"
+                        style={{
+                            height: `${(activeStep / (stepsData.length - 1)) * 100}%`,
+                        }}
+                    />
+                </div>
 
-                <div className="check-bar-container">
-                    <div></div>
-                    {stepsData.map((_, i) => (
-                        <div
-                            key={i}
-                            className={`check ${i <= activeStep ? "active" : ""}`}
+                <div className="steps">
+                    {stepsData.map((step, index) => (
+                        <section
+                            key={index}
+                            data-index={index}
+                            ref={(el) => (stepRefs.current[index] = el)}
+                            className={`step ${index <= activeStep ? "visible" : ""}`}
                         >
-                            ✓
-                        </div>
+                            <div
+                                className={`dot ${index <= activeStep ? "active" : ""}`}
+                            >
+                                ✓
+                            </div>
+
+                            <div className="step-content">
+                                <h3>Step {index + 1}</h3>
+                                <h4>{step.title}</h4>
+                                <p>{step.desc}</p>
+                            </div>
+                        </section>
                     ))}
                 </div>
             </div>
-
-            {/* Steps */}
-            {stepsData.map((step, index) => (
-                <section
-                    key={index}
-                    data-index={index}
-                    ref={(el) => (stepRefs.current[index] = el)}
-                    className={`step ${index <= activeStep ? "visible" : ""}`}
-                >
-                    <h3>Step {index + 1}</h3>
-                    <h4>{step.title}</h4>
-                    <p>{step.desc}</p>
-                </section>
-            ))}
         </div>
     );
 }
