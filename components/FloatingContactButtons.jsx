@@ -31,7 +31,7 @@ export default function FloatingContactButtons() {
                 aria-label="Call Now"
             >
                 <Image
-                    src="/assets/call.png"
+                    src="/assets/call.webp"
                     alt="Call"
                     width={26}
                     height={26}
