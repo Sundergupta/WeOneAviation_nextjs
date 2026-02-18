@@ -1,8 +1,8 @@
 import "./styles/cpl.css";
 
 export const metadata = {
-    title: "Commercial Pilot License (CPL) Course in India",
-    description: "Complete guide to Commercial Pilot License (CPL) in India including eligibility, DGCA medical, fees, salary, career opportunities and admission process.",
+    title: "Commercial Pilot License Course in India | CPL Training & Fees",
+    description: "Join a DGCA-approved Commercial Pilot License course in India. Get CPL training, eligibility details, syllabus, fees & career guidance at We One Aviation. Apply now.",
 };
 
 export default function CPLPage() {
