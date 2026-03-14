@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import "./footer.css";
 
+
 export default function Footer() {
     return (
         <footer className="footer">
@@ -35,7 +36,7 @@ export default function Footer() {
                             <Link href="/blogs"><Image src="/assets/link.png" alt="" width={20} height={20} /> Blog</Link>
                         </li>
                         <li>
-                            <Link href="/contact-us"><Image src="/assets/link.png" alt="" width={20} height={20} /> Contact</Link>
+                            <Link href="/contactform"><Image src="/assets/link.png" alt="" width={20} height={20} /> Contact</Link>
                         </li>
                     </ul>
                 </div>

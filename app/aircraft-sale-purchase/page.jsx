@@ -22,7 +22,7 @@ export default function AircraftSalePurchase() {
                     <h1>Aircraft Sale & Purchase</h1>
                     <p>End-to-End Advisory for New & Used Aircraft</p>
                 </div>
-                <button className="enquire-btn">Enquire Now</button>
+                <a className="enquire-btn" href="/contactform">Enquire Now</a>
             </section>
 
             {/* Images */}
@@ -102,30 +102,25 @@ export default function AircraftSalePurchase() {
                     <div className="card">
                         <h3>Pilot Training</h3>
                         <p>Customized crew training programs tailored to operational needs.</p>
-                        <button>Learn More</button>
+                        <a href="/contactform">Learn More</a>
                     </div>
 
                     <div className="card">
                         <h3>Charter Services</h3>
                         <p>Government-approved private charter aircraft with expert pilots.</p>
-                        <button>Learn More</button>
+                        <a href="/contactform">Learn More</a>
                     </div>
 
                     <div className="card">
                         <h3>Aviation Placement</h3>
                         <p>Career assistance and placement support for aviation professionals.</p>
-                        <button>Learn More</button>
+                        <a href="/contactform">Learn More</a>
                     </div>
                 </div>
             </section>
 
             {/* Contact */}
-            <section className="contact-section">
-                <h2>Chat with us on WhatsApp</h2>
-                <input type="text" placeholder="Your Phone Number" />
-                <textarea placeholder="Write your message here"></textarea>
-                <button className="contact-btn">Contact Us</button>
-            </section>
+
 
         </div>
     );

@@ -1,19 +1,10 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
-
-
-
-
-
-
-// import Head from "next/head";
 import Image from "next/image";
 import "./HomeClient.css";
 import Link from "next/link";
 import PilotStepsLoader from "../components/PilotStepsLoader";
-
 import TrainingCards from "@/components/TrainingCards";
 import ReviewCard from "../components/ReviewCard";
 import Slider from "../components/Slider";
@@ -37,27 +28,26 @@ export default function HomeClient() {
             subtitle:
                 "Join Best Pilot Training Institute In India. Get world-class flight training, DGCA classes, and expert guidance to kickstart your aviation career.",
             image: "/assets/home-page-slider/slider5.webp",
-            button1: "Contact Us",
-            button2: "Learn More",
+            button1: { label: "Contact Us", href: "/components/ContactForm" },
+            button2: { label: "Learn More", href: "/pilot-training" },
         },
         {
             title: "We Deliver 3000+ Pilots To India Since 2011",
             subtitle:
                 "Clear Your DGCA Exam In First Attempt With We One Aviation Academy",
             image: "/assets/home-page-slider/slider4.webp",
-            button1: "View Courses",
-            button2: "Meet Instructors",
+            button1: { label: "View Courses", href: "/dgca-ground-classes" },
+            button2: { label: "Meet Instructors", href: "/about-us" },
         },
         {
             title: "From Ground to Sky",
             subtitle:
                 "Premier DGCA Exam Coaching & Flight Training for Aspiring Pilots",
             image: "/assets/home-page-slider/slider1.webp",
-            button1: "Success Stories",
-            button2: "Apply Now",
+            button1: { label: "Success Stories", href: "/about-us" },
+            button2: { label: "Apply Now", href: "/components/ContactForm" },
         },
     ];
-
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -70,21 +60,6 @@ export default function HomeClient() {
 
     return (
         <>
-            {/* ================= SEO ================= */}
-            {/* <Head>
-                <title>We One Aviation</title>
-                <meta
-                    name="description"
-                    content="Train to become a licensed pilot with We One Aviation Academy. DGCA-ground classes, CPL courses, international flying schools & career support."
-                />
-                <meta
-                    name="keywords"
-                    content="Pilot Training, Aviation Academy, DGCA, CPL, Commercial Pilot, Ground Classes, Flying School"
-                />
-                <meta name="robots" content="index, follow" />
-                <link rel="canonical" href="https://weoneaviation.com/" />
-            </Head> */}
-
             <div className="home">
                 {/* ================= HERO SLIDER ================= */}
                 <section className="hero-slider">
@@ -114,12 +89,16 @@ export default function HomeClient() {
                                         </h1>
                                         <p className="slide-subtitle">{slide.subtitle}</p>
                                         <div className="slide-buttons">
-                                            <button className="btn btn-primary">
-                                                {slide.button1}
-                                            </button>
-                                            <button className="btn btn-secondary">
-                                                {slide.button2}
-                                            </button>
+                                            <Link href={slide.button1.href}>
+                                                <button className="btn btn-primary">
+                                                    {slide.button1.label}
+                                                </button>
+                                            </Link>
+                                            <Link href={slide.button2.href}>
+                                                <button className="btn btn-secondary">
+                                                    {slide.button2.label}
+                                                </button>
+                                            </Link>
                                         </div>
                                     </div>
                                 </div>
@@ -170,7 +149,6 @@ export default function HomeClient() {
                                     Dreaming of Becoming a Commercial Pilot? Get DGCA-approved
                                     training, expert mentorship and hands-on flight experience.
                                 </p>
-
                                 <Link href="/commercial-pilot-license">
                                     <button className="highlight-btn">Learn More</button>
                                 </Link>
@@ -219,16 +197,13 @@ export default function HomeClient() {
                                     pilot's license.
                                 </p>
                                 <div className="course-info">
-                                    <p>
-                                        <strong>Fees:</strong> 2.20-2.90 Lakh
-                                    </p>
-                                    <p>
-                                        <strong>Duration:</strong> 6 Months
-                                    </p>
-                                    <p>
-                                        <strong>Mode:</strong> Offline / Online
-                                    </p>
+                                    <p><strong>Fees:</strong> 2.20-2.90 Lakh</p>
+                                    <p><strong>Duration:</strong> 6 Months</p>
+                                    <p><strong>Mode:</strong> Offline / Online</p>
                                 </div>
+                                <Link href="/dgca-ground-classes">
+                                    <button className="highlight-btn">Explore Course</button>
+                                </Link>
                             </div>
 
                             <div className="course-card">
@@ -238,13 +213,12 @@ export default function HomeClient() {
                                     abroad.
                                 </p>
                                 <div className="course-info">
-                                    <p>
-                                        <strong>Fees:</strong> 50–65 Lakh
-                                    </p>
-                                    <p>
-                                        <strong>Duration:</strong> 1–1.5 Years
-                                    </p>
+                                    <p><strong>Fees:</strong> 50–65 Lakh</p>
+                                    <p><strong>Duration:</strong> 1–1.5 Years</p>
                                 </div>
+                                <Link href="/flying-schools-In-usa">
+                                    <button className="highlight-btn">Explore Course</button>
+                                </Link>
                             </div>
 
                             <div className="course-card">
@@ -253,14 +227,12 @@ export default function HomeClient() {
                                     Complete end-to-end CPL training including theory and flying.
                                 </p>
                                 <div className="course-info">
-                                    <p>
-                                        <strong>Fees:</strong> 50–70 Lakh
-                                    </p>
-                                    <p>
-                                        <strong>Duration:</strong> 2–3 Years
-                                    </p>
-
+                                    <p><strong>Fees:</strong> 50–70 Lakh</p>
+                                    <p><strong>Duration:</strong> 2–3 Years</p>
                                 </div>
+                                <Link href="/commercial-pilot-license">
+                                    <button className="highlight-btn">Explore Course</button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -297,6 +269,8 @@ export default function HomeClient() {
                         <Slider />
                     </div>
                 </section>
+
+                {/* ================= DGCA SUBJECTS ================= */}
                 <section className="dgca-subjects">
                     <div className="container">
                         <h2>Master Yourself For DGCA Exam With All These Subjects</h2>
@@ -309,9 +283,11 @@ export default function HomeClient() {
                                     one point to another using various navigational aids, instruments,
                                     and calculations.
                                 </p>
-                                <button className="subject-btn">
-                                    Click to explore more! 🚀
-                                </button>
+                                <Link href="/dgca-ground-classes">
+                                    <button className="subject-btn">
+                                        Click to explore more! 🚀
+                                    </button>
+                                </Link>
                             </div>
 
                             <div className="subject-card">
@@ -321,9 +297,11 @@ export default function HomeClient() {
                                     safe and legal flying. These laws cover everything from airspace
                                     restrictions to communication protocols.
                                 </p>
-                                <button className="subject-btn">
-                                    Click to find out more! ✈️
-                                </button>
+                                <Link href="/dgca-ground-classes">
+                                    <button className="subject-btn">
+                                        Click to find out more! ✈️
+                                    </button>
+                                </Link>
                             </div>
 
                             <div className="subject-card">
@@ -332,6 +310,11 @@ export default function HomeClient() {
                                     Aviation Meteorology helps pilots understand weather conditions
                                     that affect flight safety and performance.
                                 </p>
+                                <Link href="/dgca-ground-classes">
+                                    <button className="subject-btn">
+                                        Click to explore more! 🌤️
+                                    </button>
+                                </Link>
                             </div>
 
                             <div className="subject-card">
@@ -340,6 +323,11 @@ export default function HomeClient() {
                                     This subject covers the fundamental workings of aircraft and their
                                     engines, helping pilots understand how their machines operate.
                                 </p>
+                                <Link href="/dgca-ground-classes">
+                                    <button className="subject-btn">
+                                        Click to explore more! ⚙️
+                                    </button>
+                                </Link>
                             </div>
 
                             <div className="subject-card">
@@ -348,6 +336,11 @@ export default function HomeClient() {
                                     Radio Telephony (RTR) is the backbone of pilot communication with
                                     Air Traffic Control (ATC).
                                 </p>
+                                <Link href="/dgca-ground-classes">
+                                    <button className="subject-btn">
+                                        Click to explore more! 📡
+                                    </button>
+                                </Link>
                             </div>
 
                             <div className="subject-card">
@@ -357,10 +350,17 @@ export default function HomeClient() {
                                     models, ensuring pilots understand their assigned aircraft inside
                                     and out.
                                 </p>
+                                <Link href="/dgca-ground-classes">
+                                    <button className="subject-btn">
+                                        Click to explore more! 🛩️
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
                 </section>
+
+                {/* ================= WHY CHOOSE US ================= */}
                 <section className="why-choose-us">
                     <div className="container">
                         <h2>Why Choose We One Aviation </h2>
@@ -373,50 +373,53 @@ export default function HomeClient() {
                                 <span className="benefit-check">✅</span>
                                 <span>Approved Training Programs</span>
                             </div>
-
                             <div className="benefit-item">
                                 <span className="benefit-check">✅</span>
                                 <span>Experienced Instructors & Mentors</span>
                             </div>
-
                             <div className="benefit-item">
                                 <span className="benefit-check">✅</span>
                                 <span>State-of-the-Art Training Facilities</span>
                             </div>
-
                             <div className="benefit-item">
                                 <span className="benefit-check">✅</span>
                                 <span>100% Placement Assistance</span>
                             </div>
-
                             <div className="benefit-item">
                                 <span className="benefit-check">✅</span>
                                 <span>Comprehensive CPL & DGCA Ground Classes</span>
                             </div>
-
                             <div className="benefit-item">
                                 <span className="benefit-check">✅</span>
                                 <span>Flexible Payment & Loan Options</span>
                             </div>
-
                             <div className="benefit-item">
                                 <span className="benefit-check">✅</span>
                                 <span>Personalized Learning Approach</span>
                             </div>
-
                             <div className="benefit-item">
                                 <span className="benefit-check">✅</span>
                                 <span>International Training Tie-Ups</span>
                             </div>
-
                             <div className="benefit-item">
                                 <span className="benefit-check">✅</span>
                                 <span>Proven Track Record of Success</span>
                             </div>
                         </div>
+
+                        {/* CTA linking to about-us and contact */}
+                        <div style={{ textAlign: "center", marginTop: "2rem", display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
+                            <Link href="/about-us">
+                                <button className="highlight-btn">About Us</button>
+                            </Link>
+                            <Link href="/components/ContactForm">
+                                <button className="highlight-btn">Contact Us</button>
+                            </Link>
+                        </div>
                     </div>
                 </section>
 
+                {/* ================= FEATURES SECTION ================= */}
                 <section className="features-section">
                     <div className="container">
                         <div className="features-header">
@@ -428,77 +431,74 @@ export default function HomeClient() {
                         </div>
 
                         <div className="features-grid">
-                            <div className="feature-card">
-                                <div className="feature-icon">👨‍✈️</div>
-                                <h3>Airline Instructors</h3>
-                                <p>
-                                    Learn directly from experienced pilots & engineers currently
-                                    active in major airlines.
-                                </p>
-                            </div>
+                            <Link href="/about-us" style={{ textDecoration: "none", color: "inherit" }}>
+                                <div className="feature-card">
+                                    <div className="feature-icon">👨‍✈️</div>
+                                    <h3>Airline Instructors</h3>
+                                    <p>
+                                        Learn directly from experienced pilots & engineers currently
+                                        active in major airlines.
+                                    </p>
+                                </div>
+                            </Link>
 
-                            <div className="feature-card">
-                                <div className="feature-icon">💬</div>
-                                <h3>24/7 Doubt Support</h3>
-                                <p>
-                                    Get your questions answered anytime with dedicated support from
-                                    our expert faculty.
-                                </p>
-                            </div>
+                            <Link href="/components/ContactForm" style={{ textDecoration: "none", color: "inherit" }}>
+                                <div className="feature-card">
+                                    <div className="feature-icon">💬</div>
+                                    <h3>24/7 Doubt Support</h3>
+                                    <p>
+                                        Get your questions answered anytime with dedicated support from
+                                        our expert faculty.
+                                    </p>
+                                </div>
+                            </Link>
 
-                            <div className="feature-card">
-                                <div className="feature-icon">📊</div>
-                                <h3>Structured Curriculum</h3>
-                                <p>
-                                    Master the complete DGCA syllabus with our organized,
-                                    exam-focused online ground school.
-                                </p>
-                            </div>
+                            <Link href="/dgca-ground-classes" style={{ textDecoration: "none", color: "inherit" }}>
+                                <div className="feature-card">
+                                    <div className="feature-icon">📊</div>
+                                    <h3>Structured Curriculum</h3>
+                                    <p>
+                                        Master the complete DGCA syllabus with our organized,
+                                        exam-focused online ground school.
+                                    </p>
+                                </div>
+                            </Link>
 
-                            <div className="feature-card">
-                                <div className="feature-icon">⏰</div>
-                                <h3>Flexible Online Classes</h3>
-                                <p>
-                                    Study at your own pace with adaptable schedules fitting your
-                                    personal commitments.
-                                </p>
-                            </div>
+                            <Link href="/dgca-ground-classes" style={{ textDecoration: "none", color: "inherit" }}>
+                                <div className="feature-card">
+                                    <div className="feature-icon">⏰</div>
+                                    <h3>Flexible Online Classes</h3>
+                                    <p>
+                                        Study at your own pace with adaptable schedules fitting your
+                                        personal commitments.
+                                    </p>
+                                </div>
+                            </Link>
 
-                            <div className="feature-card">
-                                <div className="feature-icon">📈</div>
-                                <h3>High Success Rate</h3>
-                                <p>
-                                    Benefit from proven teaching methods and rigorous mock tests
-                                    designed for exam success.
-                                </p>
-                            </div>
+                            <Link href="/about-us" style={{ textDecoration: "none", color: "inherit" }}>
+                                <div className="feature-card">
+                                    <div className="feature-icon">📈</div>
+                                    <h3>High Success Rate</h3>
+                                    <p>
+                                        Benefit from proven teaching methods and rigorous mock tests
+                                        designed for exam success.
+                                    </p>
+                                </div>
+                            </Link>
 
-                            <div className="feature-card">
-                                <div className="feature-icon">🎯</div>
-                                <h3>Specialized Training</h3>
-                                <p>
-                                    Access additional courses like RTR(A) preparation and Type
-                                    Rating guidance.
-                                </p>
-                            </div>
+                            <Link href="/pilot-training" style={{ textDecoration: "none", color: "inherit" }}>
+                                <div className="feature-card">
+                                    <div className="feature-icon">🎯</div>
+                                    <h3>Specialized Training</h3>
+                                    <p>
+                                        Access additional courses like RTR(A) preparation and Type
+                                        Rating guidance.
+                                    </p>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                 {/* ================= TRAINING PROGRAMS ================= */}
                 <section className="training-programs">
@@ -521,14 +521,15 @@ export default function HomeClient() {
                                         backgroundImage: "url(/assets/GroundSchool.jpg)",
                                     }}
                                 ></div>
-
                                 <div className="program-content">
                                     <h3>CPL & ATPL Ground School</h3>
                                     <p>
                                         Comprehensive online classes covering all DGCA subjects –
                                         Navigation, Meteorology, Regulations, and Technical.
                                     </p>
-                                    <button className="learn-more-btn">Learn More</button>
+                                    <Link href="/dgca-ground-classes">
+                                        <button className="learn-more-btn">Learn More</button>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -539,14 +540,15 @@ export default function HomeClient() {
                                         backgroundImage: "url(/assets/RTR.jpeg)",
                                     }}
                                 ></div>
-
                                 <div className="program-content">
                                     <h3>RTR(A) Radio Telephony</h3>
                                     <p>
                                         Master aviation communication protocols and prepare for the
                                         Radio Telephony Restricted (Aeronautical) license exam.
                                     </p>
-                                    <button className="learn-more-btn">Learn More</button>
+                                    <Link href="/dgca-ground-classes">
+                                        <button className="learn-more-btn">Learn More</button>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -557,30 +559,22 @@ export default function HomeClient() {
                                         backgroundImage: "url(/assets/TypeRatingPrep.jpeg)",
                                     }}
                                 ></div>
-
                                 <div className="program-content">
                                     <h3>Type Rating Prep</h3>
                                     <p>
                                         Affordable guidance for A320 & B737 pre/post type rating,
                                         covering questions for major airline exams.
                                     </p>
-                                    <button className="learn-more-btn">Learn More</button>
+                                    <Link href="/pilot-training">
+                                        <button className="learn-more-btn">Learn More</button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-
-
-
                 <PilotStepsLoader />
-
-
-
-
-                {/* ================= OFFER SECTION ================= */}
-
 
                 {/* ================= REVIEWS ================= */}
                 <section className="review-section">
@@ -588,7 +582,6 @@ export default function HomeClient() {
                         <Slider />
                     </div>
                 </section>
-
             </div>
         </>
     );

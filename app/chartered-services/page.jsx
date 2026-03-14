@@ -101,7 +101,7 @@ export default function CharteredServices() {
                     </p>
 
                     <div className="hero-cta">
-                        <button className="btn primary">ENQUIRE NOW</button>
+                        <a className="btn primary" href="/contactform">ENQUIRE NOW</a>
                         <a className="btn ghost" href="#more">
                             Click to know more
                         </a>
@@ -209,7 +209,7 @@ export default function CharteredServices() {
                         <p>
                             Reach out for private jet booking and charter service information.
                         </p>
-                        <a className="btn primary full" href="/contact">
+                        <a className="btn primary full" href="/contactform">
                             Contact Us
                         </a>
                     </div>

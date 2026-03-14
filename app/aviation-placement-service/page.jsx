@@ -17,7 +17,7 @@ export default function AviationPlacementService() {
 
             <div className="header-section">
                 <h1>Aviation Placement service</h1>
-                <button className="enquire-btn">ENQUIRE NOW</button>
+                <a className="enquire-btn" href="/contactform">ENQUIRE NOW</a>
             </div>
 
             <section className="image-section">
@@ -93,7 +93,7 @@ export default function AviationPlacementService() {
                             Individualised crew training programmes may be built and adapted
                             to meet the specific needs of your aviation employment.
                         </p>
-                        <button>Learn more</button>
+                        <a href="/contactform">Learn more</a>
                     </div>
 
                     <div className="card">
@@ -102,7 +102,7 @@ export default function AviationPlacementService() {
                             In Dwarka, Delhi, book your Private Charter aircraft. Pilot with
                             government authorisation and expertise.
                         </p>
-                        <button>Learn more</button>
+                        <a href="/contactform">Learn more</a>
                     </div>
 
                     <div className="card">
@@ -112,19 +112,12 @@ export default function AviationPlacementService() {
                             the complete aircraft purchase process, both for new and used
                             aircraft.
                         </p>
-                        <button>Learn more</button>
+                        <a href="/contactform">Learn more</a>
                     </div>
                 </div>
             </div>
 
-            <div className="contact-section">
-                <h2>Chat with us on WhatsApp</h2>
-                <input type="text" placeholder="Your Phone Number" />
-                <textarea placeholder="Write your message here"></textarea>
-                <button className="contact-btn">
-                    Contact Us to Know More
-                </button>
-            </div>
+
         </div>
     );
 }

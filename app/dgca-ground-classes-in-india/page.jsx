@@ -20,7 +20,7 @@ export default function DgcaGroundClasses() {
                 </div>
 
                 <Image
-                    src="/assets/dgca-ground-classes.jpg"
+                    src="/assets/GroundSchool.jpg"
                     alt="DGCA Ground Classes"
                     width={900}
                     height={500}
@@ -240,9 +240,11 @@ export default function DgcaGroundClasses() {
                 </ul>
 
                 <div className="dgca-cta">
-                    <button className="dgca-btn">Book Your Seat Now</button>
+                    <a className="dgca-btn" href="/contactform">
+                        Book Your Seat Now
+                    </a>
                     <p className="dgca-note">
-                        Join We One Aviation Academy – Delhi’s trusted name for DGCA Ground
+                        Join We One Aviation Academy – Delhi's trusted name for DGCA Ground
                         Classes.
                     </p>
                 </div>

@@ -77,7 +77,7 @@ export default function Navbar() {
                 { name: "Air Regulations", path: "/air-regulations" },
                 { name: "Technical General", path: "/technical-general" },
                 { name: "RTR (A)", path: "/rtr-a" },
-                { name: "CPL Simulator", path: "/cpl-simulator" },
+
             ],
         },
         {
@@ -98,7 +98,7 @@ export default function Navbar() {
         { name: "Pilot Training Consultancy", path: "/pilot-training" },
         { name: "Charter Services", path: "/chartered-services" },
         { name: "Aircraft Sale & Purchase", path: "/aircraft-sale-purchase" },
-        { name: "Airport Ground Handling", path: "/airport-ground-handling-service" },
+        // { name: "Airport Ground Handling", path: "/airport-ground-handling-service" },
         { name: "Aviation Placement", path: "/aviation-placement-service" },
     ];
 

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import "./ContactQuery.css";
 
-export default function ContactForm({ onClose }) {
+export default function contactform({ onClose }) {
     const [loading, setLoading] = useState(false);
     const [status, setStatus] = useState("");
 
