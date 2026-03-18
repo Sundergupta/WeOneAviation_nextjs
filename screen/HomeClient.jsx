@@ -25,27 +25,24 @@ export default function HomeClient() {
     const slides = [
         {
             title: "BEST PILOT TRAINING IN INDIA",
-            subtitle:
-                "Join Best Pilot Training Institute In India. Get world-class flight training, DGCA classes, and expert guidance to kickstart your aviation career.",
+            subtitle: "Join Best Pilot Training Institute In India. Get world-class flight training, DGCA classes, and expert guidance to kickstart your aviation career.",
             image: "/assets/home-page-slider/slider5.webp",
-            button1: { label: "Contact Us", href: "/components/ContactForm" },
+            button1: { label: "Contact Us", href: "/contactform" },  // ✅ fixed
             button2: { label: "Learn More", href: "/pilot-training" },
         },
         {
             title: "We Deliver 3000+ Pilots To India Since 2011",
-            subtitle:
-                "Clear Your DGCA Exam In First Attempt With We One Aviation Academy",
+            subtitle: "Clear Your DGCA Exam In First Attempt With We One Aviation Academy",
             image: "/assets/home-page-slider/slider4.webp",
             button1: { label: "View Courses", href: "/dgca-ground-classes" },
             button2: { label: "Meet Instructors", href: "/about-us" },
         },
         {
             title: "From Ground to Sky",
-            subtitle:
-                "Premier DGCA Exam Coaching & Flight Training for Aspiring Pilots",
+            subtitle: "Premier DGCA Exam Coaching & Flight Training for Aspiring Pilots",
             image: "/assets/home-page-slider/slider1.webp",
             button1: { label: "Success Stories", href: "/about-us" },
-            button2: { label: "Apply Now", href: "/components/ContactForm" },
+            button2: { label: "Apply Now", href: "/contact" },  // ✅ fixed
         },
     ];
 
@@ -499,6 +496,7 @@ export default function HomeClient() {
                         </div>
                     </div>
                 </section>
+                <PilotStepsLoader />
 
                 {/* ================= TRAINING PROGRAMS ================= */}
                 <section className="training-programs">
@@ -574,7 +572,7 @@ export default function HomeClient() {
                     </div>
                 </section>
 
-                <PilotStepsLoader />
+
 
                 {/* ================= REVIEWS ================= */}
                 <section className="review-section">
