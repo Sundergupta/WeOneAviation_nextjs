@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import "./about-us.css";
 import Image from "next/image";
+import Link from "next/link";
 
 const AboutUs = () => {
     const [seo, setSeo] = useState(null);
@@ -16,9 +17,7 @@ const AboutUs = () => {
 
     useEffect(() => {
         if (!seo) return;
-
         document.title = seo.metaTitle || "About Us | We One Aviation";
-
         const metaDesc = document.querySelector("meta[name='description']");
         if (metaDesc) {
             metaDesc.setAttribute("content", seo.metaDescription || "");
@@ -53,8 +52,12 @@ const AboutUs = () => {
                             Comprehensive DGCA Ground School, Type Rating Prep, and Pilot Career Services.
                         </p>
                         <div className="hero-buttons">
-                            <button className="btn btn-primary">Start Your Journey</button>
-                            <button className="btn btn-secondary">Learn More</button>
+                            <Link href="/contactform">
+                                <button className="btn btn-primary">Start Your Journey</button>
+                            </Link>
+                            <Link href="/contactform">
+                                <button className="btn btn-secondary">Learn More</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -66,22 +69,20 @@ const AboutUs = () => {
                     <div className="about-content">
                         <div className="about-text">
                             <h2 className="title-pill">Who We Are</h2>
-
                             <p className="intro-text">
                                 We One Aviation is a premier aviation organization offering pilot training,
                                 aviation consulting, charter services, and aviation support across India.
                             </p>
-
                             <p className="intro-text">
                                 <strong>Pilot Training:</strong> DGCA Ground Classes, CPL preparation,
                                 airline readiness, and structured mentorship.
                             </p>
-
                             <div className="cta-container">
-                                <button className="cta-button">Get in Touch</button>
+                                <Link href="/contactform">
+                                    <button className="cta-button">Get in Touch</button>
+                                </Link>
                             </div>
                         </div>
-
                         <div className="about-image">
                             <Image src="/assets/About2.webp" alt="Cockpit" width={600} height={400} />
                         </div>
@@ -111,7 +112,6 @@ const AboutUs = () => {
                     <div className="mission-image-wrapper">
                         <Image src="/assets/About2.webp" alt="Aircraft" width={600} height={400} />
                     </div>
-
                     <div className="mission-content">
                         <div className="mission-pill">✈️ Our Mission</div>
                         <h2 className="mission-title">Our Mission</h2>
@@ -119,10 +119,9 @@ const AboutUs = () => {
                             To empower aviation aspirants and clients by delivering safe,
                             affordable, excellence-driven aviation services.
                         </p>
-
-                        <button className="btn-get-in-touch">
-                            Get In Touch →
-                        </button>
+                        <Link href="/contactform">
+                            <button className="btn-get-in-touch">Get In Touch →</button>
+                        </Link>
                     </div>
                 </div>
             </section>
