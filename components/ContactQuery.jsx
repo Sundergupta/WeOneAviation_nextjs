@@ -7,12 +7,22 @@ export default function ContactQuery() {
     const [open, setOpen] = useState(false);
     const [mounted, setMounted] = useState(false);
 
-    // ✅ Ensure client-only rendering
     useEffect(() => {
         setMounted(true);
     }, []);
 
-    // ✅ Safe body mutation (no hydration mismatch)
+    // ✅ Auto-open every 15 seconds
+    useEffect(() => {
+        if (!mounted) return;
+
+        const timer = setInterval(() => {
+            setOpen(true);
+        }, 15000);
+
+        return () => clearInterval(timer);
+    }, [mounted]);
+
+    // ✅ Safe body mutation
     useEffect(() => {
         if (!mounted) return;
 
