@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import ContactForm from "./contactform";
+import ContactForm from "./contactform.jsx";
 
 export default function ContactQuery() {
     const [open, setOpen] = useState(false);
