@@ -4,6 +4,7 @@ import LoadingAnimation from "../components/LoadingAnimation";
 import Navbar from "../components/Navbar";
 import Footer from "../components/footer";
 import ContactQuery from "../components/ContactQuery";
+import Specialofferbanner from '../components/Specialofferbanner';
 import FloatingContactButtons from "@/components/FloatingContactButtons";
 
 const geistSans = Geist({
@@ -104,6 +105,7 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <LoadingAnimation />
         <Navbar />
+        <Specialofferbanner />
         <ContactQuery />
         {children}
         <FloatingContactButtons />
