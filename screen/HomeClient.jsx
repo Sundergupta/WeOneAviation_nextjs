@@ -9,6 +9,7 @@ import TrainingCards from "@/components/TrainingCards";
 import ReviewCard from "../components/ReviewCard";
 import Slider from "../components/Slider";
 import Map from "../components/Map";
+import Passresultsslider from "../components/Passresultsslider"
 
 export default function HomeClient() {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -571,6 +572,7 @@ export default function HomeClient() {
                         </div>
                     </div>
                 </section>
+                <Passresultsslider />
 
 
 
