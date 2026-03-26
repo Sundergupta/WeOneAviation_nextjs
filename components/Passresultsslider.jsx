@@ -3,35 +3,45 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 
 const alumniData = [
-    { id: 1, name: 'Capt. Akshay', imageSrc: '/assets/pilot1.webp', airline: 'Air India' },
-    { id: 2, name: 'Capt. Pilot', imageSrc: '/assets/pilot2.webp', airline: 'IndiGo' },
-    { id: 3, name: 'Capt. Akhila', imageSrc: '/assets/pilot3.webp', airline: 'Air India Express' },
-    { id: 4, name: 'Capt. Anish K.', imageSrc: '/assets/pilot4.webp', airline: 'Air India Express' },
-    { id: 5, name: 'Capt. Aashish', imageSrc: '/assets/pilot5.webp', airline: 'IndiGo' },
-    { id: 6, name: 'Capt. Megha', imageSrc: '/assets/pilot (6).jpg', airline: 'Air India Express' },
-    { id: 7, name: 'Capt. Keshna', imageSrc: '/assets/pilot (7).jpg', airline: 'Air India' },
-    { id: 8, name: 'Capt. Tanmay', imageSrc: '/assets/pilot (8).jpg', airline: 'Air India Express' },
-    { id: 9, name: 'Capt. Neha', imageSrc: '/assets/pilot (9).jpg', airline: 'SpiceJet' },
-    { id: 10, name: 'Capt. Esther', imageSrc: '/assets/pilot (10).jpg', airline: 'Air India' },
-    { id: 11, name: 'Capt. Akshat', imageSrc: '/assets/pilot (11).jpg', airline: 'SpiceJet' },
-    { id: 12, name: 'Capt. Ashik K.', imageSrc: '/assets/pilot (12).jpg', airline: 'IndiGo' },
-    { id: 13, name: 'Capt. Eshan', imageSrc: '/assets/pilot (13).jpg', airline: 'IndiGo' },
-    { id: 14, name: 'Capt. Namita', imageSrc: '/assets/pilot (14).webp', airline: 'SpiceJet' },
-    { id: 15, name: 'Capt. Kunal', imageSrc: '/assets/pilot (15).webp', airline: 'SpiceJet' },
-    { id: 16, name: 'Capt. Sahiba', imageSrc: '/assets/pilot (16).webp', airline: 'Air India Express' },
+  { id: 1, name: 'Capt. Akshay', imageSrc: '/assets/pilot1.webp', airline: 'Air India' },
+  { id: 2, name: 'Capt. Aben Abraham', imageSrc: '/assets/pilot2.webp', airline: 'IndiGo' },
+  { id: 3, name: 'Capt. Akhila', imageSrc: '/assets/pilot3.webp', airline: 'Air India Express' },
+  { id: 4, name: 'Capt. Anish K.', imageSrc: '/assets/pilot4.webp', airline: 'Air India Express' },
+  { id: 5, name: 'Capt. Aashish', imageSrc: '/assets/pilot5.webp', airline: 'IndiGo' },
+  { id: 6, name: 'Capt. Megha', imageSrc: '/assets/pilot (6).jpg', airline: 'Air India Express' },
+  { id: 7, name: 'Capt. Keshna', imageSrc: '/assets/pilot (7).jpg', airline: 'Air India' },
+  { id: 8, name: 'Capt. Tanmay', imageSrc: '/assets/pilot (8).jpg', airline: 'Air India Express' },
+  { id: 9, name: 'Capt. Neha', imageSrc: '/assets/pilot (9).jpg', airline: 'SpiceJet' },
+  { id: 10, name: 'Capt. Esther', imageSrc: '/assets/pilot (10).jpg', airline: 'Air India' },
+  { id: 11, name: 'Capt. Akshat', imageSrc: '/assets/pilot (11).jpg', airline: 'SpiceJet' },
+  { id: 12, name: 'Capt. Ashik K.', imageSrc: '/assets/pilot (12).jpg', airline: 'IndiGo' },
+  { id: 13, name: 'Capt. Eshan', imageSrc: '/assets/pilot (13).jpg', airline: 'IndiGo' },
+  { id: 14, name: 'Capt. Namita', imageSrc: '/assets/pilot (14).webp', airline: 'SpiceJet' },
+  { id: 15, name: 'Capt. Kunal', imageSrc: '/assets/pilot (15).webp', airline: 'SpiceJet' },
+  { id: 16, name: 'Capt. Sahiba', imageSrc: '/assets/pilot (16).webp', airline: 'Air India Express' },
+  { id: 17, name: 'Capt. Aashish Arora', imageSrc: '/assets/pilot17.webp', airline: 'IndiGo' },
+  { id: 18, name: 'Capt. Ambereesh V Pillai', imageSrc: '/assets/pilot18.webp', airline: 'IndiGo' },
+  { id: 19, name: 'Capt. Anish Kujur', imageSrc: '/assets/pilot19.webp', airline: 'Air India Express' },
+  { id: 20, name: 'Capt. Akshay Passi', imageSrc: '/assets/pilot20.webp', airline: 'Air India Alliance' },
+  { id: 21, name: 'Capt. Akshat Yadav', imageSrc: '/assets/pilot21.webp', airline: 'Spice Jet' },
+  { id: 22, name: 'Capt. Akhila', imageSrc: '/assets/pilot22.webp', airline: 'IndiGo' },
+  { id: 23, name: 'Capt. Aharnish Chaudhary', imageSrc: '/assets/pilot23.webp', airline: 'Air India Express' },
+  { id: 24, name: 'Capt. Aditya Singh Rathore', imageSrc: '/assets/pilot24.webp', airline: 'SpiceJet' },
+  { id: 25, name: 'Capt. Abhishek Dedha', imageSrc: '/assets/pilot25.webp', airline: 'IndiGo' },
+  { id: 26, name: 'Capt. Aben Abraham', imageSrc: '/assets/pilot26.webp', airline: 'IndiGo' },
 ];
 
 const AIRLINE_PALETTE = {
-    'Air India': { bg: 'rgba(180,0,50,0.09)', border: 'rgba(180,0,50,0.22)', dot: '#b40032', text: '#8b0028' },
-    'IndiGo': { bg: 'rgba(11,99,214,0.10)', border: 'rgba(11,99,214,0.25)', dot: '#0b63d6', text: '#0b63d6' },
-    'Air India Express': { bg: 'rgba(249,115,22,0.09)', border: 'rgba(249,115,22,0.25)', dot: '#f97316', text: '#c2560a' },
-    'SpiceJet': { bg: 'rgba(220,53,30,0.09)', border: 'rgba(220,53,30,0.22)', dot: '#dc351e', text: '#b02a16' },
+  'Air India': { bg: 'rgba(180,0,50,0.09)', border: 'rgba(180,0,50,0.22)', dot: '#b40032', text: '#8b0028' },
+  'IndiGo': { bg: 'rgba(11,99,214,0.10)', border: 'rgba(11,99,214,0.25)', dot: '#0b63d6', text: '#0b63d6' },
+  'Air India Express': { bg: 'rgba(249,115,22,0.09)', border: 'rgba(249,115,22,0.25)', dot: '#f97316', text: '#c2560a' },
+  'SpiceJet': { bg: 'rgba(220,53,30,0.09)', border: 'rgba(220,53,30,0.22)', dot: '#dc351e', text: '#b02a16' },
 };
 
 const CARD_GAP = 24;
 const CARD_WIDTH = 260 + CARD_GAP;
 const VISIBLE = 4;
-const AUTO_DELAY = 3200;
+const AUTO_DELAY = 2000;
 
 /* ─── Static CSS ───────────────────────────────────────────────────────────── */
 const CAROUSEL_CSS = `
@@ -140,7 +150,7 @@ const CAROUSEL_CSS = `
 
   .ac-track {
     display: flex; gap: 24px;
-    transition: transform 0.52s cubic-bezier(0.33, 1, 0.68, 1);
+    transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
     will-change: transform;
     padding: 28px 6px 36px;
     cursor: grab; user-select: none;
@@ -286,14 +296,6 @@ const CAROUSEL_CSS = `
   .ac-dot.active { width: 44px; background: #0b63d6; }
   .ac-dot:hover:not(.active) { background: rgba(11,99,214,0.35); }
 
-  .ac-position {
-    font-family: 'Syne', sans-serif;
-    font-size: 0.75rem; font-weight: 700;
-    color: rgba(11,58,122,0.38); letter-spacing: 1px;
-    min-width: 60px; text-align: center;
-  }
-  .ac-position strong { color: #0b3a7a; font-size: 0.9rem; }
-
   .ac-arrows { display: flex; gap: 10px; }
   .ac-btn {
     width: 46px; height: 46px; border-radius: 50%;
@@ -334,196 +336,189 @@ const CAROUSEL_CSS = `
 `;
 
 export default function AlumniCarousel() {
-    const [current, setCurrent] = useState(0);
-    const [paused, setPaused] = useState(false);
-    const [animating, setAnimating] = useState(false);
-    const [dragOrigin, setDragOrigin] = useState(null);
-    const trackRef = useRef(null);
+  const [current, setCurrent] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const [animating, setAnimating] = useState(false);
+  const [dragOrigin, setDragOrigin] = useState(null);
+  const trackRef = useRef(null);
 
-    const total = alumniData.length;
-    const maxIndex = total - VISIBLE;
+  const total = alumniData.length;
+  const maxIndex = total - VISIBLE;
 
-    const goTo = useCallback((idx) => {
-        if (animating) return;
-        setAnimating(true);
-        setCurrent(Math.max(0, Math.min(idx, maxIndex)));
-        setTimeout(() => setAnimating(false), 520);
-    }, [animating, maxIndex]);
+  const goTo = useCallback((idx) => {
+    if (animating) return;
+    setAnimating(true);
+    setCurrent(Math.max(0, Math.min(idx, maxIndex)));
+    setTimeout(() => setAnimating(false), 300);
+  }, [animating, maxIndex]);
 
-    const advance = useCallback(() => goTo(current >= maxIndex ? 0 : current + 1), [current, maxIndex, goTo]);
-    const retreat = useCallback(() => goTo(current <= 0 ? maxIndex : current - 1), [current, maxIndex, goTo]);
+  const advance = useCallback(() => goTo(current >= maxIndex ? 0 : current + 1), [current, maxIndex, goTo]);
+  const retreat = useCallback(() => goTo(current <= 0 ? maxIndex : current - 1), [current, maxIndex, goTo]);
 
-    // Auto-advance
-    useEffect(() => {
-        if (paused) return;
-        const timer = setInterval(advance, AUTO_DELAY);
-        return () => clearInterval(timer);
-    }, [paused, advance]);
+  // Auto-advance
+  useEffect(() => {
+    if (paused) return;
+    const timer = setInterval(advance, AUTO_DELAY);
+    return () => clearInterval(timer);
+  }, [paused, advance]);
 
-    // Sync track transform
-    useEffect(() => {
-        if (trackRef.current) {
-            trackRef.current.style.transform = `translateX(-${current * CARD_WIDTH}px)`;
-        }
-    }, [current]);
+  // Sync track transform
+  useEffect(() => {
+    if (trackRef.current) {
+      trackRef.current.style.transform = `translateX(-${current * CARD_WIDTH}px)`;
+    }
+  }, [current]);
 
-    // Keyboard
-    useEffect(() => {
-        const onKey = (e) => {
-            if (e.key === 'ArrowLeft') retreat();
-            if (e.key === 'ArrowRight') advance();
-        };
-        window.addEventListener('keydown', onKey);
-        return () => window.removeEventListener('keydown', onKey);
-    }, [retreat, advance]);
-
-    // Drag-to-slide
-    const onPointerDown = (e) => setDragOrigin(e.clientX);
-    const onPointerUp = (e) => {
-        if (dragOrigin === null) return;
-        const delta = dragOrigin - e.clientX;
-        if (Math.abs(delta) > 40) delta > 0 ? advance() : retreat();
-        setDragOrigin(null);
+  // Keyboard
+  useEffect(() => {
+    const onKey = (e) => {
+      if (e.key === 'ArrowLeft') retreat();
+      if (e.key === 'ArrowRight') advance();
     };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [retreat, advance]);
 
-    const DOT_COUNT = Math.min(total, 8);
+  // Drag-to-slide
+  const onPointerDown = (e) => setDragOrigin(e.clientX);
+  const onPointerUp = (e) => {
+    if (dragOrigin === null) return;
+    const delta = dragOrigin - e.clientX;
+    if (Math.abs(delta) > 40) delta > 0 ? advance() : retreat();
+    setDragOrigin(null);
+  };
 
-    return (
-        <>
-            <style dangerouslySetInnerHTML={{ __html: CAROUSEL_CSS }} />
+  const DOT_COUNT = Math.min(total, 8);
 
-            <section
-                className="ac-section"
-                onMouseEnter={() => setPaused(true)}
-                onMouseLeave={() => setPaused(false)}
-            >
-                <div className="ac-inner">
+  return (
+    <>
+      <style dangerouslySetInnerHTML={{ __html: CAROUSEL_CSS }} />
 
-                    {/* ── Header ── */}
-                    <div className="ac-header">
-                        <div>
-                            <div className="ac-eyebrow">
-                                <span className="ac-eyebrow-pulse" />
-                                Our Graduates
-                            </div>
-                            <h2 className="ac-heading">
-                                Celebrating <em>Exceptional</em><br />Success Stories
-                            </h2>
-                        </div>
-                        <div className="ac-stat">
-                            <div className="ac-stat-num"><span>10,000+</span></div>
-                            <div className="ac-stat-label">Licensed Aviators</div>
-                        </div>
+      <section
+        className="ac-section"
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
+        <div className="ac-inner">
+
+          {/* ── Header ── */}
+          <div className="ac-header">
+            <div>
+              <div className="ac-eyebrow">
+                <span className="ac-eyebrow-pulse" />
+                Our Graduates
+              </div>
+              <h2 className="ac-heading">
+                Celebrating <em>Exceptional</em><br />Success Stories
+              </h2>
+            </div>
+            <div className="ac-stat">
+              <div className="ac-stat-num"><span>10,000+</span></div>
+              <div className="ac-stat-label">Licensed Aviators</div>
+            </div>
+          </div>
+
+          {/* ── Slider ── */}
+          <div
+            className="ac-viewport"
+            onPointerDown={onPointerDown}
+            onPointerUp={onPointerUp}
+            onPointerLeave={() => setDragOrigin(null)}
+          >
+            <div className="ac-track" ref={trackRef}>
+              {alumniData.map((pilot) => {
+                const palette = AIRLINE_PALETTE[pilot.airline] ?? {
+                  bg: 'rgba(11,99,214,0.07)', border: 'rgba(11,99,214,0.18)',
+                  dot: '#0b63d6', text: '#0b3a7a',
+                };
+                return (
+                  <div key={pilot.id} className="ac-card">
+                    <div className="ac-card-band">
+                      <span className="ac-plane-icon">✈</span>
+                      <span className="ac-card-serial">#{String(pilot.id).padStart(3, '0')}</span>
                     </div>
 
-                    {/* ── Slider ── */}
-                    <div
-                        className="ac-viewport"
-                        onPointerDown={onPointerDown}
-                        onPointerUp={onPointerUp}
-                        onPointerLeave={() => setDragOrigin(null)}
-                    >
-                        <div className="ac-track" ref={trackRef}>
-                            {alumniData.map((pilot) => {
-                                const palette = AIRLINE_PALETTE[pilot.airline] ?? {
-                                    bg: 'rgba(11,99,214,0.07)', border: 'rgba(11,99,214,0.18)',
-                                    dot: '#0b63d6', text: '#0b3a7a',
-                                };
-                                return (
-                                    <div key={pilot.id} className="ac-card">
-                                        <div className="ac-card-band">
-                                            <span className="ac-plane-icon">✈</span>
-                                            <span className="ac-card-serial">#{String(pilot.id).padStart(3, '0')}</span>
-                                        </div>
-
-                                        <div className="ac-avatar-ring">
-                                            <div className="ac-avatar-inner">
-                                                <img src={pilot.imageSrc} alt={pilot.name} loading="lazy" />
-                                            </div>
-                                        </div>
-
-                                        <div className="ac-card-body">
-                                            <h3 className="ac-pilot-name">{pilot.name}</h3>
-
-                                            <span
-                                                className="ac-airline-badge"
-                                                style={{
-                                                    background: palette.bg,
-                                                    borderColor: palette.border,
-                                                    color: palette.text,
-                                                }}
-                                            >
-                                                <span className="ac-airline-dot" style={{ background: palette.dot }} />
-                                                {pilot.airline}
-                                            </span>
-
-                                            <div className="ac-rule" />
-
-                                            <div className="ac-verified">
-                                                <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
-                                                    <path
-                                                        d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                                                        stroke="#0b63d6" strokeWidth="2"
-                                                        strokeLinecap="round" strokeLinejoin="round"
-                                                    />
-                                                </svg>
-                                                Certified
-                                            </div>
-                                        </div>
-                                    </div>
-                                );
-                            })}
-                        </div>
+                    <div className="ac-avatar-ring">
+                      <div className="ac-avatar-inner">
+                        <img src={pilot.imageSrc} alt={pilot.name} loading="lazy" />
+                      </div>
                     </div>
 
-                    {/* ── Controls ── */}
-                    <div className="ac-controls">
-                        {/* Dots */}
-                        <div className="ac-dots">
-                            {Array.from({ length: DOT_COUNT }).map((_, i) => {
-                                const step = Math.max(1, Math.floor(maxIndex / (DOT_COUNT - 1)));
-                                const target = i === DOT_COUNT - 1 ? maxIndex : i * step;
-                                const active =
-                                    i === DOT_COUNT - 1
-                                        ? current === maxIndex
-                                        : current >= target && current < target + step;
-                                return (
-                                    <button
-                                        key={i}
-                                        className={`ac-dot${active ? ' active' : ''}`}
-                                        onClick={() => goTo(target)}
-                                        aria-label={`Go to slide group ${i + 1}`}
-                                    />
-                                );
-                            })}
-                        </div>
+                    <div className="ac-card-body">
+                      <h3 className="ac-pilot-name">{pilot.name}</h3>
 
-                        {/* Position counter */}
-                        <div className="ac-position">
-                            <strong>{String(current + 1).padStart(2, '0')}</strong>
-                            {' / '}
-                            {String(maxIndex + 1).padStart(2, '0')}
-                        </div>
+                      <span
+                        className="ac-airline-badge"
+                        style={{
+                          background: palette.bg,
+                          borderColor: palette.border,
+                          color: palette.text,
+                        }}
+                      >
+                        <span className="ac-airline-dot" style={{ background: palette.dot }} />
+                        {pilot.airline}
+                      </span>
 
-                        {/* Arrow buttons */}
-                        <div className="ac-arrows">
-                            <button className="ac-btn" onClick={retreat} aria-label="Previous">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                                    <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2.2"
-                                        strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </button>
-                            <button className="ac-btn" onClick={advance} aria-label="Next">
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                                    <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2"
-                                        strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </button>
-                        </div>
+                      <div className="ac-rule" />
+
+                      <div className="ac-verified">
+                        <svg width="13" height="13" viewBox="0 0 24 24" fill="none">
+                          <path
+                            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                            stroke="#0b63d6" strokeWidth="2"
+                            strokeLinecap="round" strokeLinejoin="round"
+                          />
+                        </svg>
+                        Certified
+                      </div>
                     </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
 
-                </div>
-            </section>
-        </>
-    );
+          {/* ── Controls ── */}
+          <div className="ac-controls">
+            {/* Dots */}
+            <div className="ac-dots">
+              {Array.from({ length: DOT_COUNT }).map((_, i) => {
+                const step = Math.max(1, Math.floor(maxIndex / (DOT_COUNT - 1)));
+                const target = i === DOT_COUNT - 1 ? maxIndex : i * step;
+                const active =
+                  i === DOT_COUNT - 1
+                    ? current === maxIndex
+                    : current >= target && current < target + step;
+                return (
+                  <button
+                    key={i}
+                    className={`ac-dot${active ? ' active' : ''}`}
+                    onClick={() => goTo(target)}
+                    aria-label={`Go to slide group ${i + 1}`}
+                  />
+                );
+              })}
+            </div>
+
+            {/* Arrow buttons */}
+            <div className="ac-arrows">
+              <button className="ac-btn" onClick={retreat} aria-label="Previous">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2.2"
+                    strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+              <button className="ac-btn" onClick={advance} aria-label="Next">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path d="M9 6l6 6-6 6" stroke="currentColor" strokeWidth="2.2"
+                    strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </>
+  );
 }
