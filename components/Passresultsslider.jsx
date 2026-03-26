@@ -23,12 +23,44 @@ const alumniData = [
   { id: 18, name: 'Capt. Ambereesh V Pillai', imageSrc: '/assets/pilot18.webp', airline: 'IndiGo' },
   { id: 19, name: 'Capt. Anish Kujur', imageSrc: '/assets/pilot19.webp', airline: 'Air India Express' },
   { id: 20, name: 'Capt. Akshay Passi', imageSrc: '/assets/pilot20.webp', airline: 'Air India Alliance' },
-  { id: 21, name: 'Capt. Akshat Yadav', imageSrc: '/assets/pilot21.webp', airline: 'Spice Jet' },
+  { id: 21, name: 'Capt. Akshat Yadav', imageSrc: '/assets/pilot21.webp', airline: 'SpiceJet' },
   { id: 22, name: 'Capt. Akhila', imageSrc: '/assets/pilot22.webp', airline: 'IndiGo' },
   { id: 23, name: 'Capt. Aharnish Chaudhary', imageSrc: '/assets/pilot23.webp', airline: 'Air India Express' },
   { id: 24, name: 'Capt. Aditya Singh Rathore', imageSrc: '/assets/pilot24.webp', airline: 'SpiceJet' },
   { id: 25, name: 'Capt. Abhishek Dedha', imageSrc: '/assets/pilot25.webp', airline: 'IndiGo' },
   { id: 26, name: 'Capt. Aben Abraham', imageSrc: '/assets/pilot26.webp', airline: 'IndiGo' },
+  { id: 27, name: 'Capt. Sahiba Dev', imageSrc: '/assets/Capt. Sahiba Dev (Air India Express).webp', airline: 'Air India Express' },
+  { id: 28, name: 'Capt. Sahibjit Bhullar', imageSrc: '/assets/Capt. Sahibjit Bhullar (Indigo).webp', airline: 'IndiGo' },
+  { id: 29, name: 'Capt. Samraat Kaushal', imageSrc: '/assets/Capt. Samraat Kaushal (Spice Jet).webp', airline: 'SpiceJet' },
+  { id: 30, name: 'Capt. Sanil', imageSrc: '/assets/Capt. Sanil (Jet Airways).webp', airline: 'Jet Airways' },
+  { id: 31, name: 'Capt. Sanjay Gopinath', imageSrc: '/assets/Capt. Sanjay Gopinath (Indigo).webp', airline: 'IndiGo' },
+  { id: 32, name: 'Capt. Shoaeb Khan', imageSrc: '/assets/Capt. Shoaeb Khan (Indigo).webp', airline: 'IndiGo' },
+  { id: 33, name: 'Capt. Sushant Manik', imageSrc: '/assets/Capt. Sushant Manik (Jet Airways).webp', airline: 'Jet Airways' },
+  { id: 34, name: 'Capt. Syed Khalid', imageSrc: '/assets/Capt. Syed Khalid (Vistara).webp', airline: 'Vistara' },
+  { id: 35, name: 'Capt. Tanmay Kapse', imageSrc: '/assets/Capt. Tanmay Kapse (Air Asia).webp', airline: 'Air Asia' },
+  { id: 36, name: 'Capt. Tony Babu', imageSrc: '/assets/Capt. Tony Babu (Indigo).webp', airline: 'IndiGo' },
+  { id: 37, name: 'Capt. Vishal Tare', imageSrc: '/assets/Capt. Vishal Tare (Indigo).webp', airline: 'IndiGo' },
+  { id: 38, name: 'Capt. Vishnu Ravi', imageSrc: '/assets/Capt. Vishnu Ravi (Vistara).webp', airline: 'Vistara' },
+  // ── New pilots from second image ──
+  { id: 39, name: 'Capt. Karan Malhotra', imageSrc: '/assets/Capt. Karan Malhotra (Spice Jet).webp', airline: 'SpiceJet' },
+  { id: 40, name: 'Capt. Karan Zaidu', imageSrc: '/assets/Capt. Karan Zaidu (Indigo).webp', airline: 'IndiGo' },
+  { id: 42, name: 'Capt. Keshna', imageSrc: '/assets/Capt. Keshna (Vistara).webp', airline: 'Vistara' },
+  { id: 43, name: 'Capt. Kunal Lalwani', imageSrc: '/assets/Capt. Kunal Lalwani (Spice Jet).webp', airline: 'SpiceJet' },
+  { id: 44, name: 'Capt. Lavanya Krishna', imageSrc: '/assets/Capt. Lavanya Krishna (Indigo).webp', airline: 'IndiGo' },
+  { id: 45, name: 'Capt. Leo Crasto', imageSrc: '/assets/Capt. Leo Crasto (Go First).webp', airline: 'Go First' },
+  { id: 46, name: 'Capt. Marmik', imageSrc: '/assets/Capt. Marmik (Indigo).webp', airline: 'IndiGo' },
+  { id: 47, name: 'Capt. Megha Udayshankar', imageSrc: '/assets/Capt. Megha Udayshankar (Air India).webp', airline: 'Air India' },
+  { id: 48, name: 'Capt. Merson Correya', imageSrc: '/assets/Capt. Merson Correya (Vistara).webp', airline: 'Vistara' },
+  { id: 49, name: 'Capt. Mithin Raj', imageSrc: '/assets/Capt. Mithin Raj (Indigo).webp', airline: 'IndiGo' },
+  { id: 50, name: 'Capt. Namita Chaurasia', imageSrc: '/assets/Capt. Namita Chaurasia (Spice Jet).webp', airline: 'SpiceJet' },
+  { id: 51, name: 'Capt. Navin Sabunkar', imageSrc: '/assets/Capt. Navin Sabunkar (Spice Jet).webp', airline: 'SpiceJet' },
+  { id: 52, name: 'Capt. Neha Chand', imageSrc: '/assets/Capt. Neha Chand (Akasa Air).webp', airline: 'Akasa Air' },
+  { id: 53, name: 'Capt. Rahul Baisla', imageSrc: '/assets/Capt. Rahul Baisla (GoAir).webp', airline: 'GoAir' },
+  { id: 54, name: 'Capt. Rahul Prasad', imageSrc: '/assets/Capt. Rahul Prasad (Vistara).webp', airline: 'Vistara' },
+  { id: 55, name: 'Capt. Rahul Singh', imageSrc: '/assets/Capt. Rahul Singh (Indigo).webp', airline: 'IndiGo' },
+  { id: 56, name: 'Capt. Rishal Singh Rajan', imageSrc: '/assets/Capt. Rishal Singh Rajan (Vistara).webp', airline: 'Vistara' },
+  { id: 57, name: 'Capt. Rutwik Tirpude', imageSrc: '/assets/Capt. Rutwik Tirpude (Spice Jet).webp', airline: 'SpiceJet' },
+  { id: 58, name: 'Capt. Sachin Patil', imageSrc: '/assets/Capt. Sachin Patil (Indigo).webp', airline: 'IndiGo' },
 ];
 
 const AIRLINE_PALETTE = {
@@ -36,6 +68,13 @@ const AIRLINE_PALETTE = {
   'IndiGo': { bg: 'rgba(11,99,214,0.10)', border: 'rgba(11,99,214,0.25)', dot: '#0b63d6', text: '#0b63d6' },
   'Air India Express': { bg: 'rgba(249,115,22,0.09)', border: 'rgba(249,115,22,0.25)', dot: '#f97316', text: '#c2560a' },
   'SpiceJet': { bg: 'rgba(220,53,30,0.09)', border: 'rgba(220,53,30,0.22)', dot: '#dc351e', text: '#b02a16' },
+  'Air India Alliance': { bg: 'rgba(180,0,50,0.07)', border: 'rgba(180,0,50,0.18)', dot: '#b40032', text: '#8b0028' },
+  'Jet Airways': { bg: 'rgba(230,160,0,0.09)', border: 'rgba(230,160,0,0.25)', dot: '#e6a000', text: '#a07000' },
+  'Vistara': { bg: 'rgba(99,44,130,0.09)', border: 'rgba(99,44,130,0.25)', dot: '#632c82', text: '#4a1f63' },
+  'Air Asia': { bg: 'rgba(220,30,30,0.09)', border: 'rgba(220,30,30,0.22)', dot: '#dc1e1e', text: '#a01010' },
+  'Go First': { bg: 'rgba(0,150,100,0.09)', border: 'rgba(0,150,100,0.25)', dot: '#009664', text: '#006644' },
+  'Akasa Air': { bg: 'rgba(255,140,0,0.09)', border: 'rgba(255,140,0,0.25)', dot: '#ff8c00', text: '#b36200' },
+  'GoAir': { bg: 'rgba(0,120,200,0.09)', border: 'rgba(0,120,200,0.25)', dot: '#0078c8', text: '#005a96' },
 };
 
 const CARD_GAP = 24;
@@ -43,11 +82,9 @@ const CARD_WIDTH = 260 + CARD_GAP;
 const VISIBLE = 4;
 const AUTO_DELAY = 2000;
 
-/* ─── Static CSS ───────────────────────────────────────────────────────────── */
 const CAROUSEL_CSS = `
   @import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@400;500;600&display=swap');
 
-  /* ── Section shell ── */
   .ac-section {
     font-family: 'DM Sans', sans-serif;
     background: #f0f5ff;
@@ -76,7 +113,6 @@ const CAROUSEL_CSS = `
   }
   .ac-inner { position: relative; z-index: 1; }
 
-  /* ── Header ── */
   .ac-header {
     padding: 0 5%;
     margin-bottom: 52px;
@@ -121,7 +157,6 @@ const CAROUSEL_CSS = `
     .ac-heading em { color: #0b63d6; }
   }
 
-  /* ── Stat counter ── */
   .ac-stat { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
   .ac-stat-num {
     font-family: 'Syne', sans-serif;
@@ -135,7 +170,6 @@ const CAROUSEL_CSS = `
     color: rgba(11,58,122,0.45);
   }
 
-  /* ── Viewport / track ── */
   .ac-viewport {
     width: 90%; margin: 0 auto;
     overflow: hidden; position: relative; border-radius: 20px;
@@ -157,7 +191,6 @@ const CAROUSEL_CSS = `
   }
   .ac-track:active { cursor: grabbing; }
 
-  /* ── Card ── */
   .ac-card {
     min-width: 260px; border-radius: 20px;
     border: 1.5px solid rgba(11,99,214,0.09);
@@ -179,7 +212,6 @@ const CAROUSEL_CSS = `
     border-color: rgba(11,99,214,0.25);
   }
 
-  /* Card header band */
   .ac-card-band {
     width: 100%; height: 100px;
     background: linear-gradient(135deg, #0b3a7a 0%, #0b63d6 100%);
@@ -220,7 +252,6 @@ const CAROUSEL_CSS = `
     letter-spacing: 2px; color: rgba(255,255,255,0.3);
   }
 
-  /* Avatar ring */
   .ac-avatar-ring {
     position: relative; z-index: 2;
     width: 90px; height: 90px;
@@ -246,7 +277,6 @@ const CAROUSEL_CSS = `
   }
   .ac-card:hover .ac-avatar-inner img { transform: scale(1.1); }
 
-  /* Card body */
   .ac-card-body {
     padding: 0 18px 22px;
     display: flex; flex-direction: column; align-items: center;
@@ -258,7 +288,6 @@ const CAROUSEL_CSS = `
     color: #0b3a7a; margin: 0 0 10px; letter-spacing: 0.01em;
   }
 
-  /* Airline badge */
   .ac-airline-badge {
     display: inline-flex; align-items: center; gap: 6px;
     padding: 4px 12px; border-radius: 999px;
@@ -280,7 +309,6 @@ const CAROUSEL_CSS = `
     letter-spacing: 1.2px; text-transform: uppercase; color: #0b63d6;
   }
 
-  /* ── Controls ── */
   .ac-controls {
     display: flex; align-items: center; justify-content: space-between;
     width: 90%; margin: 36px auto 0; padding: 0 4px;
@@ -319,7 +347,6 @@ const CAROUSEL_CSS = `
   .ac-btn:active { transform: scale(0.95); }
   .ac-btn svg { pointer-events: none; }
 
-  /* ── Responsive ── */
   @media (max-width: 900px) { .ac-stat { display: none; } }
   @media (max-width: 768px) {
     .ac-section { padding: 64px 0 80px; }
@@ -355,21 +382,18 @@ export default function AlumniCarousel() {
   const advance = useCallback(() => goTo(current >= maxIndex ? 0 : current + 1), [current, maxIndex, goTo]);
   const retreat = useCallback(() => goTo(current <= 0 ? maxIndex : current - 1), [current, maxIndex, goTo]);
 
-  // Auto-advance
   useEffect(() => {
     if (paused) return;
     const timer = setInterval(advance, AUTO_DELAY);
     return () => clearInterval(timer);
   }, [paused, advance]);
 
-  // Sync track transform
   useEffect(() => {
     if (trackRef.current) {
       trackRef.current.style.transform = `translateX(-${current * CARD_WIDTH}px)`;
     }
   }, [current]);
 
-  // Keyboard
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === 'ArrowLeft') retreat();
@@ -379,7 +403,6 @@ export default function AlumniCarousel() {
     return () => window.removeEventListener('keydown', onKey);
   }, [retreat, advance]);
 
-  // Drag-to-slide
   const onPointerDown = (e) => setDragOrigin(e.clientX);
   const onPointerUp = (e) => {
     if (dragOrigin === null) return;
@@ -401,7 +424,6 @@ export default function AlumniCarousel() {
       >
         <div className="ac-inner">
 
-          {/* ── Header ── */}
           <div className="ac-header">
             <div>
               <div className="ac-eyebrow">
@@ -413,12 +435,11 @@ export default function AlumniCarousel() {
               </h2>
             </div>
             <div className="ac-stat">
-              <div className="ac-stat-num"><span>10,000+</span></div>
+              <div className="ac-stat-num"><span>4000+</span></div>
               <div className="ac-stat-label">Licensed Aviators</div>
             </div>
           </div>
 
-          {/* ── Slider ── */}
           <div
             className="ac-viewport"
             onPointerDown={onPointerDown}
@@ -478,9 +499,7 @@ export default function AlumniCarousel() {
             </div>
           </div>
 
-          {/* ── Controls ── */}
           <div className="ac-controls">
-            {/* Dots */}
             <div className="ac-dots">
               {Array.from({ length: DOT_COUNT }).map((_, i) => {
                 const step = Math.max(1, Math.floor(maxIndex / (DOT_COUNT - 1)));
@@ -500,7 +519,6 @@ export default function AlumniCarousel() {
               })}
             </div>
 
-            {/* Arrow buttons */}
             <div className="ac-arrows">
               <button className="ac-btn" onClick={retreat} aria-label="Previous">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
