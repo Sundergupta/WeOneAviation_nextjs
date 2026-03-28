@@ -80,6 +80,15 @@ export default function Navbar() {
 
             ],
         },
+        {
+            title: "Adapt Test ",
+            submenu: [
+                { name: "Air India", path: "/Airindia-pilot-preparation" },
+                { name: "IndiGo", path: "/Indigo-pilot-preparation" },
+
+
+            ],
+        },
         // {
         //     title: "Airline Preparatory Classes",
         //     path: "/airline-preparatory-classes",
