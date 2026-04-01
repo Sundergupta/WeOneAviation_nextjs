@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import "./HomeClient.css";
 import Link from "next/link";
@@ -9,26 +9,27 @@ import TrainingCards from "@/components/TrainingCards";
 import ReviewCard from "../components/ReviewCard";
 import Slider from "../components/Slider";
 import Map from "../components/Map";
-import Passresultsslider from "../components/Passresultsslider"
+import Passresultsslider from "../components/Passresultsslider";
 
 export default function HomeClient() {
     const [currentSlide, setCurrentSlide] = useState(0);
 
+    // ✅ FIX: Only 2x duplication is enough for infinite scroll (was 3x = 18 image loads)
     const companies = [
         { id: 1, name: "AirIndiaExpress", image: "/assets/Air-india-express-logo.png" },
         { id: 2, name: "AirIndia", image: "/assets/air-india-logo.png" },
         { id: 3, name: "IndiGo", image: "/assets/indigo.webp" },
-        { id: 4, name: "AirIndiaExpress", image: "/assets/Air-india-express-logo.png" },
-        { id: 5, name: "Spicejet", image: "/assets/SpiceJet-Logo.webp" },
-        { id: 6, name: "StarAir", image: "/assets/star-air-logo.webp" },
+        { id: 4, name: "Spicejet", image: "/assets/SpiceJet-Logo.webp" },
+        { id: 5, name: "StarAir", image: "/assets/star-air-logo.webp" },
     ];
+    const duplicatedCompanies = [...companies, ...companies];
 
     const slides = [
         {
             title: "BEST PILOT TRAINING IN INDIA",
             subtitle: "Join Best Pilot Training Institute In India. Get world-class flight training, DGCA classes, and expert guidance to kickstart your aviation career.",
             image: "/assets/home-page-slider/slider5.webp",
-            button1: { label: "Contact Us", href: "/contactform" },  // ✅ fixed
+            button1: { label: "Contact Us", href: "/contactform" },
             button2: { label: "Learn More", href: "/pilot-training" },
         },
         {
@@ -43,18 +44,23 @@ export default function HomeClient() {
             subtitle: "Premier DGCA Exam Coaching & Flight Training for Aspiring Pilots",
             image: "/assets/home-page-slider/slider1.webp",
             button1: { label: "Success Stories", href: "/about-us" },
-            button2: { label: "Apply Now", href: "/contact" },  // ✅ fixed
+            button2: { label: "Apply Now", href: "/contact" },
         },
     ];
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentSlide((prev) => (prev + 1) % slides.length);
-        }, 5000);
-        return () => clearInterval(interval);
+    // ✅ FIX: useCallback avoids re-creating the function on each render
+    const goToNext = useCallback(() => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, [slides.length]);
 
-    const duplicatedCompanies = [...companies, ...companies, ...companies];
+    const goToPrev = useCallback(() => {
+        setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    }, [slides.length]);
+
+    useEffect(() => {
+        const interval = setInterval(goToNext, 5000);
+        return () => clearInterval(interval);
+    }, [goToNext]);
 
     return (
         <>
@@ -66,20 +72,29 @@ export default function HomeClient() {
                             <div
                                 key={index}
                                 className={`slide ${index === currentSlide ? "active" : ""}`}
-                                style={{
-                                    backgroundImage: `url(${slide.image})`,
-                                }}
                             >
+                                {/* ✅ FIX: Use Next.js <Image fill> instead of background-image
+                                    - Enables automatic WebP/AVIF conversion
+                                    - priority on first slide = faster LCP (Largest Contentful Paint)
+                                    - lazy loading on others = don't waste bandwidth
+                                */}
+                                <Image
+                                    src={slide.image}
+                                    alt={slide.title}
+                                    fill
+                                    style={{ objectFit: "cover", objectPosition: "center" }}
+                                    priority={index === 0}
+                                    loading={index === 0 ? "eager" : "lazy"}
+                                    sizes="100vw"
+                                    quality={80}
+                                />
                                 <div className="slide-overlay"></div>
                                 <div className="slide-content">
                                     <div className="slide-text">
                                         <h1 className="slide-title">
                                             {slide.title.split(" ").map((word, i, arr) =>
                                                 i === arr.length - 1 ? (
-                                                    <span key={i} className="highlight">
-                                                        {" "}
-                                                        {word}
-                                                    </span>
+                                                    <span key={i} className="highlight"> {word}</span>
                                                 ) : (
                                                     <span key={i}> {word}</span>
                                                 )
@@ -104,23 +119,10 @@ export default function HomeClient() {
                         ))}
                     </div>
 
-                    <button
-                        className="slider-arrow slider-arrow-prev"
-                        onClick={() =>
-                            setCurrentSlide(
-                                (currentSlide - 1 + slides.length) % slides.length
-                            )
-                        }
-                    >
+                    <button className="slider-arrow slider-arrow-prev" onClick={goToPrev} aria-label="Previous slide">
                         ‹
                     </button>
-
-                    <button
-                        className="slider-arrow slider-arrow-next"
-                        onClick={() =>
-                            setCurrentSlide((currentSlide + 1) % slides.length)
-                        }
-                    >
+                    <button className="slider-arrow slider-arrow-next" onClick={goToNext} aria-label="Next slide">
                         ›
                     </button>
 
@@ -130,6 +132,7 @@ export default function HomeClient() {
                                 key={index}
                                 className={`dot ${index === currentSlide ? "active" : ""}`}
                                 onClick={() => setCurrentSlide(index)}
+                                aria-label={`Go to slide ${index + 1}`}
                             />
                         ))}
                     </div>
@@ -247,12 +250,15 @@ export default function HomeClient() {
                             <div className="slider-track">
                                 {duplicatedCompanies.map((company, index) => (
                                     <div className="company-card" key={index}>
+                                        {/* ✅ FIX: Added sizes prop for proper responsive hints */}
                                         <Image
                                             src={company.image}
                                             alt={company.name}
                                             width={150}
                                             height={80}
                                             className="company-logo"
+                                            loading="lazy"
+                                            sizes="150px"
                                         />
                                     </div>
                                 ))}
@@ -261,7 +267,8 @@ export default function HomeClient() {
                     </div>
                 </section>
 
-                {/* ================= REVIEWS ================= */}
+                {/* ================= REVIEWS — only render ONCE ================= */}
+                {/* ✅ FIX: Removed the duplicate <Slider /> that was at the top */}
                 <section className="review-section">
                     <div className="container">
                         <Slider />
@@ -282,9 +289,7 @@ export default function HomeClient() {
                                     and calculations.
                                 </p>
                                 <Link href="/dgca-ground-classes">
-                                    <button className="subject-btn">
-                                        Click to explore more! 🚀
-                                    </button>
+                                    <button className="subject-btn">Click to explore more! 🚀</button>
                                 </Link>
                             </div>
 
@@ -296,9 +301,7 @@ export default function HomeClient() {
                                     restrictions to communication protocols.
                                 </p>
                                 <Link href="/dgca-ground-classes">
-                                    <button className="subject-btn">
-                                        Click to find out more! ✈️
-                                    </button>
+                                    <button className="subject-btn">Click to find out more! ✈️</button>
                                 </Link>
                             </div>
 
@@ -309,9 +312,7 @@ export default function HomeClient() {
                                     that affect flight safety and performance.
                                 </p>
                                 <Link href="/dgca-ground-classes">
-                                    <button className="subject-btn">
-                                        Click to explore more! 🌤️
-                                    </button>
+                                    <button className="subject-btn">Click to explore more! 🌤️</button>
                                 </Link>
                             </div>
 
@@ -322,9 +323,7 @@ export default function HomeClient() {
                                     engines, helping pilots understand how their machines operate.
                                 </p>
                                 <Link href="/dgca-ground-classes">
-                                    <button className="subject-btn">
-                                        Click to explore more! ⚙️
-                                    </button>
+                                    <button className="subject-btn">Click to explore more! ⚙️</button>
                                 </Link>
                             </div>
 
@@ -335,9 +334,7 @@ export default function HomeClient() {
                                     Air Traffic Control (ATC).
                                 </p>
                                 <Link href="/dgca-ground-classes">
-                                    <button className="subject-btn">
-                                        Click to explore more! 📡
-                                    </button>
+                                    <button className="subject-btn">Click to explore more! 📡</button>
                                 </Link>
                             </div>
 
@@ -349,9 +346,7 @@ export default function HomeClient() {
                                     and out.
                                 </p>
                                 <Link href="/dgca-ground-classes">
-                                    <button className="subject-btn">
-                                        Click to explore more! 🛩️
-                                    </button>
+                                    <button className="subject-btn">Click to explore more! 🛩️</button>
                                 </Link>
                             </div>
                         </div>
@@ -361,51 +356,28 @@ export default function HomeClient() {
                 {/* ================= WHY CHOOSE US ================= */}
                 <section className="why-choose-us">
                     <div className="container">
-                        <h2>Why Choose We One Aviation </h2>
-                        <p className="section-subtitle">
-                            All Your Aviation Needs Under One Roof
-                        </p>
+                        <h2>Why Choose We One Aviation</h2>
+                        <p className="section-subtitle">All Your Aviation Needs Under One Roof</p>
 
                         <div className="benefits-grid">
-                            <div className="benefit-item">
-                                <span className="benefit-check">✅</span>
-                                <span>Approved Training Programs</span>
-                            </div>
-                            <div className="benefit-item">
-                                <span className="benefit-check">✅</span>
-                                <span>Experienced Instructors & Mentors</span>
-                            </div>
-                            <div className="benefit-item">
-                                <span className="benefit-check">✅</span>
-                                <span>State-of-the-Art Training Facilities</span>
-                            </div>
-                            <div className="benefit-item">
-                                <span className="benefit-check">✅</span>
-                                <span>100% Placement Assistance</span>
-                            </div>
-                            <div className="benefit-item">
-                                <span className="benefit-check">✅</span>
-                                <span>Comprehensive CPL & DGCA Ground Classes</span>
-                            </div>
-                            <div className="benefit-item">
-                                <span className="benefit-check">✅</span>
-                                <span>Flexible Payment & Loan Options</span>
-                            </div>
-                            <div className="benefit-item">
-                                <span className="benefit-check">✅</span>
-                                <span>Personalized Learning Approach</span>
-                            </div>
-                            <div className="benefit-item">
-                                <span className="benefit-check">✅</span>
-                                <span>International Training Tie-Ups</span>
-                            </div>
-                            <div className="benefit-item">
-                                <span className="benefit-check">✅</span>
-                                <span>Proven Track Record of Success</span>
-                            </div>
+                            {[
+                                "Approved Training Programs",
+                                "Experienced Instructors & Mentors",
+                                "State-of-the-Art Training Facilities",
+                                "100% Placement Assistance",
+                                "Comprehensive CPL & DGCA Ground Classes",
+                                "Flexible Payment & Loan Options",
+                                "Personalized Learning Approach",
+                                "International Training Tie-Ups",
+                                "Proven Track Record of Success",
+                            ].map((benefit) => (
+                                <div className="benefit-item" key={benefit}>
+                                    <span className="benefit-check">✅</span>
+                                    <span>{benefit}</span>
+                                </div>
+                            ))}
                         </div>
 
-                        {/* CTA linking to about-us and contact */}
                         <div style={{ textAlign: "center", marginTop: "2rem", display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
                             <Link href="/about-us">
                                 <button className="highlight-btn">About Us</button>
@@ -422,10 +394,7 @@ export default function HomeClient() {
                     <div className="container">
                         <div className="features-header">
                             <h2>Why Choose Our Aviation Training?</h2>
-                            <p>
-                                Experience world-class pilot training with industry-leading
-                                features and support
-                            </p>
+                            <p>Experience world-class pilot training with industry-leading features and support</p>
                         </div>
 
                         <div className="features-grid">
@@ -433,10 +402,7 @@ export default function HomeClient() {
                                 <div className="feature-card">
                                     <div className="feature-icon">👨‍✈️</div>
                                     <h3>Airline Instructors</h3>
-                                    <p>
-                                        Learn directly from experienced pilots & engineers currently
-                                        active in major airlines.
-                                    </p>
+                                    <p>Learn directly from experienced pilots & engineers currently active in major airlines.</p>
                                 </div>
                             </Link>
 
@@ -444,10 +410,7 @@ export default function HomeClient() {
                                 <div className="feature-card">
                                     <div className="feature-icon">💬</div>
                                     <h3>24/7 Doubt Support</h3>
-                                    <p>
-                                        Get your questions answered anytime with dedicated support from
-                                        our expert faculty.
-                                    </p>
+                                    <p>Get your questions answered anytime with dedicated support from our expert faculty.</p>
                                 </div>
                             </Link>
 
@@ -455,10 +418,7 @@ export default function HomeClient() {
                                 <div className="feature-card">
                                     <div className="feature-icon">📊</div>
                                     <h3>Structured Curriculum</h3>
-                                    <p>
-                                        Master the complete DGCA syllabus with our organized,
-                                        exam-focused online ground school.
-                                    </p>
+                                    <p>Master the complete DGCA syllabus with our organized, exam-focused online ground school.</p>
                                 </div>
                             </Link>
 
@@ -466,10 +426,7 @@ export default function HomeClient() {
                                 <div className="feature-card">
                                     <div className="feature-icon">⏰</div>
                                     <h3>Flexible Online Classes</h3>
-                                    <p>
-                                        Study at your own pace with adaptable schedules fitting your
-                                        personal commitments.
-                                    </p>
+                                    <p>Study at your own pace with adaptable schedules fitting your personal commitments.</p>
                                 </div>
                             </Link>
 
@@ -477,10 +434,7 @@ export default function HomeClient() {
                                 <div className="feature-card">
                                     <div className="feature-icon">📈</div>
                                     <h3>High Success Rate</h3>
-                                    <p>
-                                        Benefit from proven teaching methods and rigorous mock tests
-                                        designed for exam success.
-                                    </p>
+                                    <p>Benefit from proven teaching methods and rigorous mock tests designed for exam success.</p>
                                 </div>
                             </Link>
 
@@ -488,15 +442,13 @@ export default function HomeClient() {
                                 <div className="feature-card">
                                     <div className="feature-icon">🎯</div>
                                     <h3>Specialized Training</h3>
-                                    <p>
-                                        Access additional courses like RTR(A) preparation and Type
-                                        Rating guidance.
-                                    </p>
+                                    <p>Access additional courses like RTR(A) preparation and Type Rating guidance.</p>
                                 </div>
                             </Link>
                         </div>
                     </div>
                 </section>
+
                 <PilotStepsLoader />
 
                 {/* ================= TRAINING PROGRAMS ================= */}
@@ -513,13 +465,18 @@ export default function HomeClient() {
                         <div className="programs-divider"></div>
 
                         <div className="programs-grid">
+                            {/* ✅ FIX: Use Next.js <Image> instead of background-image for all program cards */}
                             <div className="program-card">
-                                <div
-                                    className="program-image"
-                                    style={{
-                                        backgroundImage: "url(/assets/GroundSchool.jpg)",
-                                    }}
-                                ></div>
+                                <div className="program-image">
+                                    <Image
+                                        src="/assets/GroundSchool.jpg"
+                                        alt="CPL & ATPL Ground School"
+                                        fill
+                                        style={{ objectFit: "cover" }}
+                                        loading="lazy"
+                                        sizes="(max-width: 768px) 100vw, 33vw"
+                                    />
+                                </div>
                                 <div className="program-content">
                                     <h3>CPL & ATPL Ground School</h3>
                                     <p>
@@ -533,12 +490,16 @@ export default function HomeClient() {
                             </div>
 
                             <div className="program-card">
-                                <div
-                                    className="program-image"
-                                    style={{
-                                        backgroundImage: "url(/assets/RTR.jpeg)",
-                                    }}
-                                ></div>
+                                <div className="program-image">
+                                    <Image
+                                        src="/assets/RTR.jpeg"
+                                        alt="RTR Radio Telephony"
+                                        fill
+                                        style={{ objectFit: "cover" }}
+                                        loading="lazy"
+                                        sizes="(max-width: 768px) 100vw, 33vw"
+                                    />
+                                </div>
                                 <div className="program-content">
                                     <h3>RTR(A) Radio Telephony</h3>
                                     <p>
@@ -552,12 +513,16 @@ export default function HomeClient() {
                             </div>
 
                             <div className="program-card">
-                                <div
-                                    className="program-image"
-                                    style={{
-                                        backgroundImage: "url(/assets/TypeRatingPrep.jpeg)",
-                                    }}
-                                ></div>
+                                <div className="program-image">
+                                    <Image
+                                        src="/assets/TypeRatingPrep.jpeg"
+                                        alt="Type Rating Preparation"
+                                        fill
+                                        style={{ objectFit: "cover" }}
+                                        loading="lazy"
+                                        sizes="(max-width: 768px) 100vw, 33vw"
+                                    />
+                                </div>
                                 <div className="program-content">
                                     <h3>Type Rating Prep</h3>
                                     <p>
@@ -572,16 +537,8 @@ export default function HomeClient() {
                         </div>
                     </div>
                 </section>
+
                 <Passresultsslider />
-
-
-
-                {/* ================= REVIEWS ================= */}
-                <section className="review-section">
-                    <div className="container">
-                        <Slider />
-                    </div>
-                </section>
             </div>
         </>
     );
